@@ -5940,7 +5940,6 @@
     margin-top: 4px
 }
 
-
 .ui-search-sidebar {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -5956,6 +5955,7 @@
         display: none
     }
 }
+
     .ui-search-sidebar .ui-search-sidebar__result-container {
         display: -webkit-flex;
         display: flex;
