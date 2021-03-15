@@ -5,12 +5,12 @@ function mobile() {
         document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
         document.getElementById("active").classList.remove("ui-search-view-change__link--active");
         document.getElementById("dactive").classList.add("ui-search-view-change__link--active");
-
-    } else {
+    }else if (w_w > 510) {
         document.getElementById("cardProducto").classList.replace('ui-search-layout--grid', 'ui-search-layout--stack');
         document.getElementById("dactive").classList.remove("ui-search-view-change__link--active");
         document.getElementById("active").classList.add("ui-search-view-change__link--active");
     }
+     
 }
  
 function mostrarGrid() {
