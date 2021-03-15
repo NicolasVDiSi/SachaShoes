@@ -6082,6 +6082,14 @@
         left: 27.8%
     }
 }
+@media (max-width:500px) {
+    .ui-search-view-options__container {
+        left: 1%
+    }
+    .ui-search-view-options__container{
+        width:200px
+    }
+}
 
 .ui-search-view-options__group {
     margin-bottom: -1px;
@@ -7188,7 +7196,6 @@
     .ui-search-layout--gallery .ui-search-layout__item, .ui-search-layout--grid .ui-search-layout__item {
         min-width: 240px;
         max-width: 240px;
-        -webkit-flex-basis: 240px;
         flex-basis: 240px;
         margin-left: 12px;
         margin-bottom: 12px
