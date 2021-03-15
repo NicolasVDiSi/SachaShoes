@@ -5951,7 +5951,7 @@
     width: 100%
 }
 @media(max-width:760px) and (min-width:0px) {
-    .ui-search-sidebar {
+    .aside {
         display: none
     }
 }
@@ -6058,11 +6058,10 @@
 }
 
 .ui-search-view-options__container {
-    width: 360px;
+    width: 100%;
     margin-bottom: 16px;
-    left: 59.8%;
-    position: relative;
-    text-align: right
+    left: auto;
+    text-align: right;
 }
 
 @media (max-width:1165px) and (min-width:1024px) {
@@ -7181,7 +7180,7 @@
         min-width: 284px;
         max-width: 284px;
         width: 100%;
-        margin-left: 16px
+        margin-left: auto
     }
 
 @media (max-width:861px) and (min-width:720px),(max-width:1164px) and (min-width:1024px) {
@@ -7196,7 +7195,7 @@
 }
 
 .ui-search-layout--gallery .ui-search-layout__item:first-child, .ui-search-layout--grid .ui-search-layout__item:first-child {
-    margin-left: 0
+    /*margin-left: 0*/
 }
 
 @media (max-width:1023px) and (min-width:862px) {
@@ -7209,15 +7208,7 @@
     }
 }
 
-@media (max-width:861px) and (min-width:720px) {
-    .ui-search-layout--gallery .ui-search-layout__item:nth-child(3n+1), .ui-search-layout--grid .ui-search-layout__item:nth-child(3n+1) {
-        margin-left: 12px
-    }
 
-    .ui-search-layout--gallery .ui-search-layout__item:nth-child(odd), .ui-search-layout--grid .ui-search-layout__item:nth-child(odd) {
-        margin-left: 0
-    }
-}
 
 @media (max-width:719px) {
     .ui-search-layout--gallery .ui-search-layout__item, .ui-search-layout--grid .ui-search-layout__item {
@@ -8886,7 +8877,7 @@
 
 @media (max-width:861px) {
     .ui-search-results {
-        width: 492px
+        width: 100%
     }
 }
 
