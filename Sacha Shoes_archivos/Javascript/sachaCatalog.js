@@ -21,4 +21,15 @@ function mostrarFilas() {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--grid', 'ui-search-layout--stack');
 }
 
-//------
+function mostrarInputSearch() {
+    document.getElementById("search-input").style.setProperty("visibility", "visible");
+    document.getElementById("search-input").style.setProperty("opacity", "1");
+}
+
+
+function mostrarCategorias() {
+    let display = document.getElementById("popover-menu");
+    display.style.removeProperty("display");
+    display.style.setProperty("display", "block");
+}
+
