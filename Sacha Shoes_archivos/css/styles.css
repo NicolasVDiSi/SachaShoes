@@ -1338,3 +1338,15 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
     opacity: 0.8;
     text-align: left
 }
+
+/* Subrayar  opciones del menu al pasar el mouse*/
+#nav-list li:hover {
+    box-shadow: rgb(255, 255, 255) 0px -2px 0px inset !important;
+
+}
+#nav-list li:hover #popover-menu{
+    display: block;
+
+}
+
+
