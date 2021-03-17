@@ -39,9 +39,26 @@ function mostrarInputSearch() {
 }
 
 
-function mostrarCategorias() {
+/* Moistrar/Ocultar subcategorias al pasar el mouse*/
+
+function mostrarCategorias(elementId) {
+  
     let display = document.getElementById("popover-menu");
     display.style.removeProperty("display");
     display.style.setProperty("display", "block");
+
+    let submenu = document.getElementsByClassName(elementId);
+    submenu[0].style.removeProperty("display");
+    submenu[0].style.setProperty("display", "flex");
+}
+
+function ocultarCategorias(elementId) {
+    let display = document.getElementById("popover-menu");
+    display.style.removeProperty("display");
+    display.style.setProperty("display", "none");
+
+    let submenu = document.getElementsByClassName(elementId);
+    submenu[0].style.removeProperty("display");
+    submenu[0].style.setProperty("display", "none");
 }
 
