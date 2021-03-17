@@ -21,7 +21,6 @@ function mobile() {
     }
      
 }
- 
 function mostrarGrid() {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
     document.getElementById("active").classList.remove('ui-search-view-change__link--active');

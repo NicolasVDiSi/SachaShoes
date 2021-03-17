@@ -5984,7 +5984,8 @@
 
 .ui-search-main--only-products .ui-search-view-options__container {
     margin-top: 8px;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    z-index:1;
 }
 
 .ui-search-skeleton__mockup-main .ui-search-view-options__content {
@@ -6038,7 +6039,7 @@
     width: -moz-max-content;
     width: max-content
 }
-/*Custom Select Firs Text t*/
+    /*Custom Select Firs Text t*/
     .ui-search-view-options .andes-dropdown--compact .andes-dropdown__trigger, .ui-search-view-options .andes-list__item-text {
         color: black;
     }
@@ -6061,7 +6062,7 @@
     margin-bottom: 16px;
     left: 59.8%;
     position: relative;
-    text-align: right
+    text-align: center
 }
 
 @media (max-width:1165px) and (min-width:1024px) {
@@ -10194,21 +10195,22 @@
     transition: transform .3s ease-in,-webkit-transform .3s ease-in
 }
 /*Custom select*/
+
+
 .andes-dropdown--compact {
-   
 }
 
-.andes-dropdown--compact .andes-list__item--selected {
-    pointer-events: none
-}
+    .andes-dropdown--compact .andes-list__item--selected {
+        pointer-events: none
+    }
 
-.andes-dropdown--compact .andes-list__item-primary {
-    color: #666
-}
+    .andes-dropdown--compact .andes-list__item-primary {
+        color: #666
+    }
 
-.andes-dropdown--compact .andes-dropdown__popover {
-    padding: 0
-}
+    .andes-dropdown--compact .andes-dropdown__popover {
+        padding: 0
+    }
 
 .andes-list {
     font-size: 14px;
