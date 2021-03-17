@@ -34,4 +34,15 @@ function mostrarFilas() {
     document.getElementById('dactive').classList.remove('ui-search-view-change__link--active');
 }
 
-//------
+function mostrarInputSearch() {
+    document.getElementById("search-input").style.setProperty("visibility", "visible");
+    document.getElementById("search-input").style.setProperty("opacity", "1");
+}
+
+
+function mostrarCategorias() {
+    let display = document.getElementById("popover-menu");
+    display.style.removeProperty("display");
+    display.style.setProperty("display", "block");
+}
+
