@@ -1343,11 +1343,6 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
 .subrayado:hover {
     box-shadow: rgb(255, 255, 255) 0px -2px 0px inset !important;
 }
-#nav-list li:hover #popover-menu{
-    display: block;
-
-}
-
 
 #nav-list .nav-fashion-list__item{
     visibility: visible;
@@ -1361,19 +1356,3 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
     left: 0px;
 }
 
-#Mujerid:hover .Mujer-0{
-    display: flex !important;
-}
-
-#Mujerid:hover #popover-menu {
-    display: block !important;
-}
-
-.Mujer-0 {
-    display: flex;
-    color: red;
-}
-
-#popover-menu{
-    display:block;
-}
