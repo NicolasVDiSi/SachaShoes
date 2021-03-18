@@ -698,8 +698,8 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
         margin: 0 !important;
         order: 1
     }
-
-@media screen and (min-width: 768px) {
+    /* Nav*/
+@media screen and (min-width: 780px) {
     .nav-cookie-disclaimer {
         align-items: center;
         flex-wrap: nowrap;

@@ -1,23 +1,26 @@
 //cambiar vista del catalogo
 function mobile() {
     let w_w = window.innerWidth;
-    let check = 0;
+    let token = document.getElementById("dactive")
+    let token1 = document.getElementById("active")
   if (w_w < 510) {
         document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
         document.getElementById("active").style.display = "none";
       document.getElementById("dactive").style.display = "none";
-      check = 1;
+      check = check + 1;
   } else if (w_w > 510) {
       document.getElementById("dactive").style.display = "flex";
       document.getElementById("active").style.display = "flex";
-      while (check == 1) {
-        document.getElementById("cardProducto").classList.replace('ui-search-layout--grid', 'ui-search-layout--stack');
-          check = 0;
+      if (token.classList.contains('ui-search-view-change__link--active')){
+          document.getElementById('cardProducto').classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
       }
+      if (token1.classList.contains('ui-search-view-change__link--active')) {
+          document.getElementById('cardProducto').classList.replace('ui-search-layout--grid', 'ui-search-layout--stack');
+      }
+      
     }
      
 }
- 
 function mostrarGrid() {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
     document.getElementById("active").classList.remove('ui-search-view-change__link--active');
