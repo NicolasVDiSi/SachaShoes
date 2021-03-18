@@ -1355,3 +1355,25 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
     box-shadow: none;
 }
 
+#responsive-menu {
+    transition: all 0.2s ease 0s;
+    opacity: 1;
+    left: 0px;
+}
+
+#Mujerid:hover .Mujer-0{
+    display: flex !important;
+}
+
+#Mujerid:hover #popover-menu {
+    display: block !important;
+}
+
+.Mujer-0 {
+    display: flex;
+    color: red;
+}
+
+#popover-menu{
+    display:block;
+}

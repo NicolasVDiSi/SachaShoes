@@ -67,6 +67,474 @@
     </div>
     <header role="banner" class="nav-fashion-header" style="background:rgba(0,0,0,0.60)" itemType="" itemID="#this" itemscope="">
         <div class="nav-fashion-header__bounds">
+            <ul itemscope="" itemtype="http://schema.org/SiteNavigationElement" class="nav-fashion-list" id="nav-list">
+                <!--Menu hamburguesa-->
+                <li class="nav-fashion-list__item nav-fashion__hamburger-button" id="nav-fashion__hamburger-button" style="visibility: visible; opacity: 1; box-shadow: none;" onclick="mostrarMenuResponsive()">
+                    <input type="checkbox" id="mobile-categories-menu-switch" name="nav-tools-header__menu-switch">
+                    <label for="mobile-categories-menu-switch" id="hamburguer-menu">
+                        <span class="nav-header__hamburger"></span>
+                        <span class="nav-header__hamburger"></span>
+                        <span class="nav-header__hamburger"></span>
+                    </label>
+                </li>
+                <!--Fin Menu hamburguesa-->
+                <!--Categorias-->
+
+                <li class="nav-fashion-list__item subrayado" onmouseover="mostrarCategorias(this.id);" onmouseout="ocultarCategorias(this.id)" id="Mujer-0">
+
+                    <a href="https://www.sachashoes.com.ar/ropa/_gender_339665">
+                        <span class="header--custom-text">Mujer</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-fashion-list__item subrayado" onmouseover="mostrarCategorias(this.id);" onmouseout="ocultarCategorias(this.id)" id="Hombre-1">
+
+                    <a href="https://www.sachashoes.com.ar/ropa/_gender_339666">
+                        <span class="header--custom-text">Hombre</span>
+                    </a>
+                </li>
+
+                <li class="nav-fashion-list__item subrayado" onmouseover="mostrarCategorias(this.id);" onmouseout="ocultarCategorias(this.id)" id="Ninias-2">
+
+                    <a href="https://www.sachashoes.com.ar/ropa/_gender_339666">
+                        <span class="header--custom-text">Niñas</span>
+                    </a>
+                </li>
+
+                <li class="nav-fashion-list__item" data-js="Bebés-4" has-childs="[]">
+                    <a href="./_gender_371795.htm">
+                        <span class="header--custom-text">Bebés</span>
+                    </a>
+                </li>
+                <!--Fin Categorias-->
+
+            </ul>
+            <!--Menu Hamburguesa prueba-->
+            <div itemscope="" itemtype="http://schema.org/SiteNavigationElement" class="nav-fashion-menu nav-fashion-responsive-menu header--custom-background" id="responsive-menu" style="visibility: hidden;">
+                <!--style="transition: all 0.2s ease 0s; visibility: hidden; opacity: 1; left: 0px;"-->
+                <!-- style="transition: all 0.2s ease 0s; visibility: visible; opacity: 1; left: 0px;"-->
+                <form class="nav-fashion-search-form header--custom-border" id="search-form-responsive" novalidate="">
+                    <button type="submit" class="search-button">
+                        <svg class="header--custom-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <g fill-rule="evenodd">
+                                <path fill-rule="nonzero" class="header--custom-svg" d="M15.774 16.835a8.247 8.247 0 1 1 1.06-1.06L22.062 21 21 22.06l-5.226-5.225zm-5.277.409a6.747 6.747 0 1 0 0-13.494 6.747 6.747 0 0 0 0 13.494z"></path>
+                            </g>
+                        </svg>
+
+                    </button>
+                    <input type="text" placeholder="Buscar…" class="header--custom-text" id="search-input-responsive" required="" autocomplete=" off">
+                </form>
+
+                <ul class="responsive-menu-list">
+
+
+
+                    <li class="nav-fashion-list--vertical__item">
+                        <a href="https://www.sachashoes.com.ar/ropa/_gender_339665" class="header--custom-text">Mujer</a>
+
+                        <div>
+                            <input type="checkbox" data-js="categories-toggle" id="mobile-0" name="nav-tools-header__menu-switch">
+                            <label for="mobile-0" class="toggle-menu">
+                                <span class="nav-header__toggle nav-header__hamburger"></span>
+                                <span class="nav-header__toggle nav-header__hamburger"></span>
+                            </label>
+                        </div>
+
+                    </li>
+                    <div class="nav-fashion-list--vertical__subitem-container" data-toggle="mobile-0" style="display: block;">
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-sandalias-ojotas/" class="header--custom-text">Sandalias y Ojotas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-0-0">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatillas/calzado/" class="header--custom-text">Zapatillas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-0-1">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-stilletos-plataform/" class="header--custom-text">Stilletos y Plataformas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-0-2">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-botas-botinet/" class="header--custom-text">Botas y Botinetas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-0-3">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-chatitas/" class="header--custom-text">Chatitas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-0-4">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-mocasines-oxfords/" class="header--custom-text">Mocasines y Oxfords</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-0-5">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-zuecos-mul/" class="header--custom-text">Zuecos y Mules</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-0-6">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-alpargatas/" class="header--custom-text">Alpargatas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-0-7">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-pantuflas/" class="header--custom-text">Pantuflas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-0-8">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-otros/" class="header--custom-text">Otros Zapatos</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-0-9">
+
+                        </div>
+
+                    </div>
+                    <hr class="nav-fashion-list--vertical__hr header--custom-border">
+
+                    <li class="nav-fashion-list--vertical__item">
+                        <a href="https://www.sachashoes.com.ar/ropa/_gender_339666" class="header--custom-text">Hombre</a>
+
+                        <div>
+                            <input type="checkbox" data-js="categories-toggle" id="mobile-1" name="nav-tools-header__menu-switch">
+                            <label for="mobile-1" class="toggle-menu">
+                                <span class="nav-header__toggle nav-header__hamburger"></span>
+                                <span class="nav-header__toggle nav-header__hamburger"></span>
+                            </label>
+                        </div>
+
+                    </li>
+                    <div class="nav-fashion-list--vertical__subitem-container" data-toggle="mobile-1" style="display: none;">
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatillas/calzado/" class="header--custom-text">Zapatillas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-1-0">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-sandalias-ojotas/" class="header--custom-text">Sandalias y Ojotas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-1-1">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-zuecos-mul/" class="header--custom-text">Zuecos y Mules</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-1-2">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-mocasines-oxfords/" class="header--custom-text">Mocasines y Oxfords</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-1-3">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-botas-botinet/" class="header--custom-text">Botas y Botinetas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-1-4">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-alpargatas/" class="header--custom-text">Alpargatas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-1-5">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-pantuflas/" class="header--custom-text">Pantuflas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-1-6">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-otros/" class="header--custom-text">Otros Zapatos</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-1-7">
+
+                        </div>
+
+                    </div>
+                    <hr class="nav-fashion-list--vertical__hr header--custom-border">
+
+                    <li class="nav-fashion-list--vertical__item">
+                        <a href="https://www.sachashoes.com.ar/ropa/_gender_339668" class="header--custom-text">Niñas</a>
+
+                        <div>
+                            <input type="checkbox" data-js="categories-toggle" id="mobile-2" name="nav-tools-header__menu-switch">
+                            <label for="mobile-2" class="toggle-menu">
+                                <span class="nav-header__toggle nav-header__hamburger"></span>
+                                <span class="nav-header__toggle nav-header__hamburger"></span>
+                            </label>
+                        </div>
+
+                    </li>
+                    <div class="nav-fashion-list--vertical__subitem-container" data-toggle="mobile-2" style="display: none;">
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-sandalias-ojotas/" class="header--custom-text">Sandalias y Ojotas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-2-0">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-chatitas/" class="header--custom-text">Chatitas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-2-1">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-zuecos-mul/" class="header--custom-text">Zuecos y Mules</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-2-2">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatillas/calzado/" class="header--custom-text">Zapatillas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-2-3">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-stilletos-plataform/" class="header--custom-text">Stilletos y Plataformas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-2-4">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-mocasines-oxfords/" class="header--custom-text">Mocasines y Oxfords</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-2-5">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-botas-botinet/" class="header--custom-text">Botas y Botinetas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-2-6">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-pantuflas/" class="header--custom-text">Pantuflas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-2-7">
+
+                        </div>
+
+                    </div>
+                    <hr class="nav-fashion-list--vertical__hr header--custom-border">
+
+                    <li class="nav-fashion-list--vertical__item">
+                        <a href="https://www.sachashoes.com.ar/ropa/_gender_339667" class="header--custom-text">Niños</a>
+
+                        <div>
+                            <input type="checkbox" data-js="categories-toggle" id="mobile-3" name="nav-tools-header__menu-switch">
+                            <label for="mobile-3" class="toggle-menu">
+                                <span class="nav-header__toggle nav-header__hamburger"></span>
+                                <span class="nav-header__toggle nav-header__hamburger"></span>
+                            </label>
+                        </div>
+
+                    </li>
+                    <div class="nav-fashion-list--vertical__subitem-container" data-toggle="mobile-3" style="display: none;">
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatillas/calzado/" class="header--custom-text">Zapatillas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-3-0">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-sandalias-ojotas/" class="header--custom-text">Sandalias y Ojotas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-3-1">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-zuecos-mul/" class="header--custom-text">Zuecos y Mules</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-3-2">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-mocasines-oxfords/" class="header--custom-text">Mocasines y Oxfords</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-3-3">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-alpargatas/" class="header--custom-text">Alpargatas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-3-4">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-botas-botinet/" class="header--custom-text">Botas y Botinetas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-3-5">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-pantuflas/" class="header--custom-text">Pantuflas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-3-6">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/zapatos/zapatos-otros/" class="header--custom-text">Otros Zapatos</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-3-7">
+
+                        </div>
+
+                    </div>
+                    <hr class="nav-fashion-list--vertical__hr header--custom-border">
+
+                    <li class="nav-fashion-list--vertical__item">
+                        <a href="https://www.sachashoes.com.ar/ropa/_gender_371795" class="header--custom-text">Bebés</a>
+
+                    </li>
+                    <div class="nav-fashion-list--vertical__subitem-container" data-toggle="mobile-4">
+
+                    </div>
+                    <hr class="nav-fashion-list--vertical__hr header--custom-border">
+
+                    <li class="nav-fashion-list--vertical__item">
+                        <a href="https://www.sachashoes.com.ar/deportes/" class="header--custom-text">Mundo Fitness</a>
+
+                        <div>
+                            <input type="checkbox" data-js="categories-toggle" id="mobile-5" name="nav-tools-header__menu-switch">
+                            <label for="mobile-5" class="toggle-menu">
+                                <span class="nav-header__toggle nav-header__hamburger"></span>
+                                <span class="nav-header__toggle nav-header__hamburger"></span>
+                            </label>
+                        </div>
+
+                    </li>
+                    <div class="nav-fashion-list--vertical__subitem-container" data-toggle="mobile-5">
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/deportes/_gender_339665" class="header--custom-text">Mujer</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-5-0">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/deportes/_gender_339666" class="header--custom-text">Hombre</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-5-1">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/deportes/_gender_339668" class="header--custom-text">Niñas</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-5-2">
+
+                        </div>
+
+                        <li class="nav-fashion-list--vertical__subitem">
+                            <a href="https://www.sachashoes.com.ar/deportes/_gender_339667" class="header--custom-text">Niños</a>
+
+                        </li>
+                        <div class="nav-fashion-list--vertical__attr-container" data-toggle="mobile-attr-5-3">
+
+                        </div>
+
+                    </div>
+                    <hr class="nav-fashion-list--vertical__hr header--custom-border">
+
+
+                    <li class="nav-fashion-list--vertical__item how-buy__button how-buy-button__mobile" id="how-buy__button" data-js="how-buy__button">
+                        <a href="/p/como-comprar" class="header--custom-text">Cómo comprar</a>
+                    </li>
+                </ul>
+            </div>
+            <!--fin menu hamburguesa prueba-->
             <h1 class="nav-fashion-header__title">
 
                 <a class="nav-fashion-header__logo" href="/" id="logo-wrapper">
@@ -111,54 +579,12 @@
                 </div>
             </nav>
 
-            <ul itemscope="" itemtype="http://schema.org/SiteNavigationElement" class="nav-fashion-list" id="nav-list">
-                <!--Menu hamburguesa-->
-                <li class="nav-fashion-list__item nav-fashion__hamburger-button" id="nav-fashion__hamburger-button" style="visibility: visible; opacity: 1; box-shadow: none;">
-                    <input type="checkbox" id="mobile-categories-menu-switch" name="nav-tools-header__menu-switch">
-                    <label for="mobile-categories-menu-switch" id="hamburguer-menu">
-                        <span class="nav-header__hamburger"></span>
-                        <span class="nav-header__hamburger"></span>
-                        <span class="nav-header__hamburger"></span>
-                    </label>
-                </li>
-                <!--Fin Menu hamburguesa-->
-                <!--Categorias-->
-                <li class="nav-fashion-list__item subrayado" onmouseover="mostrarCategorias(this.id);" onmouseout="ocultarCategorias(this.id)" id="Mujer-0">
 
-                    <a href="https://www.sachashoes.com.ar/ropa/_gender_339665">
-                        <span class="header--custom-text">Mujer</span>
-                    </a>
-                </li>
-
-
-                <li class="nav-fashion-list__item subrayado" onmouseover="mostrarCategorias(this.id);" onmouseout="ocultarCategorias(this.id)" id="Hombre-1">
-
-                    <a href="https://www.sachashoes.com.ar/ropa/_gender_339666">
-                        <span class="header--custom-text">Hombre</span>
-                    </a>
-                </li>
-
-                <li class="nav-fashion-list__item subrayado" onmouseover="mostrarCategorias(this.id);" onmouseout="ocultarCategorias(this.id)" id="Ninias-2">
-
-                    <a href="https://www.sachashoes.com.ar/ropa/_gender_339666">
-                        <span class="header--custom-text">Niñas</span>
-                    </a>
-                </li>
-
-                <li class="nav-fashion-list__item" data-js="Bebés-4" has-childs="[]">
-                    <a href="./_gender_371795.htm">
-                        <span class="header--custom-text">Bebés</span>
-                    </a>
-                </li>
-                <!--Fin Categorias-->
-
-            </ul>
         </div>
         <!--Subcategorías-->
-        <div id="popover-menu" class="header--custom-background" style="display: none;">
+        <div id="popover-menu" class="header--custom-background" >
             <div class="nav-bounds nav-fashion-desktop-categories-popover">
-
-                <div class="nav-fashion-list--horizontal__item Mujer-0" data-toggle="Mujer-0" style="display: none;">
+                <div class="nav-fashion-list--horizontal__item Mujer-0" data-toggle="Mujer-0" onmouseover="mostrarSubcategorias(this);" onmouseout="ocultarSubcategorias(this);">
                     <li class="nav-fashion-list--horizontal__category header--custom-text">
                         <a href="https://www.sachashoes.com.ar/ropa/_gender_339665">Mujer</a>
                         <hr class="nav-fashion-list--vertical__hr header--custom-border">
@@ -256,7 +682,7 @@
 
                 </div>
 
-                <div class="nav-fashion-list--horizontal__item Hombre-1" data-toggle="Hombre-1" style="display: none;">
+                <div class="nav-fashion-list--horizontal__item Hombre-1" data-toggle="Hombre-1" style="display: none;" onmouseover="mostrarSubcategorias(this);" onmouseout="ocultarSubcategorias(this);">
                     <li class="nav-fashion-list--horizontal__category header--custom-text">
                         <a href="https://www.sachashoes.com.ar/ropa/_gender_339666">Hombre</a>
                         <hr class="nav-fashion-list--vertical__hr header--custom-border">
@@ -336,7 +762,7 @@
 
                 </div>
 
-                <div class="nav-fashion-list--horizontal__item Ninias-2" data-toggle="Niñas-2" style="display: none;">
+                <div class="nav-fashion-list--horizontal__item Ninias-2" data-toggle="Niñas-2" style="display: none;" onmouseover="mostrarSubcategorias(this);" onmouseout="ocultarSubcategorias(this);">
                     <li class="nav-fashion-list--horizontal__category header--custom-text">
                         <a href="https://www.sachashoes.com.ar/ropa/_gender_339668">Niñas</a>
                         <hr class="nav-fashion-list--vertical__hr header--custom-border">
