@@ -16226,7 +16226,8 @@ body, html {
 }
 
 .ui-vip-core .ui-pdp-container--top {
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    top:10%;
 }
 
 .ui-vip-core .ui-pdp-container--pdp {
@@ -16299,7 +16300,7 @@ body, html {
     }
 
     .ui-vip-core--official-store .ui-pdp-container--pdp {
-        margin-top: -60px;
+        margin-top: 10%;
         border-radius: 0 0 4px 4px
     }
 

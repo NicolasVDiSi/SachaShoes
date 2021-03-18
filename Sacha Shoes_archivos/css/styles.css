@@ -698,8 +698,8 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
         margin: 0 !important;
         order: 1
     }
-
-@media screen and (min-width: 768px) {
+    /* Nav*/
+@media screen and (min-width: 780px) {
     .nav-cookie-disclaimer {
         align-items: center;
         flex-wrap: nowrap;
@@ -1338,3 +1338,21 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
     opacity: 0.8;
     text-align: left
 }
+
+/* Subrayar  opciones del menu al pasar el mouse*/
+.subrayado:hover {
+    box-shadow: rgb(255, 255, 255) 0px -2px 0px inset !important;
+}
+
+#nav-list .nav-fashion-list__item{
+    visibility: visible;
+    opacity: 1;
+    box-shadow: none;
+}
+
+#responsive-menu {
+    transition: all 0.2s ease 0s;
+    opacity: 1;
+    left: 0px;
+}
+
