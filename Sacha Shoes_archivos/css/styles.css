@@ -1343,15 +1343,16 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
 .subrayado:hover {
     box-shadow: rgb(255, 255, 255) 0px -2px 0px inset !important;
 }
-#nav-list li:hover #popover-menu{
-    display: block;
-
-}
-
 
 #nav-list .nav-fashion-list__item{
     visibility: visible;
     opacity: 1;
     box-shadow: none;
+}
+
+#responsive-menu {
+    transition: all 0.2s ease 0s;
+    opacity: 1;
+    left: 0px;
 }
 
