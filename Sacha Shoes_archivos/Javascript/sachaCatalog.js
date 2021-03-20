@@ -62,18 +62,6 @@ function ocultarCategorias(elementId) {
     submenu[0].style.setProperty("display", "none");
 }
 
-function mostrarSubcategorias(elemento) {
-    document.getElementById("popover-menu").style.setProperty("display", "block");
-    elemento.style.removeProperty("display");
-    elemento.style.setProperty("display", "flex");
-}
-
-function ocultarSubcategorias(elemento) {
-    document.getElementById("popover-menu").style.setProperty("display", "none");
-    elemento.style.removeProperty("display");
-    elemento.style.setProperty("display", "none");
-}
-
 /*menu vertical*/
 
 function mostrarSidebar() {
@@ -83,13 +71,4 @@ function mostrarSidebar() {
     } else {
         menu.classList.add("active");
     }
-    /*  let style = window.getComputedStyle(menu);
-      let compStyles.getPropertyValue('position'))
-      if (elementVisible === "hidden") {
-          menuResponsive.style.removeProperty("visibility");
-          menuResponsive.style.setProperty("visibility", "visible");
-      } else {
-          menuResponsive.style.removeProperty("visibility");
-          menuResponsive.style.setProperty("visibility", "hidden");
-      }*/
 }
