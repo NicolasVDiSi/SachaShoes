@@ -1356,3 +1356,104 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
     left: 0px;
 }
 
+.sub {
+    display: none;
+}
+
+li:hover .sub {
+    display: block;
+    /*  margin-top: 100px;*/
+    background-color: aqua;
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    left: 0;
+}
+
+.fondo {
+    background: rgba(0,0,0,0.60);
+    min-height: 56px;
+}
+
+.size {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: #fff;
+    }
+
+
+.dropdown-item {
+    color: #ffffff;
+    background-color: #000;
+    border-radius: 0;
+    padding-left: 30px;
+}
+
+.dropdown-menu {
+    background-color: #000;
+    border-radius: 0;
+}
+
+/*cambiar icono del dropdown
+
+
+
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content:"";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}*/
+
+/* Nav vertical*/
+.sidebar {
+    left: -100%;
+    max-width: 300px;
+    transition: all ease 0.25s;
+    overflow-y: auto;
+    z-index: 1032;
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    background-color: #000;
+}
+
+.menu.active .sidebar {
+    left: 0;
+}
+
+@media (min-width: 992px) {
+    .sidebar {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        flex-direction: row;
+        max-width: 100%;
+        transform: none;
+        transition: none;
+        overflow-y: visible;
+        z-index: auto;
+        background-color: transparent;
+    }
+}
+
+.main-heading {
+    position: relative;
+    z-index: 100;
+}
+
+
