@@ -62,26 +62,13 @@ function ocultarCategorias(elementId) {
     submenu[0].style.setProperty("display", "none");
 }
 
-function mostrarMenuResponsive() {
-    let visible = document.getElementById("responsive-menu").style.setProperty("visibility", "visible");
-/*
-    if (visible === "hidden") {
-        menuResponsive.style.removeProperty("visibility");
-        menuResponsive.style.setProperty("visibility", "visible");
+/*menu vertical*/
+
+function mostrarSidebar() {
+    let menu = document.getElementsByClassName("menu")[0];
+    if (menu.classList.contains("active")) {
+        menu.classList.remove(("active"));
     } else {
-        menuResponsive.style.removeProperty("visibility");
-        menuResponsive.style.setProperty("visibility", "hidden");
-    }*/
-}
-
-function mostrarSubcategorias(elemento) {
-    document.getElementById("popover-menu").style.setProperty("display", "block");
-    elemento.style.removeProperty("display");
-    elemento.style.setProperty("display", "flex");
-}
-
-function ocultarSubcategorias(elemento) {
-    document.getElementById("popover-menu").style.setProperty("display", "none");
-    elemento.style.removeProperty("display");
-    elemento.style.setProperty("display", "none");
+        menu.classList.add("active");
+    }
 }
