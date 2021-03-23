@@ -1,12 +1,4 @@
 //cambiar vista del catalogo
-$(document).ready(function () {
-    $('.zoom').hover(function () {
-        $(this).addClass('transition');
-    }, function () {
-        $(this).removeClass('transition');
-    });
-});
-
 function mobile() {
     let w_w = window.innerWidth;
     let token = document.getElementById("dactive")
