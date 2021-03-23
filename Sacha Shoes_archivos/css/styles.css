@@ -1284,18 +1284,29 @@ li:hover .sub {
     }
 
 
-.dropdown-item {
+.item-custom {
     color: #ffffff;
     background-color: #000;
     border-radius: 0;
-    padding-left: 30px;
 }
 
-.dropdown-menu {
+.menu-custom {
     background-color: #000;
     border-radius: 0;
+    flex-wrap: wrap;
 }
 
+.menu-custom .item-custom:hover {
+    color: #fff;
+    background-color: #000;
+    opacity: 0.7;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        left: 0;
+    }
+}
 /*cambiar icono del dropdown
 
 
@@ -1311,7 +1322,6 @@ li:hover .sub {
     border-bottom: 0;
     border-left: .3em solid transparent;
 }*/
-
 /* Nav vertical*/
 .sidebar {
     left: -100%;
@@ -1329,12 +1339,15 @@ li:hover .sub {
     left: 0;
 }
 
+.font-size {
+    font-size: 14px;
+}
 @media (min-width: 992px) {
     .sidebar {
-        position: relative;
+        position: absolute;
         top: auto;
         bottom: auto;
-        left: auto;
+        left: 0;
         flex-direction: row;
         max-width: 100%;
         transform: none;
@@ -1342,6 +1355,22 @@ li:hover .sub {
         overflow-y: visible;
         z-index: auto;
         background-color: transparent;
+    }
+
+    .item-custom {
+        padding: 32px 64px 32px 0;
+        width: 160px;
+    }
+    .menu-custom {
+        flex-wrap: wrap;
+    }
+    .ancho-max a{
+        font-size:14px
+    }
+
+    .ancho-max {
+        max-width: 1000px;
+        width: calc(100% - 200px);
     }
 }
 
