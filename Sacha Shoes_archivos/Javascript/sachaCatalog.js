@@ -7,7 +7,6 @@ function mobile() {
         document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
         document.getElementById("active").style.display = "none";
       document.getElementById("dactive").style.display = "none";
-      check = check + 1;
   } else if (w_w > 510) {
       document.getElementById("dactive").style.display = "flex";
       document.getElementById("active").style.display = "flex";
