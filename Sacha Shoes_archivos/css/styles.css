@@ -1424,6 +1424,7 @@ li:hover .sub {
     color: #ffffff;
     background-color: #000;
     border-radius: 0;
+    white-space: normal
 }
 
 .menu-custom {
@@ -1478,6 +1479,7 @@ li:hover .sub {
 .font-size {
     font-size: 14px;
 }
+
 @media (min-width: 992px) {
     .sidebar {
         position: absolute;
@@ -1493,20 +1495,34 @@ li:hover .sub {
         background-color: transparent;
     }
 
-    .item-custom {
-        padding: 32px 64px 32px 0;
-        width: 160px;
-    }
     .menu-custom {
         flex-wrap: wrap;
     }
-    .ancho-max a{
-        font-size:14px
+
+    .menu-custom li {
+        padding: 32px 64px 32px 0;
+        width: 160px;
+        box-sizing: content-box;
+
+    }
+
+    .ancho-max a {
+        font-size: 14px;
+        font-weight: bold;
     }
 
     .ancho-max {
-        max-width: 1000px;
-        width: calc(100% - 200px);
+        max-width: 1200px;
+        width: calc(100% - 182px);
+    }
+
+    .m-custom {
+        margin-right: auto !important;
+        margin-left: 23% !important;
+    }
+
+    .m-right{
+        margin-right: 24px;
     }
 }
 
