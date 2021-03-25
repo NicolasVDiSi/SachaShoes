@@ -3496,11 +3496,6 @@ svg + .andes-button__text {
     line-height: 1
 }
 
-.andes-spinner__icon--small {
-    width: 32px;
-    height: 32px
-}
-
 .andes-spinner__container--medium-notlabel {
     width: 48px;
     height: 48px
@@ -3731,8 +3726,7 @@ svg + .andes-button__text {
     color: #39b54a
 }
 
-.ui-item__attributes,
-.ui-item__installments {
+.ui-item__attributes {
     display: block;
     font-size: 14px;
     color: #333;
@@ -4464,837 +4458,13 @@ svg + .andes-button__text {
         height: 224px
     }
 
-.ui-recommendations .ui-item__wrapper {
+.ui-item__wrapper {
     margin: 0 6px 16px;
     width: 224px;
     height: 335px
 }
 
-.ui-recommendations .ui-item:hover.with-discount .ui-item__discount-text {
-    margin-top: 0
-}
-
-.ui-recommendations .ui-item.without-shipping-text .ui-item__shipping .ui-item__shipping-icon--fullfilment {
-    margin-left: 0
-}
-
-.ui-recommendations .ui-item.with-installments.with-shipping {
-    height: 383px !important
-}
-
-    .ui-recommendations .ui-item.with-installments.with-shipping.with-extra-one {
-        height: 408px !important
-    }
-
-    .ui-recommendations .ui-item.with-installments.with-shipping.with-extra-two {
-        height: 433px !important
-    }
-
-.ui-recommendations .ui-item:hover.with-discount.with-installments.with-shipping.with-actions,
-.ui-recommendations .ui-item:hover.with-discount.with-installments.with-shipping.with-actions.with-extra-one,
-.ui-recommendations .ui-item:hover.with-discount.with-installments.with-shipping.with-actions.with-extra-two {
-    height: 438px !important
-}
-
-.ui-recommendations .ui-item:hover.with-discount.with-installments.with-shipping.without-actions {
-    height: 398px !important
-}
-
-    .ui-recommendations .ui-item:hover.with-discount.with-installments.with-shipping.without-actions.with-extra-one {
-        height: 408px !important
-    }
-
-    .ui-recommendations .ui-item:hover.with-discount.with-installments.with-shipping.without-actions.with-extra-two {
-        height: 433px !important
-    }
-
-.ui-recommendations .ui-item:hover.without-discount.with-installments.with-shipping.with-actions,
-.ui-recommendations .ui-item:hover.without-discount.with-installments.with-shipping.with-actions.with-extra-one {
-    height: 423px !important
-}
-
-    .ui-recommendations .ui-item:hover.without-discount.with-installments.with-shipping.with-actions.with-extra-two {
-        height: 433px !important
-    }
-
-.ui-recommendations .ui-item:hover.without-discount.with-installments.with-shipping.without-actions {
-    height: 383px !important
-}
-
-    .ui-recommendations .ui-item:hover.without-discount.with-installments.with-shipping.without-actions.with-extra-one {
-        height: 408px !important
-    }
-
-    .ui-recommendations .ui-item:hover.without-discount.with-installments.with-shipping.without-actions.with-extra-two {
-        height: 433px !important
-    }
-
-.ui-recommendations .ui-item.with-installments.without-shipping {
-    height: 358px !important
-}
-
-    .ui-recommendations .ui-item.with-installments.without-shipping.with-extra-one {
-        height: 383px !important
-    }
-
-    .ui-recommendations .ui-item.with-installments.without-shipping.with-extra-two {
-        height: 408px !important
-    }
-
-.ui-recommendations .ui-item:hover.with-discount.with-installments.without-shipping.with-actions,
-.ui-recommendations .ui-item:hover.with-discount.with-installments.without-shipping.with-actions.with-extra-one,
-.ui-recommendations .ui-item:hover.with-discount.with-installments.without-shipping.with-actions.with-extra-two {
-    height: 413px !important
-}
-
-.ui-recommendations .ui-item:hover.with-discount.with-installments.without-shipping.without-actions {
-    height: 373px !important
-}
-
-    .ui-recommendations .ui-item:hover.with-discount.with-installments.without-shipping.without-actions.with-extra-one {
-        height: 383px !important
-    }
-
-    .ui-recommendations .ui-item:hover.with-discount.with-installments.without-shipping.without-actions.with-extra-two {
-        height: 408px !important
-    }
-
-.ui-recommendations .ui-item:hover.without-discount.with-installments.without-shipping.with-actions,
-.ui-recommendations .ui-item:hover.without-discount.with-installments.without-shipping.with-actions.with-extra-one {
-    height: 398px !important
-}
-
-    .ui-recommendations .ui-item:hover.without-discount.with-installments.without-shipping.with-actions.with-extra-two {
-        height: 408px !important
-    }
-
-.ui-recommendations .ui-item:hover.without-discount.with-installments.without-shipping.without-actions {
-    height: 358px !important
-}
-
-    .ui-recommendations .ui-item:hover.without-discount.with-installments.without-shipping.without-actions.with-extra-one {
-        height: 383px !important
-    }
-
-    .ui-recommendations .ui-item:hover.without-discount.with-installments.without-shipping.without-actions.with-extra-two {
-        height: 408px !important
-    }
-
-.ui-recommendations .ui-item.without-installments.with-shipping {
-    height: 358px !important
-}
-
-    .ui-recommendations .ui-item.without-installments.with-shipping.with-extra-one {
-        height: 383px !important
-    }
-
-    .ui-recommendations .ui-item.without-installments.with-shipping.with-extra-two {
-        height: 408px !important
-    }
-
-.ui-recommendations .ui-item:hover.with-discount.without-installments.with-shipping.with-actions,
-.ui-recommendations .ui-item:hover.with-discount.without-installments.with-shipping.with-actions.with-extra-one,
-.ui-recommendations .ui-item:hover.with-discount.without-installments.with-shipping.with-actions.with-extra-two {
-    height: 413px !important
-}
-
-.ui-recommendations .ui-item:hover.with-discount.without-installments.with-shipping.without-actions {
-    height: 373px !important
-}
-
-    .ui-recommendations .ui-item:hover.with-discount.without-installments.with-shipping.without-actions.with-extra-one {
-        height: 383px !important
-    }
-
-    .ui-recommendations .ui-item:hover.with-discount.without-installments.with-shipping.without-actions.with-extra-two {
-        height: 408px !important
-    }
-
-.ui-recommendations .ui-item:hover.without-discount.without-installments.with-shipping.with-actions,
-.ui-recommendations .ui-item:hover.without-discount.without-installments.with-shipping.with-actions.with-extra-one {
-    height: 398px !important
-}
-
-    .ui-recommendations .ui-item:hover.without-discount.without-installments.with-shipping.with-actions.with-extra-two {
-        height: 408px !important
-    }
-
-.ui-recommendations .ui-item:hover.without-discount.without-installments.with-shipping.without-actions {
-    height: 358px !important
-}
-
-    .ui-recommendations .ui-item:hover.without-discount.without-installments.with-shipping.without-actions.with-extra-one {
-        height: 383px !important
-    }
-
-    .ui-recommendations .ui-item:hover.without-discount.without-installments.with-shipping.without-actions.with-extra-two {
-        height: 408px !important
-    }
-
-.ui-recommendations .ui-item.without-installments.without-shipping {
-    height: 333px !important
-}
-
-    .ui-recommendations .ui-item.without-installments.without-shipping.with-extra-one {
-        height: 358px !important
-    }
-
-    .ui-recommendations .ui-item.without-installments.without-shipping.with-extra-two {
-        height: 383px !important
-    }
-
-.ui-recommendations .ui-item:hover.with-discount.without-installments.without-shipping.with-actions,
-.ui-recommendations .ui-item:hover.with-discount.without-installments.without-shipping.with-actions.with-extra-one,
-.ui-recommendations .ui-item:hover.with-discount.without-installments.without-shipping.with-actions.with-extra-two {
-    height: 388px !important
-}
-
-.ui-recommendations .ui-item:hover.with-discount.without-installments.without-shipping.without-actions {
-    height: 348px !important
-}
-
-    .ui-recommendations .ui-item:hover.with-discount.without-installments.without-shipping.without-actions.with-extra-one {
-        height: 358px !important
-    }
-
-    .ui-recommendations .ui-item:hover.with-discount.without-installments.without-shipping.without-actions.with-extra-two {
-        height: 383px !important
-    }
-
-.ui-recommendations .ui-item:hover.without-discount.without-installments.without-shipping.with-actions,
-.ui-recommendations .ui-item:hover.without-discount.without-installments.without-shipping.with-actions.with-extra-one {
-    height: 373px !important
-}
-
-    .ui-recommendations .ui-item:hover.without-discount.without-installments.without-shipping.with-actions.with-extra-two {
-        height: 383px !important
-    }
-
-.ui-recommendations .ui-item:hover.without-discount.without-installments.without-shipping.without-actions {
-    height: 333px !important
-}
-
-    .ui-recommendations .ui-item:hover.without-discount.without-installments.without-shipping.without-actions.with-extra-one {
-        height: 358px !important
-    }
-
-    .ui-recommendations .ui-item:hover.without-discount.without-installments.without-shipping.without-actions.with-extra-two {
-        height: 383px !important
-    }
-
-.ui-recommendations .ui-item:hover .ui-item__bookmark {
-    display: none
-}
-
-.ui-recommendations .ui-item:hover:after {
-    box-shadow: 0 7px 11px 0 rgba(0, 0, 0, .1), 0 2px 4px 0 rgba(0, 0, 0, .1)
-}
-
-.ui-recommendations .ui-item__content {
-    padding-right: 8px
-}
-
-.ui-recommendations .ui-item__title {
-    margin-top: 10px
-}
-
-.ui-recommendations .ui-item .price-tag-cents {
-    display: block;
-    top: -.5em;
-    position: relative
-}
-
-.ui-recommendations .ui-item .ui-item__title {
-    opacity: 1
-}
-
-.ui-recommendations .ui-item .ui-item__action {
-    display: none;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 20px;
-    padding-right: 8px
-}
-
-.ui-recommendations .ui-item .price-tag-cents {
-    font-size: .5em
-}
-
-.ui-recommendations .ui-item:hover .ui-item__action {
-    display: block;
-    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    font-size: 14px
-}
-
-.ui-recommendations .ui-item .ui-item__installments {
-    margin-top: 0
-}
-
-    .ui-recommendations .ui-item .ui-item__installments .price-tag {
-        line-height: 17px !important;
-        padding-top: 0
-    }
-
-    .ui-recommendations .ui-item .ui-item__installments .ui-item__card,
-    .ui-recommendations .ui-item .ui-item__shipping .ui-item__shipping-icon-wrapper {
-        display: none
-    }
-
-.ui-recommendations .ui-item .ui-item__shipping-icon--fullfilment {
-    fill: #00a650 !important;
-    -webkit-align-self: baseline;
-    align-self: baseline
-}
-
-.ui-recommendations .ui-item.with-installments .ui-item__content .ui-item__price-block .ui-item__price-block .ui-item__installments.ui-item__installments--free .price-tag .price-tag-cents {
-    line-height: 13px;
-    padding-top: 2px
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop.ui-recommendations--hidden-load {
-    display: block
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.static {
-    height: 352px
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.static.with-discount {
-        height: 360px
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.static.with-actions {
-        height: 384px
-    }
-
-        .ui-recommendations--seller.ui-recommendations--desktop .ui-item.static.with-actions.with-discount {
-            height: 392px
-        }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.static .ui-item__action,
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.static .ui-item__brand,
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.static .ui-item__discount-price,
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.static .ui-item__title,
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.static .ui-review {
-        opacity: 1;
-        visibility: visible;
-        -webkit-transition: visibility .1s .1s;
-        transition: visibility .1s .1s
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.static.with-discount .ui-item__price-block {
-        margin-top: 6px
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.static .ui-item__discount-price.price-tag {
-        top: 13px
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated {
-    -webkit-transition: height .1s ease-out;
-    transition: height .1s ease-out
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated__action,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated__discount-price.price-tag,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated__title {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: .1s ease-out;
-    transition: .1s ease-out;
-    -webkit-transition-property: opacity, top;
-    transition-property: opacity, top;
-    -webkit-transition: visibility 0s;
-    transition: visibility 0s
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated__price-block {
-    margin-top: -2px;
-    -webkit-transition: margin-top .1s ease-out;
-    transition: margin-top .1s ease-out
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover {
-    height: 352px
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover.with-discount {
-        height: 360px
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover.with-actions {
-        height: 384px
-    }
-
-        .ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover.with-actions.with-discount {
-            height: 392px
-        }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover .ui-item__action,
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover .ui-item__brand,
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover .ui-item__discount-price,
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover .ui-item__title,
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover .ui-review {
-        opacity: 1;
-        visibility: visible;
-        -webkit-transition: visibility .1s .1s;
-        transition: visibility .1s .1s
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover.with-discount .ui-item__price-block {
-        margin-top: 6px
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.animated:hover .ui-item__discount-price.price-tag {
-        top: 13px
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item {
-    height: 395px;
-    margin: 0;
-    height: 261px;
-    height: 352px;
-    width: 167px;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__image-container,
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item img {
-        width: 167px;
-        height: 167px
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item__wrapper {
-    margin: 0 4px 16px;
-    width: 167px;
-    height: 261px
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-discount {
-    height: 360px
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-actions {
-    height: 384px
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-actions.with-discount {
-        height: 392px
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__action,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__brand,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__discount-price,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__title,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-review {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: visibility .1s .1s;
-    transition: visibility .1s .1s
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-discount .ui-item__price-block {
-    margin-top: 6px
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__discount-price.price-tag {
-    top: 13px
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover .ui-item__bookmark {
-    display: none !important
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.without-shipping-text .ui-item__shipping .ui-item__shipping-icon--fullfilment {
-    margin-left: -1px
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__action {
-    display: none;
-    text-align: center;
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover .ui-item__action {
-    display: block;
-    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    padding-right: 0
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__content {
-    padding: 12px 11px 11px
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .price-tag-cents {
-    display: block;
-    font-weight: 500
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__installments-price .price-tag {
-    padding-top: 0
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__installments-price .price-tag-cents {
-    padding-top: 0;
-    font-size: .7em;
-    font-weight: 500
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-installments.with-shipping {
-    height: 298px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-installments.with-shipping.with-extra-one {
-        height: 315px !important
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-installments.with-shipping.with-extra-two {
-        height: 335px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.with-shipping.with-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.with-shipping.with-actions.with-extra-one,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.with-shipping.with-actions.with-extra-two {
-    height: 350px !important
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.with-shipping.without-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.with-shipping.without-actions.with-extra-one {
-    height: 316px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.with-shipping.without-actions.with-extra-two {
-        height: 335px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.with-shipping.with-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.with-shipping.with-actions.with-extra-one {
-    height: 332px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.with-shipping.with-actions.with-extra-two {
-        height: 335px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.with-shipping.without-actions {
-    height: 298px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.with-shipping.without-actions.with-extra-one {
-        height: 315px !important
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.with-shipping.without-actions.with-extra-two {
-        height: 335px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-installments.without-shipping {
-    height: 281px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-installments.without-shipping.with-extra-one {
-        height: 298px !important
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.with-installments.without-shipping.with-extra-two {
-        height: 318px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.without-shipping.with-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.without-shipping.with-actions.with-extra-one,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.without-shipping.with-actions.with-extra-two {
-    height: 333px !important
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.without-shipping.without-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.without-shipping.without-actions.with-extra-one {
-    height: 299px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.with-installments.without-shipping.without-actions.with-extra-two {
-        height: 318px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.without-shipping.with-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.without-shipping.with-actions.with-extra-one {
-    height: 315px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.without-shipping.with-actions.with-extra-two {
-        height: 318px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.without-shipping.without-actions {
-    height: 281px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.without-shipping.without-actions.with-extra-one {
-        height: 298px !important
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.with-installments.without-shipping.without-actions.with-extra-two {
-        height: 318px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.without-installments.with-shipping {
-    height: 281px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.without-installments.with-shipping.with-extra-one {
-        height: 298px !important
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.without-installments.with-shipping.with-extra-two {
-        height: 318px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.with-shipping.with-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.with-shipping.with-actions.with-extra-one,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.with-shipping.with-actions.with-extra-two {
-    height: 333px !important
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.with-shipping.without-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.with-shipping.without-actions.with-extra-one {
-    height: 299px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.with-shipping.without-actions.with-extra-two {
-        height: 318px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.with-shipping.with-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.with-shipping.with-actions.with-extra-one {
-    height: 315px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.with-shipping.with-actions.with-extra-two {
-        height: 318px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.with-shipping.without-actions {
-    height: 281px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.with-shipping.without-actions.with-extra-one {
-        height: 298px !important
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.with-shipping.without-actions.with-extra-two {
-        height: 318px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.without-installments.without-shipping {
-    height: 261px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.without-installments.without-shipping.with-extra-one {
-        height: 281px !important
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item.without-installments.without-shipping.with-extra-two {
-        height: 298px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.without-shipping.with-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.without-shipping.with-actions.with-extra-one,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.without-shipping.with-actions.with-extra-two {
-    height: 313px !important
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.without-shipping.without-actions {
-    height: 279px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.without-shipping.without-actions.with-extra-one {
-        height: 281px !important
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.with-discount.without-installments.without-shipping.without-actions.with-extra-two {
-        height: 298px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.without-shipping.with-actions,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.without-shipping.with-actions.with-extra-one {
-    height: 295px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.without-shipping.with-actions.with-extra-two {
-        height: 298px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.without-shipping.without-actions {
-    height: 261px !important
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.without-shipping.without-actions.with-extra-one {
-        height: 281px !important
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover.without-discount.without-installments.without-shipping.without-actions.with-extra-two {
-        height: 298px !important
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__discount-text {
-    font-size: 12px;
-    margin-top: 0;
-    vertical-align: 5px
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__installments,
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__shipping {
-    font-size: 12px
-}
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__installments svg:not(.ui-item__shipping-icon--fullfilment),
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__shipping svg:not(.ui-item__shipping-icon--fullfilment) {
-        display: none
-    }
-
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__installments .ui-item__shipping-icon--fullfilment,
-    .ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__shipping .ui-item__shipping-icon--fullfilment {
-        height: 12px;
-        margin: 0 0 0 4px
-    }
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .ui-item__title {
-    font-size: 12px;
-    margin-top: 10px;
-    height: 30px;
-    min-height: 28px
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item.static .ui-item__discount-price.price-tag {
-    font-size: 12px;
-    left: 12px;
-    top: 12px;
-    opacity: 0
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item:hover .ui-item__discount-price.price-tag {
-    opacity: 1
-}
-
-.ui-recommendations--seller.ui-recommendations--desktop .ui-item .price-tag-cents {
-    font-size: .5em;
-    top: 0
-}
-
-.ui-recommendations {
-    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif
-}
-
-    .ui-recommendations .ui-item__shipping-icon--fullfilment {
-        fill: #00a650 !important;
-        height: 12px;
-        margin: 0 0 0 4px;
-        width: auto;
-        display: inline;
-        position: relative;
-        top: unset;
-        left: unset;
-        vertical-align: middle
-    }
-
-    .ui-recommendations .ui-item {
-        font-weight: 400
-    }
-
-        .ui-recommendations .ui-item.without-installments .ui-item__shipping {
-            display: inline-block;
-            height: 17px;
-            padding-top: 0
-        }
-
-        .ui-recommendations .ui-item .ui-item__price-block .ui-item__price .price-tag-cents {
-            position: relative;
-            top: -.3em
-        }
-
-        .ui-recommendations .ui-item .ui-item__price-block .price-tag__disabled span {
-            line-height: 17px
-        }
-
-    .ui-recommendations .ui-item__discount-text {
-        margin-top: 4px;
-        color: #00a650
-    }
-
-    .ui-recommendations .ui-item__shipping {
-        padding-top: 6px;
-        border: 0;
-        position: relative;
-        width: auto;
-        top: unset;
-        right: unset;
-        left: 0;
-        background: transparent
-    }
-
-    .ui-recommendations .ui-item__shipping-free {
-        color: #00a650 !important
-    }
-
-    .ui-recommendations .ui-item__shipping-icon {
-        margin: 0 1.5px 0 5.5px;
-        fill: #00a650
-    }
-
-    .ui-recommendations .ui-item__shipping-icon-fast {
-        margin-left: 2px
-    }
-
-    .ui-recommendations .ui-item__shipping-icon-wrapper {
-        display: none
-    }
-
-    .ui-recommendations .ui-item__installments {
-        line-height: 1;
-        color: #666
-    }
-
-        .ui-recommendations .ui-item__installments:after {
-            content: none
-        }
-
-    .ui-recommendations .ui-item__installments-price .installments_multiplier {
-        margin-left: 1px
-    }
-
-    .ui-recommendations .ui-item__installments-price .price-tag {
-        margin-left: 3px;
-        margin-right: 4px
-    }
-
-    .ui-recommendations .ui-item__installments-price .price-tag-cents {
-        display: inline-block;
-        position: relative;
-        top: -.5em
-    }
-
-    .ui-recommendations .ui-item__installments-price .price-tag .price-tag-symbol {
-        margin-right: 3px
-    }
-
-    .ui-recommendations .ui-item__installments-price span {
-        -webkit-align-items: center;
-        align-items: center;
-        display: -webkit-flex;
-        display: flex;
-        line-height: 17px
-    }
-
-    .ui-recommendations .ui-item__installments--free {
-        color: #00a650 !important
-    }
-
-.ui-recommendations--desktop .slick-list {
+.slick-list {
     height: 370px;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
@@ -5303,166 +4473,38 @@ svg + .andes-button__text {
     padding-bottom: 30px
 }
 
-    .ui-recommendations--desktop .slick-list > .carousel__link--view-more {
-        padding-left: 7px
-    }
-
-.ui-recommendations--desktop.ui-recommendations--with-extra-one .carousel__link--view-more {
-    top: 20px
-}
-
-.ui-recommendations--desktop.ui-recommendations--with-extra-one .slick-list {
-    height: 395px
-}
-
-.ui-recommendations--desktop.ui-recommendations--with-extra-two .carousel__link--view-more {
-    top: 45px
-}
-
-.ui-recommendations--desktop.ui-recommendations--with-extra-two .slick-list {
-    height: 420px
-}
-
-.ui-recommendations--desktop .price-block .price-digits-1 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop .price-digits-2 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop .price-digits-3 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop .price-digits-4 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop .price-digits-5 .ui-item__price-block .price-tag.ui-item__price {
-    font-size: 26px
-}
-
-    .ui-recommendations--desktop .price-block .price-digits-1 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-block .price-digits-1 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop .price-digits-2 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-digits-2 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop .price-digits-3 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-digits-3 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop .price-digits-4 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-digits-4 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop .price-digits-5 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-digits-5 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol {
-        height: 26px
-    }
-
-.ui-recommendations--desktop .price-digits-6 .ui-item__price-block .price-tag.ui-item__price {
-    font-size: 25px
-}
-
-    .ui-recommendations--desktop .price-digits-6 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-digits-6 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol {
-        height: 25px
-    }
-
-.ui-recommendations--desktop .price-digits-7 .ui-item__price-block .price-tag.ui-item__price {
-    font-size: 24px
-}
-
-    .ui-recommendations--desktop .price-digits-7 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-digits-7 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol {
-        height: 24px
-    }
-
-.ui-recommendations--desktop .price-digits-8 .ui-item__price-block .price-tag.ui-item__price {
-    font-size: 23px
-}
-
-    .ui-recommendations--desktop .price-digits-8 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-digits-8 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol {
-        height: 23px
-    }
-
-.ui-recommendations--desktop .price-digits-9 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop .price-digits-10 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop .price-digits-11 .ui-item__price-block .price-tag.ui-item__price {
-    font-size: 20px
-}
-
-    .ui-recommendations--desktop .price-digits-9 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-digits-9 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop .price-digits-10 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-digits-10 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop .price-digits-11 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop .price-digits-11 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol {
-        height: 20px
-    }
-
-.ui-recommendations--desktop .carousel__link--view-more {
-    text-decoration: none;
-    color: #1259c3;
-    font-weight: 500;
-    font-size: 16px;
-    position: relative;
-    z-index: 1
-}
-
-.ui-recommendations--desktop .price-tag span {
-    line-height: 17px
-}
-
-.ui-recommendations--desktop .ui-item__discount-price {
-    left: 16px
-}
-
-.ui-recommendations--desktop .ui-item .ui-item__shipping {
-    font-size: 14px;
-    padding-top: 5px
-}
-
-.ui-recommendations--desktop .ui-item .ui-item__shipping-icon--fullfilment {
-    margin-top: 3px
-}
-
-.ui-recommendations--desktop .ui-item .ui-item__installments {
-    font-size: 14px
-}
-
-.ui-recommendations--desktop .carousel-container .prev-button {
-    left: -32px
-}
-
-.ui-recommendations--desktop .carousel-container .next-button {
-    right: -23px
-}
-
-.ui-recommendations--desktop .carousel-container .next-button,
-.ui-recommendations--desktop .carousel-container .prev-button {
-    display: block;
-    top: 120px
-}
-
-.ui-recommendations--desktop .slick-track {
+.slick-track {
     z-index: 2
 }
 
-.ui-recommendations--desktop .ui-item__content {
+.ui-item__content {
     padding: 18px 8px 16px 16px
 }
 
-    .ui-recommendations--desktop .ui-item__content .ui-item__price-block .price-tag-fraction,
-    .ui-recommendations--desktop .ui-item__content .ui-item__price-block .price-tag-symbol {
+    .ui-item__content .ui-item__price-block {
         display: -webkit-inline-flex;
         display: inline-flex;
         -webkit-align-items: baseline;
         align-items: baseline
     }
 
-    .ui-recommendations--desktop .ui-item__content .ui-item__price-block .ui-item__price {
-        padding-bottom: 6px
-    }
+        .ui-item__content .ui-item__price-block .ui-item__price {
+            padding-bottom: 6px
+        }
 
-    .ui-recommendations--desktop .ui-item__content .ui-item__installments {
-        top: 5px
-    }
+.ui-item__content {
+    top: 5px
+}
 
-.ui-recommendations--desktop .ui-item__discount-text {
+.ui-item__discount-text {
     vertical-align: 10px
 }
 
-.ui-recommendations--desktop .with-discount:hover .ui-item__content .ui-item__price {
+.with-discount:hover .ui-item__content .ui-item__price {
     margin-top: 6px
 }
 
-.ui-recommendations--desktop .with-discount:hover .ui-item__content .ui-item__price-block {
+.with-discount:hover .ui-item__content .ui-item__price-block {
     margin-top: 6px !important
 }
 
@@ -5488,432 +4530,7 @@ svg + .andes-button__text {
     text-decoration: none
 }
 
-    .ui-recommendations__header__subtitle:visited {
-        color: #3483fa
-    }
-
-    .ui-recommendations__header__subtitle:hover {
-        color: #1259c3
-    }
-
-.ui-recommendations--desktop.ui-recommendations--seller .slick-list {
-    height: 295px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller.ui-recommendations--with-extra-one .carousel__link--view-more {
-    top: 17px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller.ui-recommendations--with-extra-one .slick-list {
-    height: 310px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller.ui-recommendations--with-extra-two .carousel__link--view-more {
-    top: 32px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller.ui-recommendations--with-extra-two .slick-list {
-    height: 330px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-1 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-2 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-3 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-4 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-5 .ui-item__price-block .price-tag.ui-item__price {
-    font-size: 20px
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-1 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-1 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-2 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-2 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-3 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-3 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-4 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-4 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-5 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-5 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol {
-        height: 20px
-    }
-
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-6 .ui-item__price-block .price-tag.ui-item__price {
-    font-size: 19px
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-6 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-6 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol {
-        height: 19px
-    }
-
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-7 .ui-item__price-block .price-tag.ui-item__price {
-    font-size: 18px
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-7 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-7 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol {
-        height: 18px
-    }
-
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-7 .ui-item__price-block .ui-item__discount-text {
-    font-size: 12px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-8 .ui-item__price-block .price-tag.ui-item__price {
-    font-size: 17px
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-8 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-8 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol {
-        height: 17px
-    }
-
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-8 .ui-item__price-block .ui-item__discount-text {
-    font-size: 10px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-9 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-10 .ui-item__price-block .price-tag.ui-item__price,
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-11 .ui-item__price-block .price-tag.ui-item__price {
-    font-size: 13px
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-9 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-9 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-10 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-10 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-11 .ui-item__price-block .price-tag.ui-item__price .price-tag-fraction,
-    .ui-recommendations--desktop.ui-recommendations--seller .price-digits-11 .ui-item__price-block .price-tag.ui-item__price .price-tag-symbol {
-        height: 13px
-    }
-
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-9 .ui-item__price-block .ui-item__discount-text,
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-10 .ui-item__price-block .ui-item__discount-text,
-.ui-recommendations--desktop.ui-recommendations--seller .price-digits-11 .ui-item__price-block .ui-item__discount-text {
-    font-size: 10px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item {
-    width: 167px;
-    height: 261px
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item .price-tag__disabled {
-        display: none
-    }
-
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item:hover .price-tag__disabled {
-        display: inline-block
-    }
-
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item.with-installments .ui-item__shipping {
-        display: block;
-        line-height: 18px;
-        height: auto;
-        padding-top: 0
-    }
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item__content {
-    padding: 10px 11px 11px !important
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item__content .ui-item__price-block .ui-item__installments {
-        margin-top: 5px
-    }
-
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item__content .ui-item__price-block .price-tag-cents {
-        -webkit-align-self: start;
-        align-self: start;
-        line-height: 1;
-        top: 0 !important
-    }
-
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item__content .ui-item__installments {
-        padding-top: 0
-    }
-
-        .ui-recommendations--desktop.ui-recommendations--seller .ui-item__content .ui-item__installments .ui-item__card {
-            display: none
-        }
-
-        .ui-recommendations--desktop.ui-recommendations--seller .ui-item__content .ui-item__installments .price-tag {
-            padding-top: 0
-        }
-
-        .ui-recommendations--desktop.ui-recommendations--seller .ui-item__content .ui-item__installments .price-tag-cents {
-            line-height: 13px;
-            padding-top: 1px
-        }
-
-        .ui-recommendations--desktop.ui-recommendations--seller .ui-item__content .ui-item__installments .ui-item__benefits {
-            margin-top: 6px
-        }
-
-        .ui-recommendations--desktop.ui-recommendations--seller .ui-item__content .ui-item__installments .ui-item__shipping.ui-item__shipping-free {
-            padding-top: 0
-        }
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item__title {
-    visibility: visible;
-    opacity: 1
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item__shipping-icon--fullfilment {
-    margin-top: 4px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item .price-tag.ui-item__price {
-    font-size: 20px
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item .price-tag.ui-item__price span {
-        -webkit-align-items: center;
-        align-items: center
-    }
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item__discount-price {
-    font-size: 12px !important;
-    left: 12px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item__discount-text {
-    vertical-align: bottom;
-    font-size: 12px;
-    margin-top: 2px;
-    display: inline-block
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item__price-block {
-    line-height: 1.15;
-    margin-top: 0 !important
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item__installments,
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item__shipping {
-    font-size: 12px
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item__installments .ui-item__shipping-icon-wrapper,
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item__installments svg:not(.ui-item__shipping-icon--fullfilment),
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item__shipping .ui-item__shipping-icon-wrapper,
-    .ui-recommendations--desktop.ui-recommendations--seller .ui-item__shipping svg:not(.ui-item__shipping-icon--fullfilment) {
-        display: none
-    }
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item__shipping {
-    font-size: 12px;
-    padding-top: 6px;
-    border: 0;
-    position: relative;
-    width: auto;
-    top: unset;
-    right: unset;
-    left: 0;
-    margin-left: 0;
-    background: transparent
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item:hover .ui-item__bookmark {
-    display: block
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item.with-installments.with-shipping .ui-item__shipping {
-    margin-left: 0
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item.with-discount:hover .ui-item__content .ui-item__price {
-    margin-top: 10px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item.with-discount:hover .ui-item__content .ui-item__discount-text {
-    margin-top: 2px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .ui-item.with-discount:hover .ui-item__content .ui-item__price-block {
-    margin-top: 16px;
-    line-height: 1.15
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .carousel-container .next-button,
-.ui-recommendations--desktop.ui-recommendations--seller .carousel-container .prev-button {
-    height: 36px;
-    width: 36px
-}
-
-.ui-recommendations--desktop.ui-recommendations--seller .carousel-container .prev-button {
-    left: -16px
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .carousel-container .prev-button:after {
-        left: 55%;
-        width: 9px;
-        bottom: 55%;
-        right: 55%
-    }
-
-    .ui-recommendations--desktop.ui-recommendations--seller .carousel-container .prev-button:before {
-        left: 55%;
-        width: 9px;
-        top: 55%;
-        right: 55%
-    }
-
-.ui-recommendations--desktop.ui-recommendations--seller .carousel-container .next-button {
-    right: -16px
-}
-
-    .ui-recommendations--desktop.ui-recommendations--seller .carousel-container .next-button:after {
-        width: 9px;
-        bottom: 55%;
-        left: 55%
-    }
-
-    .ui-recommendations--desktop.ui-recommendations--seller .carousel-container .next-button:before {
-        width: 9px;
-        top: 55%;
-        left: 55%
-    }
-
-.ui-recommendations.ui-recommendations--cheaper {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    text-align: left;
-    padding: 24px 10px 0
-}
-
-    .ui-recommendations.ui-recommendations--cheaper .andes-badge--notification {
-        position: relative;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        overflow: hidden
-    }
-
-    .ui-recommendations.ui-recommendations--cheaper .andes-badge__icon {
-        width: 100%;
-        height: 100%
-    }
-
-    .ui-recommendations.ui-recommendations--cheaper .andes-badge--small {
-        line-height: 4px
-    }
-
-        .ui-recommendations.ui-recommendations--cheaper .andes-badge--small .andes-badge__content {
-            line-height: 4px;
-            padding: 6px;
-            font-size: 11px
-        }
-
-        .ui-recommendations.ui-recommendations--cheaper .andes-badge--small.andes-badge--standard {
-            height: 16px;
-            border-radius: 8px
-        }
-
-        .ui-recommendations.ui-recommendations--cheaper .andes-badge--small.andes-badge--rounded {
-            border-top-right-radius: 0;
-            border-top-left-radius: 0;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 8px
-        }
-
-        .ui-recommendations.ui-recommendations--cheaper .andes-badge--small.andes-badge--corner {
-            border-top-right-radius: 8px;
-            border-top-left-radius: 0;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 8px
-        }
-
-        .ui-recommendations.ui-recommendations--cheaper .andes-badge--small.andes-badge--notification {
-            width: 16px;
-            height: 16px;
-            border-radius: 50%
-        }
-
-    .ui-recommendations.ui-recommendations--cheaper .andes-badge--neutral {
-        background: #3483fa
-    }
-
-    .ui-recommendations.ui-recommendations--cheaper .andes-badge--neutral--quiet {
-        background: rgba(52, 131, 250, .1);
-        border: 0
-    }
-
-        .ui-recommendations.ui-recommendations--cheaper .andes-badge--neutral--quiet .andes-badge__content {
-            color: #3483fa
-        }
-
-    .ui-recommendations.ui-recommendations--cheaper .andes-badge__icon-inner {
-        fill: #fff
-    }
-
-    .ui-recommendations.ui-recommendations--cheaper .cheaper-seller {
-        padding: 0 6px
-    }
-
-    .ui-recommendations.ui-recommendations--cheaper .cheaper-seller-tooltip {
-        width: 100%;
-        padding: 10px;
-        margin-top: 25px;
-        border-radius: 4px;
-        border-left: 4px solid #3483fa;
-        font-size: 14px;
-        font-weight: 300;
-        color: rgba(0, 0, 0, .8);
-        background-color: rgba(0, 0, 0, .04);
-        display: inline-block
-    }
-
-        .ui-recommendations.ui-recommendations--cheaper .cheaper-seller-tooltip .andes-badge {
-            display: inline-block;
-            vertical-align: bottom;
-            margin-right: 8px
-        }
-
-    .ui-recommendations.ui-recommendations--cheaper .cheaper-seller-tooltip-strong {
-        font-weight: 600;
-        margin-right: 5px
-    }
-
-    .ui-recommendations.ui-recommendations--cheaper .cheaper-seller-tooltip-link {
-        color: #3483fa;
-        margin-left: 5px
-    }
-
-    .ui-recommendations.ui-recommendations--cheaper .cheaper-items-container {
-        display: -webkit-flex;
-        display: flex
-    }
-
-    .ui-recommendations.ui-recommendations--cheaper .ui-recommendations__header {
-        text-align: left;
-        font-size: 24px;
-        line-height: 24px
-    }
-
-    .ui-recommendations.ui-recommendations--cheaper .ui-recommendations__header__subtitle {
-        -webkit-align-self: baseline;
-        align-self: baseline;
-        color: #3483fa;
-        font-size: 16px;
-        margin: auto 0 2px 16px;
-        text-decoration: none
-    }
-
-        .ui-recommendations.ui-recommendations--cheaper .ui-recommendations__header__subtitle:visited {
-            color: #3483fa
-        }
-
-        .ui-recommendations.ui-recommendations--cheaper .ui-recommendations__header__subtitle:hover {
-            color: #1259c3
-        }
-
-.ui-recommendations.ui-recommendations--cheaper-reviews__label {
-    margin-top: 5px
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item-description h2 {
+.ui-recommendations.item-description h2 {
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -5925,55 +4542,55 @@ svg + .andes-button__text {
     text-overflow: ellipsis
 }
 
-.ui-recommendations.ui-recommendations--cheaper a {
+.ui-recommendationsa {
     text-decoration: none;
     color: rgba(0, 0, 0, .8)
 }
 
-.ui-recommendations.ui-recommendations--cheaper .item-list {
+.ui-recommendations.item-list {
     display: -webkit-flex;
     display: flex;
     padding: 0 6px;
     list-style: none
 }
 
-    .ui-recommendations.ui-recommendations--cheaper .item-list .item {
+    .ui-recommendations.item-list .item {
         padding: 5px 8px
     }
 
-    .ui-recommendations.ui-recommendations--cheaper .item-list .item-action {
+    .ui-recommendations.item-list .item-action {
         display: none
     }
 
-.ui-recommendations.ui-recommendations--cheaper .ui-item__benefits {
+.ui-recommendations {
     -webkit-flex-basis: 30%;
     flex-basis: 30%
 }
 
-.ui-recommendations.ui-recommendations--cheaper .ui-item__card {
-    display: none
-}
+    .ui-recommendations.ui-item__card {
+        display: none
+    }
 
-.ui-recommendations.ui-recommendations--cheaper .ui-recommendations__header__title {
-    padding-left: 8px;
-    font-weight: 400;
-    margin: 0 0 15px
-}
+    .ui-recommendations.ui-recommendations__header__title {
+        padding-left: 8px;
+        font-weight: 400;
+        margin: 0 0 15px
+    }
 
-.ui-recommendations.ui-recommendations--cheaper .ui-item__shipping-icon-wrapper {
-    display: none
-}
+    .ui-recommendations.ui-item__shipping-icon-wrapper {
+        display: none
+    }
 
-.ui-recommendations.ui-recommendations--cheaper .ui-item__benefits {
+.ui-recommendations {
     margin-top: 0;
     font-size: 14px
 }
 
-    .ui-recommendations.ui-recommendations--cheaper .ui-item__benefits * {
+    .ui-recommendations * {
         line-height: 16px
     }
 
-.ui-recommendations.ui-recommendations--cheaper .ui-item__installments {
+.ui-recommendations {
     padding-top: 0;
     margin-top: 0;
     padding-bottom: 3px;
@@ -5981,126 +4598,126 @@ svg + .andes-button__text {
     font-size: 14px
 }
 
-.ui-recommendations.ui-recommendations--cheaper .ui-item__installments-price {
-    line-height: 14px;
-    margin-top: 0
-}
-
-    .ui-recommendations.ui-recommendations--cheaper .ui-item__installments-price .price-tag .price-tag-cents {
-        font-size: 10px;
-        line-height: 10px;
-        -webkit-align-self: flex-end;
-        align-self: flex-end;
-        padding-top: 0
+    .ui-recommendations.ui-item__installments-price {
+        line-height: 14px;
+        margin-top: 0
     }
 
-.ui-recommendations.ui-recommendations--cheaper .item {
-    padding: 0 20px;
-    height: 100%;
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .12)
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item-list {
-    width: 100%;
-    max-width: 50%
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item-column {
-    width: 100%
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item-discount {
-    font-size: 0
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item .ui-recommendations-icon {
-    width: 14px;
-    height: 14px;
-    margin-right: 4px
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item .ui-item__shipping {
-    padding-top: 6px;
-    font-size: 14px
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item .item-price-wrapper .item-price {
-    font-size: 20px;
-    line-height: 32px;
-    display: -webkit-flex;
-    display: flex;
-    margin-top: 0;
-    font-weight: 400
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item .item-price-wrapper .item-price--old {
-    color: #999;
-    font-size: 12px;
-    line-height: 12px;
-    margin-bottom: -5px
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item .item-price-wrapper .item-price .price-cents {
-    -webkit-align-self: baseline;
-    align-self: baseline;
-    line-height: 26px;
-    font-size: 12px
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item .item-price-wrapper .item-price .price-symbol {
-    padding-right: 4px
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item .item-price-wrapper .item-price--old {
-    display: none
-}
-
-.ui-recommendations.ui-recommendations--cheaper .item-image {
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
-    min-width: 100px;
-    max-width: 100px;
-    width: 100px;
-    height: auto;
-    margin: auto
-}
-
-    .ui-recommendations.ui-recommendations--cheaper .item-image img {
-        width: 100%;
-        height: auto
-    }
-
-.ui-recommendations.ui-recommendations--cheaper .item-description {
-    padding: 5px 0 5px 25px;
-    -webkit-flex-grow: 2;
-    flex-grow: 2
-}
-
-    .ui-recommendations.ui-recommendations--cheaper .item-description,
-    .ui-recommendations.ui-recommendations--cheaper .item-description h2 {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        -webkit-justify-content: center;
-        justify-content: center
-    }
-
-        .ui-recommendations.ui-recommendations--cheaper .item-description .ui-recommendations-reviews__amount {
-            color: #999;
-            font-size: 12px;
-            line-height: 12px;
-            padding: 0 5px;
-            vertical-align: top
+        .ui-recommendations.ui-item__installments-price .price-tag .price-tag-cents {
+            font-size: 10px;
+            line-height: 10px;
+            -webkit-align-self: flex-end;
+            align-self: flex-end;
+            padding-top: 0
         }
 
-.ui-recommendations.ui-recommendations--cheaper .item a {
-    height: 100%;
-    display: -webkit-flex;
-    display: flex
-}
+    .ui-recommendations.item {
+        padding: 0 20px;
+        height: 100%;
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .12)
+    }
+
+    .ui-recommendations.item-list {
+        width: 100%;
+        max-width: 50%
+    }
+
+    .ui-recommendations.item-column {
+        width: 100%
+    }
+
+    .ui-recommendations.item-discount {
+        font-size: 0
+    }
+
+    .ui-recommendations.item .ui-recommendations-icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 4px
+    }
+
+    .ui-recommendations.item .ui-item__shipping {
+        padding-top: 6px;
+        font-size: 14px
+    }
+
+    .ui-recommendations.item .item-price-wrapper .item-price {
+        font-size: 20px;
+        line-height: 32px;
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 0;
+        font-weight: 400
+    }
+
+    .ui-recommendations.item .item-price-wrapper .item-price--old {
+        color: #999;
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: -5px
+    }
+
+    .ui-recommendations.item .item-price-wrapper .item-price .price-cents {
+        -webkit-align-self: baseline;
+        align-self: baseline;
+        line-height: 26px;
+        font-size: 12px
+    }
+
+    .ui-recommendations.item .item-price-wrapper .item-price .price-symbol {
+        padding-right: 4px
+    }
+
+    .ui-recommendations.item .item-price-wrapper .item-price--old {
+        display: none
+    }
+
+    .ui-recommendations.item-image {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        min-width: 100px;
+        max-width: 100px;
+        width: 100px;
+        height: auto;
+        margin: auto
+    }
+
+        .ui-recommendations.item-image img {
+            width: 100%;
+            height: auto
+        }
+
+    .ui-recommendations.item-description {
+        padding: 5px 0 5px 25px;
+        -webkit-flex-grow: 2;
+        flex-grow: 2
+    }
+
+        .ui-recommendations.item-description,
+        .ui-recommendations.item-description h2 {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: center;
+            justify-content: center
+        }
+
+            .ui-recommendations.item-description .ui-recommendations-reviews__amount {
+                color: #999;
+                font-size: 12px;
+                line-height: 12px;
+                padding: 0 5px;
+                vertical-align: top
+            }
+
+    .ui-recommendations.item a {
+        height: 100%;
+        display: -webkit-flex;
+        display: flex
+    }
 
 .ui-search-icon--chevron {
     stroke: #3483fa
@@ -10747,6 +9364,22 @@ svg + .andes-button__text {
         animation-delay: 0.9s;
     }
 
+    .slide-in-left:nth-child(7) {
+        animation-delay: 0.6s;
+    }
+
+    .slide-in-left:nth-child(8) {
+        animation-delay: 0.7s;
+    }
+
+    .slide-in-left:nth-child(9) {
+        animation-delay: 0.8s;
+    }
+
+    .slide-in-left:nth-child(10) {
+        animation-delay: 0.9s;
+    }
+
 @-webkit-keyframes slide-in-left {
     0% {
         -webkit-transform: translateX(-1000px);
@@ -13481,208 +12114,32 @@ textarea {
     }
 }
 
-.ui-search-bottom-ads__wrapper .ui-recommendations--cheaper {
+.ui-search-bottom-ads__wrapper {
     padding: 0;
     margin: 50px 0 82px
 }
 
-    .ui-search-bottom-ads__wrapper .ui-recommendations--cheaper .ui-recommendations__header__title {
+    .ui-search-bottom-ads__wrapper .ui-recommendations__header__title {
         font-weight: 600;
         color: #000
     }
 
-    .ui-search-bottom-ads__wrapper .ui-recommendations--cheaper .ui-recommendations__headersubtitle {
+    .ui-search-bottom-ads__wrapper .ui-recommendations__headersubtitle {
         font-weight: 400
     }
 
-        .ui-search-bottom-ads__wrapper .ui-recommendations--cheaper .ui-recommendations__headersubtitle:hover {
+        .ui-search-bottom-ads__wrapper .ui-recommendations__headersubtitle:hover {
             color: #3483fa
         }
 
-    .ui-search-bottom-ads__wrapper .ui-recommendations--cheaper .item-column:hover {
+    .ui-search-bottom-ads__wrapper .item-column:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .1)
     }
 
-    .ui-search-bottom-ads__wrapper .ui-recommendations--cheaper .item-description h2 {
+    .ui-search-bottom-ads__wrapper .item-description h2 {
         font-weight: 300;
         color: #666
     }
-
-.ui-search-card-add-to-cart .ui-search-icon--rest,
-.ui-search-card-add-to-cart .ui-search-icon--sum {
-    height: 32px
-}
-
-    .ui-search-card-add-to-cart .ui-search-icon--rest:hover,
-    .ui-search-card-add-to-cart .ui-search-icon--sum:hover {
-        background-color: #eee
-    }
-
-.ui-search-card-add-to-cart .ui-search-icon--sum {
-    border-radius: 0 4px 4px 0
-}
-
-.ui-search-card-add-to-cart .ui-search-icon--rest {
-    border-radius: 4px 0 0 4px
-}
-
-.ui-search-card-add-to-cart .andes-button--transparent:focus {
-    box-shadow: none
-}
-
-.ui-search-card-add-to-cart .andes-button--transparent:hover {
-    background-color: #fff;
-    border-color: transparent
-}
-
-.ui-search-card-add-to-cart__button,
-.ui-search-card-add-to-cart__count {
-    background: 0 0;
-    border: 1px solid #3483fa;
-    border-radius: 4px;
-    color: #3483fa;
-    font-size: 14px;
-    font-weight: 400;
-    height: 34px;
-    padding: 0;
-    width: 100%
-}
-
-    .ui-search-card-add-to-cart__button .andes-button--medium svg,
-    .ui-search-card-add-to-cart__count .andes-button--medium svg {
-        display: block;
-        max-height: none;
-        max-width: none
-    }
-
-    .ui-search-card-add-to-cart__button .andes-spinner--inline,
-    .ui-search-card-add-to-cart__count .andes-spinner--inline {
-        position: relative;
-        left: 40%;
-        top: -34px
-    }
-
-        .ui-search-card-add-to-cart__button .andes-spinner--inline .andes-spinner__icon--small,
-        .ui-search-card-add-to-cart__count .andes-spinner--inline .andes-spinner__icon--small {
-            height: 26px;
-            width: 26px
-        }
-
-.ui-search-card-add-to-cart__button--fade,
-.ui-search-card-add-to-cart__count--fade {
-    opacity: .15
-}
-
-.ui-search-card-add-to-cart__count:hover {
-    border: 1px solid rgba(0, 0, 0, .25)
-}
-
-.ui-search-card-add-to-cart__button.andes-button--medium.andes-button--transparent:hover {
-    background-color: rgba(52, 131, 250, .15);
-    border: 1px solid #3483fa;
-    color: #3483fa
-}
-
-.ui-search-card-add-to-cart__count {
-    border: 1px solid rgba(0, 0, 0, .25);
-    line-height: normal;
-    text-align: center
-}
-
-.ui-search-card-add-to-cart__count__quantity {
-    color: #333;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 35px;
-    margin-right: 6px
-}
-
-.ui-search-card-add-to-cart__count__label {
-    color: #666;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 35px
-}
-
-.ui-search-card-add-to-cart__count__button--left,
-.ui-search-card-add-to-cart__count__button--right {
-    border: 0;
-    padding: 0
-}
-
-.ui-search-card-add-to-cart__count__button--left {
-    float: left
-}
-
-    .ui-search-card-add-to-cart__count__button--left.andes-button,
-    .ui-search-card-add-to-cart__count__button--left.andes-button--medium {
-        border-radius: 4px 0 0 4px
-    }
-
-.ui-search-card-add-to-cart__count__button--right {
-    float: right
-}
-
-    .ui-search-card-add-to-cart__count__button--right.andes-button,
-    .ui-search-card-add-to-cart__count__button--right.andes-button--medium {
-        border-radius: 0 4px 4px 0
-    }
-
-.ui-search-card-add-to-cart__count__button--disabled .ui-search-icon--sum {
-    fill: rgba(0, 0, 0, .1)
-}
-
-    .ui-search-card-add-to-cart__count__button--disabled .ui-search-icon--sum:hover {
-        background-color: unset
-    }
-
-.ui-search-card-add-to-cart .andes-button--transparent:active {
-    background-color: unset;
-    border-color: unset;
-    color: unset
-}
-
-.ui-search-card-add-to-cart .andes-spinner--inline {
-    left: 43%;
-    top: -32px;
-    position: relative
-}
-
-    .ui-search-card-add-to-cart .andes-spinner--inline .andes-spinner__icon--small {
-        height: 26px;
-        width: 26px
-    }
-
-.ui-search-card-add-to-cart__count__button--disabled {
-    cursor: default
-}
-
-    .ui-search-card-add-to-cart__count__button--disabled.andes-button--transparent:active,
-    .ui-search-card-add-to-cart__count__button--disabled.andes-button--transparent:focus,
-    .ui-search-card-add-to-cart__count__button--disabled.andes-button--transparent:hover,
-    .ui-search-card-add-to-cart__count__button--disabled.andes-button--transparent:visited {
-        background-color: unset
-    }
-
-.ui-search-suggestions {
-    background-color: #fff;
-    border-radius: 5px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    z-index: 10
-}
-
-.ui-search-suggestions--collapse {
-    height: 0;
-    opacity: 0;
-    visibility: hidden
-}
 
 .ui-search-suggestions__wrapper {
     display: block;
