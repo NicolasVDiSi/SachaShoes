@@ -519,21 +519,14 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
     display: none
 }
 
-    input[data-js=categories-toggle]:checked + .toggle-menu span:nth-child(1), input[data-js=attributes-toggle]:checked + .toggle-menu span:nth-child(1) {
-        transform: translate3d(0px, 13px, 0)
-    }
-
-    input[data-js=categories-toggle]:checked + .toggle-menu span:nth-child(2), input[data-js=attributes-toggle]:checked + .toggle-menu span:nth-child(2) {
-        transform: translate3d(0px, 13px, 0)
-    }
-
 .toggle-menu {
     cursor: pointer;
     display: inline-block;
-    height: 20px;
     position: relative;
     width: 16px;
-    transform: rotateX(180deg)
+    transform: rotateX( 180deg );
+    float: right;
+    top: -0.75rem;
 }
 
     .toggle-menu span {
@@ -547,13 +540,13 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
         width: 100%
     }
 
-        .toggle-menu span:nth-child(1) {
-            transform: translate3d(0px, 13px, 0) rotate(0deg)
-        }
+.animated1 {
+    transform: translate3d(0px, 13px, 0) rotate(0deg)
+}
 
-        .toggle-menu span:nth-child(2) {
-            transform: translate3d(0px, 13px, 0) rotate(90deg)
-        }
+.animated2 {
+    transform: translate3d(0px, 13px, 0) rotate(90deg)
+}
 
 @media screen and (max-width: 768px) {
     #popover-menu {
@@ -901,26 +894,7 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
             width: 100%
         }
           */
-    #search-form input {
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid;
-        color: white;
-        font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-        font-size: 14px;
-        opacity: 0;
-        transition: .3s;
-        visibility: hidden;
-        width: 100%
-    }
 
-    #nav-search-button {
-        margin-top: 6px;
-    }
-    #nav-search-button img {
-       width: 16px;
-
-    }
     
 
     .nav-fashion-header__nav-icons .nav-search-form input:focus, .nav-fashion-header__nav-icons .nav-search-form .search-button {
@@ -1459,6 +1433,9 @@ li:hover .sub {
     border-bottom: 0;
     border-left: .3em solid transparent;
 }*/
+.dropdown-divider {
+    border-top: 2px solid #fff;
+}
 /* Nav vertical*/
 .sidebar {
     left: -100%;
@@ -1480,7 +1457,72 @@ li:hover .sub {
     font-size: 14px;
 }
 
+.submenu {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    font-weight: normal;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    margin: 16px 0;
+}
+
+.nav-item :hover .este{
+    display:block;
+
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: unset;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media (min-width: 991px) {
+    .hidden-md-lg {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .hidden-sm-xs {
+        display: none !important;
+    }
+}
+    
 @media (min-width: 992px) {
+
+    #search-form input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid;
+        color: white;
+        font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        font-size: 14px;
+        opacity: 0;
+        transition: .3s;
+        visibility: hidden;
+        width: 100%
+    }
+
+    #nav-search-button {
+        margin-top: 6px;
+    }
+
+        #nav-search-button img {
+            width: 16px;
+        }
+
+
     .sidebar {
         position: absolute;
         top: auto;

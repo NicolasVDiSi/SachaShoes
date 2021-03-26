@@ -62,7 +62,6 @@ function ocultarCategorias(elementId) {
 }
 
 /*menu vertical*/
-
 function mostrarSidebar() {
     let menu = document.getElementsByClassName("menu")[0];
     if (menu.classList.contains("active")) {
@@ -71,3 +70,34 @@ function mostrarSidebar() {
         menu.classList.add("active");
     }
 }
+
+/* Cambiar icono del dropdown al hacer click*/
+$(document).ready(function () {
+    $('.verMas').click(function () {
+
+        var dropdown = $(this).parent().find('.dropdown-menu');
+
+        if (dropdown.hasClass("show"))
+            $(dropdown).removeClass("show")
+        else
+            $(dropdown).addClass("show");
+
+        /*si no contiene la clase open quiere decir que el dropdown esta cerrado entonces remuevo la animacion para que se convierta en +*/
+        if (!$(this).hasClass('open')) {
+            $(this).addClass('open');
+            var barra1 = $(this).parent().find('.barra1');
+            var barra2 = $(this).parent().find('.barra2');
+            /* Remuevo clases para que se convierta en + */
+            barra1.removeClass('animated1');
+            barra2.removeClass('animated2');
+        }
+        else {
+            $(this).removeClass('open');
+            var barra1 = $(this).parent().find('.barra1');
+            var barra2 = $(this).parent().find('.barra2');
+            /* Agrego clases para que se convierta en - */
+            barra1.addClass('animated1');
+            barra2.addClass('animated2');
+        }
+    });
+});
