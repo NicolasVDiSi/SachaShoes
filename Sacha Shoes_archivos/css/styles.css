@@ -715,66 +715,6 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
         width: initial
     }
 
-    .header-wrapper--fixed + main > .nav-main-content, .header-wrapper--fixed + main > .home {
-        padding-top: 90px
-    }
-
-    .header-wrapper--fixed + main > .ui-search, .header-wrapper--fixed + main > .ui-search--zrp, .header-wrapper--fixed + main > .ui-pdp-not-found, .header-wrapper--fixed + main > .ui-pdp--error, .header-wrapper--fixed + main > .ui-vip-core {
-        padding-top: 138px
-    }
-
-        .header-wrapper--fixed + main > .ui-search.home--with-transparency, .header-wrapper--fixed + main > .ui-search--zrp.home--with-transparency, .header-wrapper--fixed + main > .ui-pdp-not-found.home--with-transparency, .header-wrapper--fixed + main > .ui-pdp--error.home--with-transparency, .header-wrapper--fixed + main > .ui-vip-core.home--with-transparency {
-            padding-top: 0
-        }
-
-            .header-wrapper--fixed + main > .ui-search.home--with-transparency.home--padding-top-content, .header-wrapper--fixed + main > .ui-search--zrp.home--with-transparency.home--padding-top-content, .header-wrapper--fixed + main > .ui-pdp-not-found.home--with-transparency.home--padding-top-content, .header-wrapper--fixed + main > .ui-pdp--error.home--with-transparency.home--padding-top-content, .header-wrapper--fixed + main > .ui-vip-core.home--with-transparency.home--padding-top-content {
-                padding-top: 138px
-            }
-
-        .header-wrapper--fixed + main > .ui-search .ui-pdp-gallery__zoom-container, .header-wrapper--fixed + main > .ui-search--zrp .ui-pdp-gallery__zoom-container, .header-wrapper--fixed + main > .ui-pdp-not-found .ui-pdp-gallery__zoom-container, .header-wrapper--fixed + main > .ui-pdp--error .ui-pdp-gallery__zoom-container, .header-wrapper--fixed + main > .ui-vip-core .ui-pdp-gallery__zoom-container {
-            z-index: 900
-        }
-
-    div.header-wrapper--fixed[data-ms-theme="fashion"] + main > .ui-search, div.header-wrapper--fixed[data-ms-theme="fashion"] + main > .ui-search--zrp {
-        padding-top: 120px
-    }
-
-    .header-wrapper--with-flash.header-wrapper--fixed + main > .nav-main-content, .header-wrapper--with-flash.header-wrapper--fixed + main > .home {
-        padding-top: 120px
-    }
-
-    .header-wrapper--with-flash.header-wrapper--fixed + main > .ui-search, .header-wrapper--with-flash.header-wrapper--fixed + main > .ui-search--zrp, .header-wrapper--with-flash.header-wrapper--fixed + main > .ui-pdp-not-found, .header-wrapper--with-flash.header-wrapper--fixed + main > .ui-pdp--error, .header-wrapper--with-flash.header-wrapper--fixed + main > .ui-vip-core {
-        padding-top: 168px
-    }
-
-        .header-wrapper--with-flash.header-wrapper--fixed + main > .ui-search.home--with-transparency, .header-wrapper--with-flash.header-wrapper--fixed + main > .ui-search--zrp.home--with-transparency, .header-wrapper--with-flash.header-wrapper--fixed + main > .ui-pdp-not-found.home--with-transparency, .header-wrapper--with-flash.header-wrapper--fixed + main > .ui-pdp--error.home--with-transparency, .header-wrapper--with-flash.header-wrapper--fixed + main > .ui-vip-core.home--with-transparency {
-            padding-top: 30px
-        }
-
-    .header-wrapper--with-flash.header-wrapper--fixed .ui-pdp-gallery__zoom-container {
-        z-index: 900
-    }
-
-    .header-wrapper--fixed + main > .nav-main-content .short-description--fixed .short-description__floating.non-fixed {
-        top: 90px !important
-    }
-
-    .header-wrapper--with-flash.header-wrapper--fixed + main > .nav-main-content .short-description--fixed .short-description__floating.non-fixed {
-        top: 120px !important
-    }
-
-    .header-wrapper--fixed + .nav-header__banner + main > .nav-main-content.home--with-transparency .header-wrapper--fixed + .nav-header__banner + main > .nav-main-content.home--padding-top-content, .header-wrapper--fixed + main > .nav-main-content.home--with-transparency .header-wrapper--fixed + .nav-header__banner + main > .nav-main-content.home--padding-top-content, .header-wrapper--fixed + main > .home.home--with-transparency .header-wrapper--fixed + .nav-header__banner + main > .nav-main-content.home--padding-top-content, .header-wrapper--fixed + .nav-header__banner + main > .nav-main-content.home--with-transparency .header-wrapper--fixed + main > .nav-main-content.home--padding-top-content, .header-wrapper--fixed + main > .nav-main-content.home--with-transparency .header-wrapper--fixed + main > .nav-main-content.home--padding-top-content, .header-wrapper--fixed + main > .home.home--with-transparency .header-wrapper--fixed + main > .nav-main-content.home--padding-top-content, .header-wrapper--fixed + .nav-header__banner + main > .nav-main-content.home--with-transparency .header-wrapper--fixed + main > .home.home--padding-top-content, .header-wrapper--fixed + main > .nav-main-content.home--with-transparency .header-wrapper--fixed + main > .home.home--padding-top-content, .header-wrapper--fixed + main > .home.home--with-transparency .header-wrapper--fixed + main > .home.home--padding-top-content {
-        padding-top: 90px
-    }
-
-    .header--editable {
-        height: 90px
-    }
-
-        .header--editable.header--editable--with-flash {
-            height: 120px
-        }
-
     .flash-component {
         box-sizing: border-box;
         height: 30px;
