@@ -1127,10 +1127,6 @@
     margin-top: 23px
 }
 
-.ui-search-main--without-header:not(.ui-search-main--without-breadcrumb) .ui-search-view-options__container {
-    margin-top: 4px
-}
-
 .ui-search-main--only-products .ui-search-view-options__container {
     margin-top: 8px;
     margin-bottom: 24px;
@@ -8694,9 +8690,9 @@ main[role=main] {
     display: flex;
     width: 100%
 }
-
+/*Margin-top general*/
 .ui-search-main {
-    margin-top: 32px
+    margin-top: 5%
 }
 
 .ui-search-main--official-store {
