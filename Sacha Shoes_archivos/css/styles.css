@@ -541,11 +541,11 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
     }
 
 .animated1 {
-    transform: translate3d(0px, 13px, 0) rotate(0deg)
+    transform: rotate(0deg)
 }
 
 .animated2 {
-    transform: translate3d(0px, 13px, 0) rotate(90deg)
+    transform: rotate(90deg)
 }
 
 @media screen and (max-width: 768px) {
@@ -1343,11 +1343,6 @@ input[data-js=categories-toggle], input[data-js=attributes-toggle] {
     text-align: left
 }
 
-/* Subrayar  opciones del menu al pasar el mouse*/
-.subrayado:hover {
-    box-shadow: rgb(255, 255, 255) 0px -2px 0px inset !important;
-}
-
 #nav-list .nav-fashion-list__item{
     visibility: visible;
     opacity: 1;
@@ -1416,6 +1411,7 @@ li:hover .sub {
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         left: 0;
+        margin: 0;
     }
 }
 /*cambiar icono del dropdown
@@ -1500,7 +1496,15 @@ li:hover .sub {
 }
     
 @media (min-width: 992px) {
+    /* Subrayar  opciones del menu al pasar el mouse*/
+    .subrayado:hover {
+        border-bottom: 2px solid white;
+    }
 
+    .subrayado:hover .dropdown-menu{
+        display: block;
+    }
+    
     #search-form input {
         background: transparent;
         border: none;
