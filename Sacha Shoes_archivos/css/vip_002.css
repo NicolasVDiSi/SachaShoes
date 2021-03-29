@@ -2763,7 +2763,7 @@ button, textarea {
 
 .andes-table__column {
     border-bottom: 1px solid #ededed;
-    padding: 16px 24px;
+    padding: 16px 10px;
     white-space: nowrap
 }
 
@@ -5286,6 +5286,7 @@ main {
     width: 16px;
     height: 16px
 }
+/*Tabla*/
 
 .ui-pdp-specs__subtitle {
     font-size: 20px;
