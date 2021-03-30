@@ -94,7 +94,7 @@
                         </form>
                     </li>
                     <li class="nav-item dropdown position-static subrayado">
-                        <a class="nav-link m-lg-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link m-lg-4" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                             Mujer
                         </a>
                         <label class="toggle-menu verMas hidden-md-lg">
@@ -129,7 +129,7 @@
                     </li>
                     <li><hr class="dropdown-divider"></li>
                     <li class="nav-item dropdown position-static subrayado">
-                        <a class="nav-link m-lg-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link m-lg-4" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                             Hombre
                         </a>
                         <label class="toggle-menu verMas hidden-md-lg">
@@ -194,8 +194,14 @@
                     </a>
                 </li>
                 <li class="nav-item m-right">
+                    <input type="checkbox" id="menu-hamburguesa-checkbox" name="nav-tools-header__menu-switch"/>
                     <button onclick="mostrarSidebar();" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+
+                        <label for="menu-hamburguesa-checkbox" id="hamburguer-menu">
+                            <span class="navbar-toggler-icon nav-header__hamburger"></span>
+                            <span class="nav-header__hamburger"></span>
+                            <span class="nav-header__hamburger"></span>
+                        </label>
                     </button>
                 </li>
             </ul>
