@@ -287,19 +287,20 @@ body {
             padding: 0 !important
         }
 
-    .nav-fashion-menu .nav-fashion-search-form {
-        border-bottom: solid 1px rgba(255,255,255,0.25);
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 5px
-    }
+.nav-fashion-search-form {
+    border-bottom: solid 1px rgba(255,255,255,0.25);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    float: left
+}
 
-        .nav-fashion-menu .nav-fashion-search-form button, .nav-fashion-menu .nav-fashion-search-form input {
+        .nav-fashion-search-form button, .nav-fashion-search-form input {
             background-color: transparent;
             border: none;
             color: white;
             font-size: 16px;
-            padding-right: 16px
+            padding-right: 16px;
         }
 
             .nav-fashion-menu .nav-fashion-search-form button svg, .nav-fashion-menu .nav-fashion-search-form input svg {
@@ -322,23 +323,24 @@ body {
     display: block
 }
 
-#mobile-categories-menu-switch {
+    
+/*menu hamburguesa X*/
+#menu-hamburguesa-checkbox {
     display: none
 }
-
-@media screen and (max-width: 768px) {
-    #mobile-categories-menu-switch:checked + #hamburguer-menu span:nth-child(1) {
-        transform: translate3d(0px, 13px, 0) rotate(45deg)
-    }
-
-    #mobile-categories-menu-switch:checked + #hamburguer-menu span:nth-child(2) {
-        transform: translate3d(0px, 13px, 0) rotate(135deg)
-    }
-
-    #mobile-categories-menu-switch:checked + #hamburguer-menu span:nth-child(3) {
-        transform: translate3d(0px, 13px, 0) rotate(-45deg)
-    }
+    
+#menu-hamburguesa-checkbox:checked ~ * #hamburguer-menu span:nth-child(1) {
+    transform: translate3d(0px, 13px, 0) rotate( 45deg );
 }
+
+#menu-hamburguesa-checkbox:checked ~ * #hamburguer-menu span:nth-child(2) {
+    transform: translate3d(0px, 13px, 0) rotate( 135deg );
+}
+
+#menu-hamburguesa-checkbox:checked ~ * #hamburguer-menu span:nth-child(3) {
+    transform: translate3d(0px, 13px, 0) rotate( -45deg );
+}
+
 
 #hamburguer-menu {
     cursor: pointer;
@@ -1222,10 +1224,6 @@ li:hover .sub {
     margin: 16px 0;
 }
 
-.nav-item :hover .este {
-    display: block;
-}
-
 .dropdown-toggle::after {
     display: inline-block;
     margin-left: .255em;
@@ -1333,6 +1331,7 @@ li:hover .sub {
     position: relative;
     z-index: 100;
 }
+
 /*estilos de tabla*/
 .styled-table {
     border-collapse: collapse;
@@ -1369,3 +1368,4 @@ li:hover .sub {
             font-weight: bold;
             color: #3483fa;
         }
+
