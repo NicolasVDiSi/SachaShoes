@@ -110,38 +110,12 @@ body {
             z-index: 900
         }
 
-.nav-footer-hp, .nav-header, .nav-header-btn, .nav-title {
+.nav-header, .nav-header-btn, .nav-title {
     position: absolute
 }
 
     .nav-header.nav-header-sticky + main > .nav-bounds, .nav-header.nav-header-sticky + main > .nav-main-content, .nav-header.nav-header-sticky ~ main > .nav-bounds, .nav-header.nav-header-sticky ~ main > .nav-main-content {
         padding-top: 64px
-    }
-
-.nav-header-btn {
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(25%,transparent),color-stop(25%,rgba(99,99,99,.12)));
-    background-image: -webkit-linear-gradient(transparent 25%,rgba(99,99,99,.12));
-    background-image: linear-gradient(transparent 25%,rgba(99,99,99,.12));
-    border: 1px solid rgba(0,0,0,.15);
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: inset none;
-    box-shadow: inset none;
-    font-size: 13px;
-    height: 30px;
-    left: 17px;
-    line-height: 30px;
-    padding: 0 10px;
-    text-shadow: none;
-    top: 17px
-}
-
-    .nav-header-btn:active {
-        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(25%,rgba(99,99,99,.12)),color-stop(25%,rgba(99,99,99,.2)));
-        background-image: -webkit-linear-gradient(rgba(99,99,99,.12) 25%,rgba(99,99,99,.2));
-        background-image: linear-gradient(rgba(99,99,99,.12) 25%,rgba(99,99,99,.2));
-        -webkit-box-shadow: inset 0 1px rgba(99,99,99,.2);
-        box-shadow: inset 0 1px rgba(99,99,99,.2)
     }
 
     .nav-header-btn + .nav-header-btn {
@@ -186,13 +160,6 @@ body {
     text-decoration: none !important
 }
 
-.nav-footer .nav-footer-change-device, .nav-footer .nav-footer-change-device:active, .nav-footer .nav-footer-change-device:link, .nav-footer .nav-footer-change-device:visited {
-    float: right;
-    display: inline-block;
-    line-height: 14px;
-    color: #666
-}
-
 .nav-footer-primaryinfo {
     overflow: hidden;
     padding-top: 15px
@@ -206,97 +173,6 @@ body {
     display: inline-block;
     vertical-align: top;
     line-height: 14px
-}
-
-.nav-footer-user {
-    padding: 25px 12px 20px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    text-align: center;
-    overflow: hidden;
-    font-size: 0
-}
-
-    .nav-footer-user .nav-footer-login, .nav-footer-user .nav-footer-registration {
-        font-size: 13px;
-        line-height: 20px;
-        display: inline-block
-    }
-
-    .nav-footer-user .nav-footer-login {
-        padding-right: .7em;
-        border-right: .5px solid #ddd
-    }
-
-    .nav-footer-user .nav-footer-registration {
-        padding-left: .7em
-    }
-
-    .nav-footer-user strong {
-        color: #666;
-        display: inline-block;
-        max-width: 100px;
-        vertical-align: bottom
-    }
-
-    .nav-footer-user.logged {
-        font-size: 13px
-    }
-
-        .nav-footer-user.logged > a {
-            margin-left: 7.5px
-        }
-
-.nav-footer-secondary-user {
-    padding: 0 12px 20px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 13px
-}
-
-.nav-footer-downloadapp-banner {
-    display: block;
-    margin-top: 32px;
-    text-align: center;
-    background-color: #ffdb08;
-    padding: 0 15px
-}
-
-    .nav-footer-downloadapp-banner a.nav-footer-downloadapp {
-        font-size: 11px;
-        vertical-align: middle;
-        color: #666;
-        padding-top: 0;
-        display: inline-block
-    }
-
-        .nav-footer-downloadapp-banner a.nav-footer-downloadapp:active, .nav-footer-downloadapp-banner a.nav-footer-downloadapp:link, .nav-footer-downloadapp-banner a.nav-footer-downloadapp:visited {
-            color: #666
-        }
-
-    .nav-footer-downloadapp-banner .nav-icon.nav-icon-downloadapp {
-        background: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.2/mercadoshops/49x64-download-icon.png) top center no-repeat;
-        -webkit-background-size: 49px 64px;
-        background-size: 49px 64px;
-        display: inline-block;
-        width: 49px;
-        height: 64px;
-        margin-top: -8px;
-        margin-right: 10px;
-        vertical-align: middle
-    }
-
-@media (-webkit-min-device-pixel-ratio:2),(min-resolution:2dppx),(min-resolution:192dpi) {
-    .nav-footer-downloadapp-banner .nav-icon.nav-icon-downloadapp {
-        background: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.2/mercadoshops/97x127-download-icon@2x.png);
-        -webkit-background-size: 49px 64px;
-        background-size: 49px 64px;
-        width: 49px;
-        height: 64px
-    }
 }
 
 .nav-footer-info-wrapper {
@@ -572,7 +448,7 @@ body {
 h1 .nav-title {
     background-color: #fff
 }
-
+/*Carrito*/
 .nav-header__bounds .nav-header-btn {
     background: 0 0;
     border: 0;
