@@ -1369,3 +1369,27 @@ li:hover .sub {
             color: #3483fa;
         }
 
+.toggle-menu {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    transform: rotateX( 180deg );
+    float: right;
+    top: -0.75rem;
+}
+
+    .toggle-menu span {
+        background-color: white;
+        display: block;
+        height: 2px;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        transition: transform 0.2s ease;
+        width: 100%;
+    }
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
