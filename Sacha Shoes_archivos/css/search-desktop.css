@@ -295,17 +295,11 @@
         outline: none
     }
 
-.slick-slider .slick-list,
-.slick-slider .slick-track {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0)
-}
-
 .slick-track {
     position: relative;
     top: 0;
     left: 0;
-    display: block
+    display: block;
 }
 
     .slick-track:after,
@@ -330,7 +324,7 @@
 }
 
     .slick-slide img {
-        display: block
+        display: block;
     }
 
 .slick-initialized .slick-slide {

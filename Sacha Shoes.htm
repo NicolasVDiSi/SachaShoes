@@ -93,10 +93,10 @@
                         </form>
                     </li>
                     <li class="nav-item dropdown position-static subrayado">
-                        <a class="nav-link m-lg-4" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                        <a class="nav-link m-lg-4 verMas" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                             Mujer
                         </a>
-                        <label class="toggle-menu verMas hidden-md-lg">
+                        <label class="toggle-menu hidden-md-lg">
                             <span class="barra1 animated1"></span>
                             <span class="barra2 animated2"></span>
                         </label>
@@ -128,10 +128,10 @@
                     </li>
                     <li><hr class="dropdown-divider"></li>
                     <li class="nav-item dropdown position-static subrayado">
-                        <a class="nav-link m-lg-4" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                        <a class="nav-link m-lg-4 verMas" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                             Hombre
                         </a>
-                        <label class="toggle-menu verMas hidden-md-lg">
+                        <label class="toggle-menu hidden-md-lg">
                             <span class="barra1 animated1"></span>
                             <span class="barra2 animated2"></span>
                         </label>
@@ -193,7 +193,7 @@
                     </a>
                 </li>
                 <li class="nav-item m-right">
-                    <input type="checkbox" id="menu-hamburguesa-checkbox" name="nav-tools-header__menu-switch"/>
+                    <input type="checkbox" id="menu-hamburguesa-checkbox" name="nav-tools-header__menu-switch" />
                     <button onclick="mostrarSidebar();" class="navbar-toggler border-0" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
                         <label for="menu-hamburguesa-checkbox" id="hamburguer-menu">
@@ -204,10 +204,24 @@
                     </button>
                 </li>
             </ul>
-            
+
             <!--fin iconos-->
         </div>
-</nav>
+    </nav>
+    <div class="btn-group w-100 hidden-md-lg" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">2</button>
+
+        <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="#">Dropdown link</a>
+                <a class="dropdown-item" href="#">Dropdown link</a>
+            </div>
+        </div>
+    </div>
     <!--fin header-->
 
     <main role="main" id="root-app">
@@ -241,7 +255,7 @@
                             <dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/listado/bebes/ropa-calzado/sacha-shoes_NoIndex_True#applied_filter_id%3Dcategory%26applied_filter_name%3DCategor%C3%ADas%26applied_filter_order%3D3%26applied_value_id%3DMLA1396%26applied_value_name%3DRopa+y+Calzado+para+Beb%C3%A9s%26applied_value_order%3D3%26applied_value_results%3D2" class="ui-search-link" rel="nofollow"><span class="ui-search-filter-name">Ropa y Calzado para Bebés</span><span class="ui-search-filter-results-qty">(2)</span></a></dd>
                         </dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Costo de envío</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_CostoEnvio_Gratis#applied_filter_id%3Dshipping_cost%26applied_filter_name%3DCosto+de+env%C3%ADo%26applied_filter_order%3D4%26applied_value_id%3Dfree%26applied_value_name%3DGratis%26applied_value_order%3D1%26applied_value_results%3D68" class="ui-search-link"><span class="ui-search-filter-name">Gratis</span><span class="ui-search-filter-results-qty">(68)</span></a></dd></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Tiempo de entrega</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_TiempoEnvio_ProximoDia#applied_filter_id%3Dshipping_time%26applied_filter_name%3DTiempo+de+entrega%26applied_filter_order%3D5%26applied_value_id%3Dnextday%26applied_value_name%3DLlegan+en+menos+de+24+hs%26applied_value_order%3D1%26applied_value_results%3D572" class="ui-search-link"><span class="ui-search-filter-name">Llegan en menos de 24 hs</span><span class="ui-search-filter-results-qty">(572)</span></a></dd></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Pago</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_Installments_NoInterest#applied_filter_id%3Dinstallments%26applied_filter_name%3DPago%26applied_filter_order%3D6%26applied_value_id%3Dno_interest%26applied_value_name%3DSin+inter%C3%A9s%26applied_value_order%3D1%26applied_value_results%3D236" class="ui-search-link"><span class="ui-search-filter-name">Sin interés</span><span class="ui-search-filter-results-qty">(236)</span></a></dd></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Color principal</dt><div class="ui-search-filter-row wrap"><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Negro#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450295%26applied_value_name%3DNegro%26applied_value_order%3D1%26applied_value_results%3D332" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450295"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Blanco#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450308%26applied_value_name%3DBlanco%26applied_value_order%3D2%26applied_value_results%3D121" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450308"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Rosa#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450312%26applied_value_name%3DRosa%26applied_value_order%3D3%26applied_value_results%3D58" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450312"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Marrón#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450291%26applied_value_name%3DMarr%C3%B3n%26applied_value_order%3D4%26applied_value_results%3D54" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450291"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Azul#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450293%26applied_value_name%3DAzul%26applied_value_order%3D5%26applied_value_results%3D42" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450293"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Piel#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450286%26applied_value_name%3DNude%26applied_value_order%3D6%26applied_value_results%3D31" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450286"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Plateado#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450303%26applied_value_name%3DPlateado%26applied_value_order%3D7%26applied_value_results%3D24" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450303"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Fucsia#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450326%26applied_value_name%3DFucsia%26applied_value_order%3D8%26applied_value_results%3D23" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450326"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Suela#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450287%26applied_value_name%3DSuela%26applied_value_order%3D9%26applied_value_results%3D21" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450287"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Gris-claro#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450294%26applied_value_name%3DGris%26applied_value_order%3D10%26applied_value_results%3D19" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450294"></div></a></div></dd></div><a href="https://www.sachashoes.com.ar/sacha-shoes_FiltersAvailableSidebar?filter=MAIN_COLOR" class="ui-search-modal__link ui-search-modal--default ui-search-link">Ver todos</a></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Talle</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259502#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259502%26applied_value_name%3D23%26applied_value_order%3D8%26applied_value_results%3D40" class="ui-search-link"><span class="ui-search-filter-name">23</span><span class="ui-search-filter-results-qty">(40)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3189110#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3189110%26applied_value_name%3D24%26applied_value_order%3D9%26applied_value_results%3D40" class="ui-search-link"><span class="ui-search-filter-name">24</span><span class="ui-search-filter-results-qty">(40)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_4608574#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D4608574%26applied_value_name%3D35%26applied_value_order%3D20%26applied_value_results%3D202" class="ui-search-link"><span class="ui-search-filter-name">35</span><span class="ui-search-filter-results-qty">(202)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259450#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259450%26applied_value_name%3D36%26applied_value_order%3D21%26applied_value_results%3D317" class="ui-search-link"><span class="ui-search-filter-name">36</span><span class="ui-search-filter-results-qty">(317)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259511#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259511%26applied_value_name%3D37%26applied_value_order%3D22%26applied_value_results%3D223" class="ui-search-link"><span class="ui-search-filter-name">37</span><span class="ui-search-filter-results-qty">(223)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259451#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259451%26applied_value_name%3D38%26applied_value_order%3D23%26applied_value_results%3D193" class="ui-search-link"><span class="ui-search-filter-name">38</span><span class="ui-search-filter-results-qty">(193)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259512#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259512%26applied_value_name%3D39%26applied_value_order%3D24%26applied_value_results%3D236" class="ui-search-link"><span class="ui-search-filter-name">39</span><span class="ui-search-filter-results-qty">(236)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3189142#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3189142%26applied_value_name%3D40%26applied_value_order%3D25%26applied_value_results%3D205" class="ui-search-link"><span class="ui-search-filter-name">40</span><span class="ui-search-filter-results-qty">(205)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259513#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259513%26applied_value_name%3D41%26applied_value_order%3D26%26applied_value_results%3D43" class="ui-search-link"><span class="ui-search-filter-name">41</span><span class="ui-search-filter-results-qty">(43)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259454#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259454%26applied_value_name%3D44%26applied_value_order%3D29%26applied_value_results%3D37" class="ui-search-link"><span class="ui-search-filter-name">44</span><span class="ui-search-filter-results-qty">(37)</span></a></dd><a href="https://www.sachashoes.com.ar/sacha-shoes_FiltersAvailableSidebar?filter=SIZE" class="ui-search-modal__link ui-search-modal--default ui-search-link">Ver todos</a></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Precio</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_PriceRange_0-1500#applied_filter_id%3Dprice%26applied_filter_name%3DPrecio%26applied_filter_order%3D9%26applied_value_id%3D*-1500.0%26applied_value_name%3DHasta+%24+1.500%26applied_value_order%3D1%26applied_value_results%3D131" class="ui-search-link"><span class="ui-search-filter-name">Hasta $ 1.500</span><span class="ui-search-filter-results-qty">(131)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_PriceRange_1500-2000#applied_filter_id%3Dprice%26applied_filter_name%3DPrecio%26applied_filter_order%3D9%26applied_value_id%3D1500.0-2000.0%26applied_value_name%3D%241.500+a+%242.000%26applied_value_order%3D2%26applied_value_results%3D146" class="ui-search-link"><span class="ui-search-filter-name">$1.500 a $2.000</span><span class="ui-search-filter-results-qty">(146)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_PriceRange_2000-0#applied_filter_id%3Dprice%26applied_filter_name%3DPrecio%26applied_filter_order%3D9%26applied_value_id%3D2000.0-*%26applied_value_name%3DM%C3%A1s+de+%242.000%26applied_value_order%3D3%26applied_value_results%3D298" class="ui-search-link"><span class="ui-search-filter-name">Más de $2.000</span><span class="ui-search-filter-results-qty">(298)</span></a></dd><form class="ui-search-price-filter ui-search-filter-range--price" method="post"><div class="ui-search-price-filter-container"><label class="andes-form-control andes-form-control--textfield andes-form-control--textbox"><div class="andes-form-control__control"><input type="number" data-testid="Minimum-price" name="Minimum" placeholder="Mínimo" rows="1" class="andes-form-control__field" maxLength="120" /><div class="andes-form-control__embedded"> <!-- --> </div></div><div class="andes-form-control__border"></div><span class="andes-form-control__message"></span></label></div><div class="ui-search-price-filter-container"><label class="andes-form-control andes-form-control--textfield andes-form-control--textbox"><div class="andes-form-control__control"><input type="number" data-testid="Maximum-price" name="Maximum" placeholder="Máximo" rows="1" class="andes-form-control__field" maxLength="120" /><div class="andes-form-control__embedded"> <!-- --> </div></div><div class="andes-form-control__border"></div><span class="andes-form-control__message"></span></label></div><div class="ui-search-price-filter-container"><button data-testid="submit-price" type="submit" class="ui-search-price-filter-action-btn" disabled=""><div class="andes-dropdown__arrow"></div></button></div></form></dl>
                     </section>
-                </aside><section class="ui-search-results">
+                </aside><section class="ui-search-results pt-lg-5">
                     <div class="d-flex flex-row-reverse mr-auto pb-3">
                         <div class="ui-search-view-options">
                             <div class="ui-search-view-options__content">
@@ -281,7 +295,7 @@
                                                     <div class="slick-list">
                                                         <div class="slick-track">
                                                             <div data-index="0" class="slick-slide slick-active " tabindex="-1" style="outline:none">
-                                                                <img class="img-fluid" src="https://i1.wp.com/angularscript.com/wp-content/uploads/2018/06/Progressively-Loading-Images-With-Blur-Effect-min.png" alt="Place Holder" />
+                                                                <img class="img-fluid" src="https://i2.wp.com/www.kinetica.mobi/wp-content/uploads/2013/01/sample-img.png" alt="Place Holder" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -341,7 +355,7 @@
                                                     <div class="slick-list">
                                                         <div class="slick-track">
                                                             <div data-index="0" class="slick-slide slick-active" tabindex="-1" style="outline:none">
-                                                                <img class="img-fluid .img-thumbnail" src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
+                                                                <img class="img-fluid" src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -519,7 +533,7 @@
                                                     <div class="slick-list">
                                                         <div class="slick-track">
                                                             <div data-index="0" class="slick-slide slick-active" tabindex="-1" style="outline:none">
-                                                                <img class="img-fluid" src="https://i1.wp.com/angularscript.com/wp-content/uploads/2018/06/Progressively-Loading-Images-With-Blur-Effect-min.png" alt="Place Holder" />
+                                                                <img class="img-fluid" src="https://i2.wp.com/www.kinetica.mobi/wp-content/uploads/2013/01/sample-img.png" alt="Place Holder" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -579,7 +593,7 @@
                                                     <div class="slick-list">
                                                         <div class="slick-track">
                                                             <div data-index="0" class="slick-slide slick-active" tabindex="-1" style="outline:none">
-                                                                <img class="img-fluid .img-thumbnail" src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
+                                                                <img class="img-fluid " src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -640,7 +654,7 @@
                                                     <div class="slick-list">
                                                         <div class="slick-track">
                                                             <div data-index="0" class="slick-slide slick-active" tabindex="-1" style="outline:none">
-                                                                <img class="img-fluid .img-thumbnail" src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
+                                                                <img class="img-fluid " src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -700,7 +714,7 @@
                                                     <div class="slick-list">
                                                         <div class="slick-track">
                                                             <div data-index="0" class="slick-slide slick-active" tabindex="-1" style="outline:none">
-                                                                <img class="img-fluid .img-thumbnail" src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
+                                                                <img class="img-fluid " src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -756,11 +770,11 @@
                                     <div class="ui-search-result__image">
                                         <a href="https://www.sachashoes.com.ar/MLA-884061363-ojotas-plataforma-dama-mujer-livianas-comodas-cleo-cshoes-_JM?searchVariation=66086434364#searchVariation=66086434364&amp;position=1&amp;type=item&amp;tracking_id=b7dba688-f848-4b98-9033-43c52d6ea348" class="ui-search-link" title="Place Holder">
                                             <div class="carousel-container arrow-visible">
-                                                <div class="slick-initialized slick-slider">
+                                                <div class="">
                                                     <div class="slick-list">
                                                         <div class="slick-track">
-                                                            <div data-index="0" class="slick-slide slick-active" tabindex="-1" style="outline:none">
-                                                                <img class="img-fluid .img-thumbnail" src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
+                                                            <div data-index="0" class="slick-slide" tabindex="-1" style="outline:none">
+                                                                <img class="img-fluid " src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -968,5 +982,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    </body>
+</body>
 </html>
