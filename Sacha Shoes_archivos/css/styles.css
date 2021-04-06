@@ -1394,3 +1394,26 @@ li:hover .sub {
 .navbar-light .navbar-toggler {
     border-color: transparent;
 }
+
+.slider-product button {
+    display: block;
+}
+.slider-product:hover button {
+    display: block !important
+}
+
+.flecha-prev, .flecha-next {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.flecha-prev{
+    right:0;
+}
+.flecha-next {
+    left: 0;
+}
