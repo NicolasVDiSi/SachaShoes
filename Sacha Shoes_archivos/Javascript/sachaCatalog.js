@@ -70,7 +70,15 @@ function mostrarSidebar() {
         menu.classList.add("active");
     }
 }
-
+/*Filter menu*/
+function mostrarFiltros() {
+    let filter = document.getElementsByClassName("ui-search-filter-dl")[0];
+    if (filter.classList.contains("movil")) {
+        filter.classList.remove(("movil"));
+    } else {
+        filter.classList.add("movil");
+    }
+}
 /* Cambiar icono del dropdown al hacer click*/
 $(document).ready(function () {
     $('.verMas').click(function () {

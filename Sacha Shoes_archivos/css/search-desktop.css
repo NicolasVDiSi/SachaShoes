@@ -844,11 +844,63 @@
     padding-right: 14px;
     width: 100%
 }
-
-@media(max-width:770px) {
-    .ui-search-sidebar {
-        display: none
+@media(max-width:770px){
+    .ui-search-sidebar{
+        display:none;
     }
+}
+
+
+/*Sidebar filtros*/
+.andes-modal--full .andes-modal-dialog {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+}
+
+.andes-modal-dialog {
+    top: 50%;
+    left: 50%;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 1021;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.07),0 20px 25px 0 rgba(0,0,0,.1);
+    border-radius: 4px;
+    overflow: auto;
+    background: #fff;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-animation: translateIn .2s ease-in-out,fadeIn .2s ease-in-out;
+    animation: translateIn .2s ease-in-out,fadeIn .2s ease-in-out;
+    will-change: opacity,transform;
+    z-index: 10000;
+
+}
+
+.andes-modal-bg, .andes-modal-dialog {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    opacity: 1;
+}
+.andes-list__item {
+    padding: 24px 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width:100%;
+}
+.ui-search-modal .andes-modal-dialog__header {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+li {
+    list-style: none;
 }
 
 .ui-search-sidebar .ui-search-sidebar__result-container {
@@ -1182,7 +1234,15 @@
     -webkit-justify-content: space-between;
     justify-content: space-between
 }
-/*Filtro mobile*/
+/*Filtro*/
+.filter{
+    background:white;
+    width:100%;
+    z-index:10000;
+    display:block;
+   text-align:center
+}
+/*Filtro botones*/
 .filter-mobile {
     display: -webkit-flex;
     display: flex;
@@ -1273,7 +1333,7 @@ input:checked + .slider:before {
 .hide-sm {
     display: block;
 }
-@media (min-width:762px){
+@media (min-width:769px){
     .hide-sm{
         display:none;
     }
@@ -3142,20 +3202,6 @@ input:checked + .slider:before {
     border-left-width: 6px
 }
 
-.ui-search-modal .andes-modal-dialog__header {
-    padding-top: 96px;
-    padding-bottom: 48px
-}
-
-.ui-search-modal .andes-modal-dialog__header--scrolled {
-    padding-top: 20px;
-    padding-bottom: 20px
-}
-
-    .ui-search-modal .andes-modal-dialog__header--scrolled .andes-modal-dialog__header-title {
-        font-size: 20px
-    }
-
 .ui-search-modal .andes-modal-dialog__content {
     display: -webkit-flex;
     display: flex;
@@ -3205,16 +3251,6 @@ input:checked + .slider:before {
         display: none
     }
 
-@media (min-width: 860px) {
-    .andes-modal--tight .andes-modal-dialog.ui-search-modal {
-        max-width: 816px;
-        max-height: 550px
-    }
-
-    .andes-modal--tight .andes-modal-dialog.ui-search-modal--vehicle-body {
-        max-height: 400px
-    }
-}
 
 .ui-search-money-picker {
     margin-left: 12px
