@@ -70,7 +70,8 @@
 body {
     font-family: 'Proxima Nova', sans-serif !important;
     margin: 0;
-    overflow: auto
+    overflow: auto;
+    margin-top: 7rem;
 }
 
 .header-wrapper {
