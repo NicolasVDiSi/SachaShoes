@@ -47,6 +47,7 @@
     <link href="./Sacha Shoes_archivos/css/styles.css" rel="stylesheet" type="text/css" />
     <link href="./Sacha Shoes_archivos/css/search-desktop.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body data-site="MS" data-country="AR" onload="mobile()" onresize="mobile()" class="mt-5">
     <div class="header-wrapper header-wrapper--fixed  nav-logo-float-left " id="header-wrapper" data-ms-theme="fashion">
@@ -82,12 +83,7 @@
                     <li class="nav-item m-right hidden-md-lg">
                         <form class="nav-fashion-search-form header--custom-border" id="search-form-responsive" novalidate="">
                             <button type="submit" class="search-button d-inline">
-                                <svg class="header--custom-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                    <g fill-rule="evenodd">
-                                        <path fill-rule="nonzero" class="header--custom-svg" d="M15.774 16.835a8.247 8.247 0 1 1 1.06-1.06L22.062 21 21 22.06l-5.226-5.225zm-5.277.409a6.747 6.747 0 1 0 0-13.494 6.747 6.747 0 0 0 0 13.494z"></path>
-                                    </g>
-                                </svg>
-
+                                <img class="size" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTIyNS40NzQsMEMxMDEuMTUxLDAsMCwxMDEuMTUxLDAsMjI1LjQ3NGMwLDEyNC4zMywxMDEuMTUxLDIyNS40NzQsMjI1LjQ3NCwyMjUuNDc0ICAgIGMxMjQuMzMsMCwyMjUuNDc0LTEwMS4xNDQsMjI1LjQ3NC0yMjUuNDc0QzQ1MC45NDgsMTAxLjE1MSwzNDkuODA0LDAsMjI1LjQ3NCwweiBNMjI1LjQ3NCw0MDkuMzIzICAgIGMtMTAxLjM3MywwLTE4My44NDgtODIuNDc1LTE4My44NDgtMTgzLjg0OFMxMjQuMTAxLDQxLjYyNiwyMjUuNDc0LDQxLjYyNnMxODMuODQ4LDgyLjQ3NSwxODMuODQ4LDE4My44NDggICAgUzMyNi44NDcsNDA5LjMyMywyMjUuNDc0LDQwOS4zMjN6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxwYXRoIGQ9Ik01MDUuOTAyLDQ3Ni40NzJMMzg2LjU3NCwzNTcuMTQ0Yy04LjEzMS04LjEzMS0yMS4yOTktOC4xMzEtMjkuNDMsMGMtOC4xMzEsOC4xMjQtOC4xMzEsMjEuMzA2LDAsMjkuNDNsMTE5LjMyOCwxMTkuMzI4ICAgIGM0LjA2NSw0LjA2NSw5LjM4Nyw2LjA5OCwxNC43MTUsNi4wOThjNS4zMjEsMCwxMC42NDktMi4wMzMsMTQuNzE1LTYuMDk4QzUxNC4wMzMsNDk3Ljc3OCw1MTQuMDMzLDQ4NC41OTYsNTA1LjkwMiw0NzYuNDcyeiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" />
                             </button>
                             <input type="text" placeholder="Buscar…" class="header--custom-text" id="search-input-responsive" required="" autocomplete=" off">
                         </form>
@@ -453,8 +449,30 @@
                                                 <div class="slick-initialized slick-slider">
                                                     <div class="slick-list">
                                                         <div class="slick-track">
-                                                            <div data-index="0" class="slick-slide slick-active " tabindex="-1" style="outline:none">
-                                                                <img class="img-fluid" src="https://i2.wp.com/www.kinetica.mobi/wp-content/uploads/2013/01/sample-img.png" alt="Place Holder" />
+                                                            <div data-index="0" class="slick-slide slick-active d-flex align-items-center" tabindex="-1" style="outline:none">
+                                                                <!-- Slider producto catalogo-->
+                                                                <div id="sliderControl" class="carousel slide slider-product" data-bs-touch="false" data-bs-interval="false">
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="https://i2.wp.com/www.kinetica.mobi/wp-content/uploads/2013/01/sample-img.png" class="d-block w-100" alt="...">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://http2.mlstatic.com/D_NQ_NP_620547-MLA42585047518_072020-W.webp" class="d-block w-100" alt="...">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://i2.wp.com/www.kinetica.mobi/wp-content/uploads/2013/01/sample-img.png" class="d-block w-100" alt="...">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#sliderControl" data-bs-slide="prev">
+                                                                        <img src="Sacha Shoes_archivos/img/flecha-prev.png" class="d-block flecha-prev" alt="..." aria-hidden="true">
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                    </button>
+                                                                        <button class="carousel-control-next" type="button" data-bs-target="#sliderControl" data-bs-slide="next">
+                                                                            <img src="Sacha Shoes_archivos/img/flecha-next.png" class="d-block flecha-next" alt="..." aria-hidden="true">
+                                                                            <span class="visually-hidden">Next</span>
+                                                                        </button>
+                                                                </div>
+                                                                <!-- Fin Slider producto catalogo-->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -513,8 +531,30 @@
                                                 <div class="slick-initialized slick-slider">
                                                     <div class="slick-list">
                                                         <div class="slick-track">
-                                                            <div data-index="0" class="slick-slide slick-active" tabindex="-1" style="outline:none">
-                                                                <img class="img-fluid" src="https://http2.mlstatic.com/D_737067-MLA41268260935_032020-O.jpg" alt="Place Holder" />
+                                                            <div data-index="0" class="slick-slide slick-active d-flex align-items-center" tabindex="-1" style="outline:none">
+                                                                <!-- Slider producto catalogo-->
+                                                                <div id="sliderControl1" class="carousel slide slider-product" data-bs-touch="false" data-bs-interval="false">
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="https://http2.mlstatic.com/D_NQ_NP_977741-MLA42589679296_072020-W.webphttps://http2.mlstatic.com/D_NQ_NP_620547-MLA42585047518_072020-W.webp" class="d-block w-100" alt="...">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://http2.mlstatic.com/D_NQ_NP_620547-MLA42585047518_072020-W.webp" class="d-block w-100" alt="...">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://http2.mlstatic.com/D_NQ_NP_620547-MLA42585047518_072020-W.webp" class="d-block w-100" alt="...">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#sliderControl1" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#sliderControl1" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Next</span>
+                                                                    </button>
+                                                                </div>
+                                                                <!-- Fin Slider producto catalogo-->
                                                             </div>
                                                         </div>
                                                     </div>
