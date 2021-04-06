@@ -2569,11 +2569,11 @@ main {
     font-size: 12px;
     padding: 2px
 }
-
+/*Thumbnails img product*/
     .ui-pdp-thumbnail__picture img {
         width: 100%;
         height: 100%;
-        object-fit: contain
+        object-fit: fill
     }
 
 .ui-pdp-thumbnail__picture--SMALL {
@@ -9419,7 +9419,8 @@ main {
     font-size: 14px;
     width: 100%;
     padding: 24px 16px;
-    border-radius: 8px
+    border-radius: 8px;
+    background:#fff;
 }
 
     .ui-pdp-component-list:not(:empty) {
@@ -9502,196 +9503,6 @@ main {
         text-decoration: none
     }
 
-
-    .ui-vip-core-container--short-description .ui-pdp-container__row--available-quantity:not(:empty) .andes-button {
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
-        line-height: 1;
-        border: 0
-    }
-
-    .ui-vip-core-container--short-description .ui-pdp-container__row--available-quantity:not(:empty) .ui-pdp-buybox__quantity__messages__message:not(:empty) {
-        margin: 8px 0 0
-    }
-
-.ui-vip-core-container--short-description .ui-pdp-container__row--buy-benefits:not(:empty), .ui-vip-core-container--short-description .ui-pdp-container__row--credits-tooltip:not(:empty), .ui-vip-core-container--short-description .ui-pdp-container__row--loyalty-tooltip:not(:empty), .ui-vip-core-container--short-description .ui-pdp-container__row--main-actions:not(:empty), .ui-vip-core-container--short-description .ui-pdp-container__row--paypal-tooltip:not(:empty), .ui-vip-core-container--short-description .ui-pdp-container__row--shipping-cart-benefits-tooltip:not(:empty) {
-    margin-top: 24px
-}
-
-.ui-vip-core-container--short-description .ui-pdp-container__row--item-status-short-description-message {
-    margin-top: 16px
-}
-
-.ui-vip-core-container--short-description .ui-pdp-container__row .ui-pdp-card-tooltip {
-    width: 325px
-}
-
-.ui-vip-core-container--content-left {
-    margin-left: 50px;
-    width: 718px
-}
-
-    .ui-vip-core-container--content-left .ui-pdp-container__row--compatibilities + .ui-pdp-container__row--technical-specifications {
-        border-top: none;
-        padding-top: 20px
-    }
-
-    .ui-vip-core-container--content-left .ui-pdp-container__row--carousel-above-pads .ui-recommendations--seller, .ui-vip-core-container--content-left .ui-pdp-container__row--carousel-above .ui-recommendations--seller {
-        border-top: 1px solid rgba(0,0,0,.1);
-        padding-top: 40px
-    }
-
-    .ui-vip-core-container--content-left .ui-pdp-container__row--carousel-above .ui-recommendations--seller {
-        padding-bottom: 26px
-    }
-
-    .ui-vip-core-container--content-left .ui-pdp-container__row--compatibilities {
-        border-top: 1px solid rgba(0,0,0,.1);
-        padding-top: 40px
-    }
-
-    .ui-vip-core-container--content-left .ui-pdp-container__row--description, .ui-vip-core-container--content-left .ui-pdp-container__row--technical-specifications {
-        border-top: 1px solid rgba(0,0,0,.1);
-        padding-top: 40px;
-        padding-bottom: 40px
-    }
-
-    .ui-vip-core-container--content-left .ui-pdp-container__row--questions {
-        border-top: 1px solid rgba(0,0,0,.1);
-        padding-top: 40px
-    }
-
-    .ui-vip-core-container--content-left .ui-pdp-container__row--reviews {
-        border-top: 1px solid rgba(0,0,0,.1);
-        margin-top: 40px;
-        padding-top: 40px
-    }
-
-    .ui-vip-core-container--content-left .ui-pdp-container__row--highlighted-specs-attrs {
-        border-top: 1px solid rgba(0,0,0,.1);
-        padding-top: 40px
-    }
-
-        .ui-vip-core-container--content-left .ui-pdp-container__row--highlighted-specs-attrs .ui-pdp-container__row--technical-specifications {
-            border-top: none;
-            padding-top: 0
-        }
-
-        .ui-vip-core-container--content-left .ui-pdp-container__row--highlighted-specs-attrs section {
-            padding-left: 0;
-            padding-right: 0
-        }
-
-.ui-vip-core .ui-pdp-container--column-right {
-    width: 368px;
-    max-width: 368px;
-    margin-left: 48px
-}
-
-    .ui-vip-core .ui-pdp-container--column-right .ui-vip-content-right .ui-pdp-container__row:not(:first-child) {
-        border-top: 1px solid rgba(0,0,0,.1)
-    }
-
-    .ui-vip-core .ui-pdp-container--column-right .ui-vip-content-right-ads {
-        border: none;
-        padding: 0;
-        margin-top: 8px
-    }
-
-        .ui-vip-core .ui-pdp-container--column-right .ui-vip-content-right-ads .ui-pdp-component-list__item--desktop-content-right-ads {
-            border: none
-        }
-
-.ui-vip-core-container--column__right {
-    position: relative;
-    width: 100%
-}
-
-.ui-vip-core .ui-pdp-container--top {
-    margin-bottom: 12px;
-    top:10%;
-}
-
-.ui-vip-core .ui-pdp-container--pdp {
-    border-radius: 4px
-}
-
-.ui-vip-core .ui-pdp-component-list__item--desktop-head .ui-pdp-message {
-    margin-top: 8px;
-    margin-bottom: 12px
-}
-
-.ui-vip-core .ui-pdp-seller {
-    margin-top: 0
-}
-
-.ui-vip-core .ui-pdp-seller__header {
-    margin-bottom: 0
-}
-
-.ui-vip-core .ui-pdp-seller__header__image-container {
-    -webkit-align-items: flex-start;
-    align-items: flex-start
-}
-
-.ui-vip-core .ui-pdp-seller__header__info-container {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: center;
-    justify-content: center
-}
-
-.ui-vip-core .ui-pdp-seller__header__title {
-    margin-top: 0
-}
-
-.ui-vip-core .ui-pdp-seller__icon-description {
-    height: 28px
-}
-
-.ui-vip-core .ui-pdp-seller__item-description, .ui-vip-core .ui-pdp-seller__text-description {
-    width: 100%
-}
-
-.ui-vip-core .ui-pdp-seller__header--margin {
-    margin-bottom: 18px
-}
-
-.ui-vip-core .ui-pdp-seller__link-trigger {
-    display: inline-block;
-    margin-top: 0
-}
-
-.ui-vip-core .ui-pdp-actions .ui-pdp-action-primary--disabled, .ui-vip-core .ui-pdp-actions .ui-pdp-action-secondary--disabled {
-    cursor: pointer
-}
-
-.ui-vip-core--official-store {
-    width: 100%
-}
-
-    .ui-vip-core--official-store .ui-pdp-container--pdp, .ui-vip-core--official-store .ui-pdp-container--top, .ui-vip-core--official-store .ui-pdp-container--top__bottom {
-        max-width: 1184px;
-        margin: 0 auto
-    }
-
-    .ui-vip-core--official-store .ui-pdp-container--top, .ui-vip-core--official-store .ui-pdp-container--top__bottom {
-        background-color: #ededed
-    }
-
-    .ui-vip-core--official-store .ui-pdp-container--pdp {
-        margin-top: 10%;
-        border-radius: 0 0 4px 4px
-    }
-
-.ui-pdp-bookmark__link-bookmark a {
-    position: relative;
-    top: auto;
-    left: auto
-}
 
 .ui-pdp-gallery {
     width: 100%;
