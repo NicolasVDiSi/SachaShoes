@@ -1396,7 +1396,7 @@ li:hover .sub {
 }
 
 .slider-product button {
-    display: block;
+    display: none;
 }
 .slider-product:hover button {
     display: block !important
