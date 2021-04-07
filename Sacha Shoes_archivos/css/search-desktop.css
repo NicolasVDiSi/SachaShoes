@@ -253,7 +253,7 @@
 .ui-item.price-text .ui-item__price {
     font-size: 24px
 }
-
+/*Slider*/
 .carousel-container .arrow-visible .next-button,
 .carousel-container .arrow-visible .prev-button,
 .low-end a.ui-item .ui-item__bookmark,
@@ -850,21 +850,72 @@
     }
 }
 
+/*Filter Nav*/
 
-/*Sidebar filtros*/
-.andes-modal--full .andes-modal-dialog {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 0;
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    background: white;
+}
+.overlay .active{
+    width:100%;
+}
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin-top: 0px;
 }
 
+.overlay a {
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    transition: 0.3s;
+}
+
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    left:2.5em;
+    font-size: 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 20px;
+        left:2.5em;
+    }
+}
+
+/*Sidebar filtros*/
+.andes-list__item[aria-expanded="true"] .ui-search-icon {
+    transform: rotate(90deg);
+}
 .andes-modal-dialog {
-    top: 50%;
-    left: 50%;
+    margin-top: 50%;
+    margin-left: 50%;
     font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     font-size: 16px;
     font-weight: 400;
-    z-index: 1021;
+    z-index: 10021;
     box-shadow: 0 0 1px 1px rgba(0,0,0,.07),0 20px 25px 0 rgba(0,0,0,.1);
     border-radius: 4px;
     overflow: auto;
@@ -874,31 +925,43 @@
     -webkit-animation: translateIn .2s ease-in-out,fadeIn .2s ease-in-out;
     animation: translateIn .2s ease-in-out,fadeIn .2s ease-in-out;
     will-change: opacity,transform;
-    z-index: 10000;
-
 }
-
-.andes-modal-bg, .andes-modal-dialog {
-    width: 100%;
-    height: auto;
-    position: fixed;
-    opacity: 1;
+.andes-modal-dialog__header-title {
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+    font-size:2.5em;
 }
 .andes-list__item {
-    padding: 24px 32px;
+    padding: 1em 1.5em;
     padding-top: 24px;
     padding-bottom: 24px;
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    width:100%;
-}
-.ui-search-modal .andes-modal-dialog__header {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    width: 100%;
 }
 
+.andes-list__item-dropdown::line-marker {
+    padding: 1px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    width: 100%;
+}
+    .andes-list__item:hover {
+        content: "";
+        border-left: .2em solid #3483fa;
+        border-left-width: 0.2em;
+    }
+.andes-modal-dialog__header {
+    padding: 80px 32px 32px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+/*slider*/
 li {
     list-style: none;
 }
@@ -1316,9 +1379,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(14px);
-    -ms-transform: translateX(14px);
-    transform: translateX(14px);
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
 }
 
 /* Rounded sliders */
@@ -2162,12 +2225,11 @@ input:checked + .slider:before {
         margin-bottom: 16px;
         /*cambio de resolucion*/
         min-width: 284px;
-        max-width: 284px;
         width: 100%;
         margin-left: 10px
     }
 
-@media (max-width: 861px) and (min-width: 720px), (max-width: 1164px) and (min-width: 1024px) {
+@media (max-width: 1164px) and (min-width: 720px) {
     .ui-search-layout--gallery .ui-search-layout__item,
     .ui-search-layout--grid .ui-search-layout__item {
         min-width: 240px;
@@ -3206,7 +3268,9 @@ input:checked + .slider:before {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+
+
 }
 
 .andes-modal-dialog__container .andes-modal-dialog__content {
@@ -3217,114 +3281,6 @@ input:checked + .slider:before {
     .andes-modal-dialog__container .andes-modal-dialog__content .ui-search-filter-container {
         width: 120px
     }
-
-.andes-modal-dialog__container .andes-modal-dialog__button-close {
-    top: 30px;
-    right: 65px;
-    position: fixed
-}
-
-.andes-modal--full .andes-modal-dialog__header .andes-modal-dialog__button-close {
-    -webkit-tap-highlight-color: transparent;
-    width: 35px;
-    height: 35px;
-    left: 24px;
-    top: 15px
-}
-
-    .andes-modal--full .andes-modal-dialog__header .andes-modal-dialog__button-close:before {
-        content: "";
-        background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiMzNDgzZmEiIHN0cm9rZT0iIzM0ODNmYSIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIj48cGF0aCBzdHJva2Utd2lkdGg9Ii4yIiBkPSJNNiAxNS42NjdsOSA5TDE2LjMzMyAyMyAxMCAxNi42NjdoMTZ2LTJIMTBsNi4zMzMtNi4zMzNMMTUgNi42Njd6Ii8+PC9zdmc+");
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        left: 3px;
-        color: #3483fa;
-        top: 3px;
-        text-indent: 0;
-        -webkit-transform: none;
-        transform: none;
-        background-color: transparent
-    }
-
-    .andes-modal--full .andes-modal-dialog__header .andes-modal-dialog__button-close:after {
-        display: none
-    }
-
-
-.ui-search-money-picker {
-    margin-left: 12px
-}
-
-.ui-search-money-picker,
-.ui-search-money-picker-dt-title {
-    display: -webkit-inline-flex;
-    display: inline-flex;
-    margin-bottom: 10px;
-    line-height: 1.25
-}
-
-.ui-search-money-picker-dt-title {
-    font-weight: 600;
-    font-size: 16px;
-    color: #333
-}
-
-    .ui-search-money-picker-dt-title:after {
-        color: #999;
-        height: 14px;
-        margin-left: 15px;
-        width: 1px;
-        content: "|"
-    }
-
-.ui-search-money-picker__form {
-    display: -webkit-inline-flex;
-    display: inline-flex;
-    width: 105px
-}
-
-.ui-search-money-picker__btn {
-    background-color: transparent;
-    display: -webkit-inline-flex;
-    display: inline-flex;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    -webkit-align-content: center;
-    align-content: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    color: rgba(0, 0, 0, .25);
-    cursor: pointer
-}
-
-    .ui-search-money-picker__btn:focus {
-        box-shadow: none
-    }
-
-    .ui-search-money-picker__btn:disabled {
-        color: #333
-    }
-
-.ui-search-money-picker__li {
-    margin-bottom: 6px
-}
-
-    .ui-search-money-picker__li .ui-search-link {
-        color: #666;
-        font-weight: 400;
-        font-size: 14px;
-        margin-left: 0;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap
-    }
-
-        .ui-search-money-picker__li .ui-search-link:hover {
-            color: #333
-        }
 
 .ui-search-pagination:last-child {
     margin-bottom: 32px
@@ -3338,11 +3294,6 @@ input:checked + .slider:before {
     width: 8px;
     height: 8px;
     margin-left: 2px
-}
-
-.andes-modal-dialog__header--scrolled {
-    box-shadow: unset;
-    padding: 0
 }
 
 .ui-search-search-modal {
@@ -4163,7 +4114,7 @@ input:checked + .slider:before {
         background: inherit
     }
 }
-
+/*Items*/
 .andes-list {
     font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     font-size: 18px;
@@ -4180,12 +4131,10 @@ input:checked + .slider:before {
     display: -webkit-flex;
     display: flex;
     -webkit-justify-content: space-between;
-    justify-content: space-between
+    justify-content: space-between;
+    font-size:18px;
+    border-top: .0625em solid #e6e6e6
 }
-
-    .andes-list__item + .andes-list__item {
-        border-top: .0625em solid #e6e6e6
-    }
 
 .andes-list__item-with-image {
     padding: 20px 32px
@@ -4327,7 +4276,7 @@ input:checked + .slider:before {
     left: -.6em
 }
 
-.andes-dropdown--compact .andes-list__item + .andes-list__item {
+.andes-dropdown--compact .andes-list__item {
     border: 0
 }
 

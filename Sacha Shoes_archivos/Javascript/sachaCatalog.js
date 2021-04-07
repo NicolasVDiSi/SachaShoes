@@ -71,14 +71,30 @@ function mostrarSidebar() {
     }
 }
 /*Filter menu*/
-function mostrarFiltros() {
-    let filter = document.getElementsByClassName("ui-search-filter-dl")[0];
-    if (filter.classList.contains("movil")) {
-        filter.classList.remove(("movil"));
+function openFilter() {
+    let x = document.getElementById("filterNav");
+
+    if (x.classList.contains("active")) {
+        x.classList.remove("active")
+        x.style.width = "100%";
     } else {
-        filter.classList.add("movil");
+        x.classList.add("active");
+        x.style.width = "0%";
+    }
+
+}
+function openFilter2() {
+    let x2 = document.getElementById("filterNav2");
+
+    if (x2.classList.contains("active")) {
+        x2.classList.remove("active")
+        x2.style.width = "100%";
+    } else {
+        x2.classList.add("active");
+        x2.style.width = "0%";
     }
 }
+
 /* Cambiar icono del dropdown al hacer click*/
 $(document).ready(function () {
     $('.verMas').click(function () {
