@@ -1,4 +1,3 @@
-﻿
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
@@ -68,7 +67,7 @@
     </div>
     <!--header-->
     <nav class="navbar navbar-expand-lg navbar-light fondo fixed-top menu">
-        <div class="container-fluid">
+        <div class="container-fluid w-100">
             <div class="" style="margin-left: 8%;">
                 <div class="m-lg-4">
                     <a class="nav-fashion-header__logo" href="/" id="logo-wrapper">
@@ -204,55 +203,330 @@
             <!--fin iconos-->
         </div>
     </nav>
-    <div class="btn-group w-100 hidden-md-lg" role="group" aria-label="Button group with nested dropdown">
-        <button type="button" class="btn btn-secondary">1</button>
-        <button type="button" class="btn btn-secondary">2</button>
-
-        <div class="btn-group" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-            </button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <a class="dropdown-item" href="#">Dropdown link</a>
-                <a class="dropdown-item" href="#">Dropdown link</a>
+    <!--Filter Nav-->
+    <div class=" hide-sm mt-2 mt-md-4" role="group">
+        <ul class="bg-white d-flex nav-fill py-3 fs-6">
+            <li onclick="openFilter2()" class="nav-item item d-flex justify-content-center align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#0d6efd" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z" />
+                </svg><a class="px-2 text-center" href="#">
+                    Ordenar
+                </a>
+            </li>
+            <li class="nav-item item filter-mobile">
+                <span class="text-center px-2">Llegan mañana</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+            <li onclick="openFilter()" class="nav-item item d-flex justify-content-center align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0d6efd" class="bi bi-sliders" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+                </svg>
+                <a class="px-2 text-center" href="#">
+                    Filtrar
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--Filter menu-->
+    <div id="filterNav" class="overlay active">
+        <div class="overlay-content">
+            <a href="javascript:void(0)" class="closebtn" onclick="openFilter();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="#0d6efd" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+            </a>
+            <div class="andes-modal-dialog__container" style="padding-top: 0px; height: 100%;">
+                <div class="andes-modal-dialog__header container-fluid"><h3 id="dialog-label" class="andes-modal-dialog__header-title">Filtrar por</h3><a class="andes-modal-dialog__button-close"></a></div><div class="andes-modal-dialog__content">
+                    <div></div><ul class="w-100">
+    <li class="andes-list__item ui-search-filter ui-search-filter--highlighted ui-search-filter--shipping_time_highlighted" role="button">
+        <div class="andes-list__item-image-container">
+            <div class="andes-list__item-text">
+                <div class="andes-list__item-primary">
+                    <span class="ui-search-filter__title ui-search-icon-label">Llegan mañana</span>
+                </div>
+            </div>
+        </div>
+        <div class="andes-list__item-tertiary">
+            <div href="https://www.sachashoes.com.ar/sacha-shoes_TiempoEnvio_ProximoDia#applied_filter_id%3Dshipping_time_highlighted%26applied_filter_name%3DTiempo+de+entrega%26applied_filter_order%3D1%26applied_value_id%3Dnextday%26applied_value_name%3DLlegan+en+menos+de+24+hs%26applied_value_order%3D1%26applied_value_results%3D614" class="ui-search-animated-switch ui-search-animated-switch--small ui-search-link">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </li>
+    <li class="andes-list__item" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapse1">
+        <div class="andes-list__item-image-container"><div class="andes-list__item-text"><div class="andes-list__item-primary">Género</div></div></div>
+        <div class="andes-list__item-tertiary">
+            <svg class="ui-search-icon ui-search-icon--chevron" width="16" height="16" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" fill-rule="evenodd" d="M1 1.343L6.657 7 1 12.657"></path>
+            </svg>
+        </div>
+    </li>
+    <li class="andes-list__item-dropdown">
+        <div id="collapseOne" class="collapse in" role="tabpanel">
+            <a class="andes-list__item" href="#">Mujer</a>
+            <a class="andes-list__item" href="#">Niñas</a>
+            <a class="andes-list__item" href="#">Hombre</a>
+            <a class="andes-list__item" href="#">Niños</a>
+            <a class="andes-list__item" href="#">Sin Genero</a>
+            <a class="andes-list__item" href="#">Bebés</a>
+        </div>
+    </li>
+    <li class="andes-list__item" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+        <div class="andes-list__item-image-container"><div class="andes-list__item-text"><div class="andes-list__item-primary">Categorías</div></div></div>
+        <div class="andes-list__item-tertiary">
+            <svg class="ui-search-icon ui-search-icon--chevron" width="16" height="16" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" fill-rule="evenodd" d="M1 1.343L6.657 7 1 12.657"></path>
+            </svg>
+        </div>
+    </li>
+    <li class="andes-list__item-dropdown">
+        <div id="collapse2" class="collapse in" role="tabpanel">
+            <a class="andes-list__item" href="#">Calzado</a>
+            <a class="andes-list__item" href="#">Ropa Interior y de Dormir</a>
+            <a class="andes-list__item" href="#">Ropa y Calzado para Bebés</a>
+        </div>
+    </li>
+    <li class="andes-list__item" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+        <div class="andes-list__item-image-container"><div class="andes-list__item-text"><div class="andes-list__item-primary">Costo de envío</div></div></div>
+        <div class="andes-list__item-tertiary"><svg class="ui-search-icon ui-search-icon--chevron" width="16" height="16" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path fill="none" fill-rule="evenodd" d="M1 1.343L6.657 7 1 12.657"></path></svg></div>
+    </li>
+    <li class="andes-list__item-dropdown">
+        <div id="collapse3" class="collapse in" role="tabpanel">
+            <a class="andes-list__item" href="#">Gratis</a>
+        </div>
+    </li>
+    <li class="andes-list__item" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+        <div class="andes-list__item-image-container"><div class="andes-list__item-text"><div class="andes-list__item-primary">Tiempo de entrega</div></div></div>
+        <div class="andes-list__item-tertiary"><svg class="ui-search-icon ui-search-icon--chevron" width="16" height="16" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path fill="none" fill-rule="evenodd" d="M1 1.343L6.657 7 1 12.657"></path></svg></div>
+    </li>
+    <li class="andes-list__item-dropdown">
+        <div id="collapse4" class="collapse in" role="tabpanel">
+            <a class="andes-list__item" href="#">Llega en menos de 24hs</a>
+        </div>
+    </li>
+    <li class="andes-list__item" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+        <div class="andes-list__item-image-container"><div class="andes-list__item-text"><div class="andes-list__item-primary">Pago</div></div></div>
+        <div class="andes-list__item-tertiary"><svg class="ui-search-icon ui-search-icon--chevron" width="16" height="16" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path fill="none" fill-rule="evenodd" d="M1 1.343L6.657 7 1 12.657"></path></svg></div>
+    </li>
+    <li class="andes-list__item-dropdown">
+        <div id="collapse5" class="collapse in" role="tabpanel">
+            <a class="andes-list__item" href="#">Sin interés</a>>
+        </div>
+    </li>
+    <li class="andes-list__item" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+        <div class="andes-list__item-image-container"><div class="andes-list__item-text"><div class="andes-list__item-primary">Color principal</div></div></div>
+        <div class="andes-list__item-tertiary"><svg class="ui-search-icon ui-search-icon--chevron" width="16" height="16" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path fill="none" fill-rule="evenodd" d="M1 1.343L6.657 7 1 12.657"></path></svg></div>
+    </li>
+    <li class="andes-list__item-dropdown">
+        <div id="collapse6" class="collapse in" role="tabpanel">
+            <a class="andes-list__item" href="#">Action</a>
+            <a class="andes-list__item" href="#">Another action</a>
+            <a class="andes-list__item" href="#">Something else here</a>
+        </div>
+    </li>
+    <li class="andes-list__item" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+        <div class="andes-list__item-image-container"><div class="andes-list__item-text"><div class="andes-list__item-primary">Talle</div></div></div>
+        <div class="andes-list__item-tertiary"><svg class="ui-search-icon ui-search-icon--chevron" width="16" height="16" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path fill="none" fill-rule="evenodd" d="M1 1.343L6.657 7 1 12.657"></path></svg></div>
+    </li>
+    <li class="andes-list__item-dropdown">
+        <div id="collapse7" class="collapse in" role="tabpanel">
+            <a class="andes-list__item" href="#">Action</a>
+            <a class="andes-list__item" href="#">Another action</a>
+            <a class="andes-list__item" href="#">Something else here</a>
+        </div>
+    </li>
+    <li class="andes-list__item" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+        <div class="andes-list__item-image-container"><div class="andes-list__item-text"><div class="andes-list__item-primary">Precio</div></div></div>
+        <div class="andes-list__item-tertiary"><svg class="ui-search-icon ui-search-icon--chevron" width="16" height="16" viewBox="0 0 9 14" xmlns="http://www.w3.org/2000/svg"><path fill="none" fill-rule="evenodd" d="M1 1.343L6.657 7 1 12.657"></path></svg></div>
+    </li>
+    <li class="andes-list__item-dropdown">
+        <div id="collapse8" class="collapse in" role="tabpanel">
+            <a class="andes-list__item" href="#">Hasta $1500</a>
+            <a class="andes-list__item" href="#">$1500 a $2000</a>
+            <a class="andes-list__item" href="#">Más de $2000</a>
+        </div>
+    </li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div id="filterNav2" class="overlay active">
+        <div class="overlay-content">
+            <a href="javascript:void(0)" class="closebtn" onclick="openFilter2();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="#0d6efd" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+            </a>
+            <div class="andes-modal-dialog__container" style="padding-top: 0px; height: 100%;">
+                <div class="andes-modal-dialog__header container-fluid"><h3 id="dialog-label" class="andes-modal-dialog__header-title">Filtrar por</h3><a class="andes-modal-dialog__button-close"></a></div><div class="andes-modal-dialog__content">
+                    <div></div><ul class="w-100">
+                        <li class="andes-list__item ui-search-filter ui-search-filter--highlighted ui-search-filter--shipping_time_highlighted" role="button">
+                            <div class="andes-list__item-image-container">
+                                <div class="andes-list__item-text">
+                                    <div class="andes-list__item-primary">
+                                        <span class="ui-search-filter__title ui-search-icon-label">Más relevantes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="andes-list__item dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="andes-list__item-image-container"><div class="andes-list__item-text"><div class="andes-list__item-primary">Menor Precio</div></div></div>
+                            <div class="andes-list__item-tertiary">
+                            </div>
+                        </li>
+                        <li class="andes-list__item " role="button">
+                            <div class="andes-list__item-image-container"><div class="andes-list__item-text"><div class="andes-list__item-primary">Mayor Precio</div></div></div>
+                            <div class="andes-list__item-tertiary">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     <!--fin header-->
 
     <main role="main" id="root-app">
-        <div class="ui-search" data-reactroot="">
+        <div class="ui-search " data-reactroot="">
             <div class="ui-search-main ui-search-main--only-products">
+                <!--Sidebar-->
                 <aside class="pt-lg-5 ui-search-sidebar">
                     <div class="ui-search-breadcrumb">
                         <h1 class="ui-search-breadcrumb__title">Sacha shoes</h1>
-                    </div><div class="ui-search-search-result"><span class="ui-search-search-result__quantity-results">575 resultados</span></div><section class="ui-search-filter-groups">
-                        <dl class="ui-search-filter-dl" role="listbox">
+                    </div>
+                    <div class="ui-search-result"><span class="ui-search-search-result__quantity-results">575 resultados</span></div>
+                    <section class="ui-search-filter-groups">
+                        <ul class="ui-search-filter-dl d-xs-none" role="listbox">
                             <div class="ui-search-filter-highlighted ui-search-filter-highlighted-shipping_time_highlighted">
-                                <dd class="ui-search-filter-highlighted__container">
+                                <li class="ui-search-filter-highlighted__container">
                                     <div class="ui-search-filter-highlighted__content">
                                         <span class="ui-search-filter-highlighted__title ui-search-icon-label">Llegan mañana</span>
                                     </div>
                                     <div class="form-check form-switch">
                                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
                                     </div>
-                                </dd>
+                                </li>
                             </div>
-                        </dl>
-                        <dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Género</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_339665#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D339665%26applied_value_name%3DMujer%26applied_value_order%3D3%26applied_value_results%3D404" class="ui-search-link"><span class="ui-search-filter-name">Mujer</span><span class="ui-search-filter-results-qty">(404)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_339668#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D339668%26applied_value_name%3DNi%C3%B1as%26applied_value_order%3D4%26applied_value_results%3D83" class="ui-search-link"><span class="ui-search-filter-name">Niñas</span><span class="ui-search-filter-results-qty">(83)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_339666#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D339666%26applied_value_name%3DHombre%26applied_value_order%3D2%26applied_value_results%3D56" class="ui-search-link"><span class="ui-search-filter-name">Hombre</span><span class="ui-search-filter-results-qty">(56)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_339667#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D339667%26applied_value_name%3DNi%C3%B1os%26applied_value_order%3D5%26applied_value_results%3D18" class="ui-search-link"><span class="ui-search-filter-name">Niños</span><span class="ui-search-filter-results-qty">(18)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_110461#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D110461%26applied_value_name%3DSin+g%C3%A9nero%26applied_value_order%3D6%26applied_value_results%3D10" class="ui-search-link"><span class="ui-search-filter-name">Sin género</span><span class="ui-search-filter-results-qty">(10)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_371795#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D371795%26applied_value_name%3DBeb%C3%A9s%26applied_value_order%3D1%26applied_value_results%3D4" class="ui-search-link"><span class="ui-search-filter-name">Bebés</span><span class="ui-search-filter-results-qty">(4)</span></a></dd></dl><dl class="ui-search-filter-dl" role="listbox">
-                            <dt class="ui-search-filter-dt-title">Categorías</dt>
-                            <dd class="ui-search-filter-container" role="option">
+                        </ul>
+                        <ul class="ui-search-filter-dl" role="listbox">
+                            <li class="ui-search-filter-dt-title">Género</li>
+                            <li class="ui-search-filter-container" role="option">
+                                <a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_339665#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D339665%26applied_value_name%3DMujer%26applied_value_order%3D3%26applied_value_results%3D404" class="ui-search-link">
+                                    <span class="ui-search-filter-name">Mujer</span><span class="ui-search-filter-results-qty">(404)</span>
+                                </a>
+                            </li>
+                            <li class="ui-search-filter-container" role="option">
+                                <a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_339668#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D339668%26applied_value_name%3DNi%C3%B1as%26applied_value_order%3D4%26applied_value_results%3D83" class="ui-search-link">
+                                    <span class="ui-search-filter-name">Niñas</span><span class="ui-search-filter-results-qty">(83)</span>
+                                </a>
+                            </li>
+                            <li class="ui-search-filter-container" role="option">
+                                <a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_339666#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D339666%26applied_value_name%3DHombre%26applied_value_order%3D2%26applied_value_results%3D56" class="ui-search-link">
+                                    <span class="ui-search-filter-name">Hombre</span>
+                                    <span class="ui-search-filter-results-qty">(56)</span>
+                                </a>
+                            </li>
+                            <li class="ui-search-filter-container" role="option">
+                                <a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_339667#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D339667%26applied_value_name%3DNi%C3%B1os%26applied_value_order%3D5%26applied_value_results%3D18" class="ui-search-link">
+                                    <span class="ui-search-filter-name">Niños</span><span class="ui-search-filter-results-qty">(18)</span>
+                                </a>
+                            </li>
+                            <li class="ui-search-filter-container" role="option">
+                                <a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_110461#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D110461%26applied_value_name%3DSin+g%C3%A9nero%26applied_value_order%3D6%26applied_value_results%3D10" class="ui-search-link">
+                                    <span class="ui-search-filter-name">Sin género</span><span class="ui-search-filter-results-qty">(10)</span>
+                                </a>
+                            </li>
+                            <li class="ui-search-filter-container" role="option">
+                                <a href="https://www.sachashoes.com.ar/sacha-shoes_GENDER_371795#applied_filter_id%3DGENDER%26applied_filter_name%3DG%C3%A9nero%26applied_filter_order%3D2%26applied_value_id%3D371795%26applied_value_name%3DBeb%C3%A9s%26applied_value_order%3D1%26applied_value_results%3D4" class="ui-search-link">
+                                    <span class="ui-search-filter-name">Bebés</span><span class="ui-search-filter-results-qty">(4)</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="ui-search-filter-dl" role="listbox">
+                            <li class="ui-search-filter-dt-title">Categorías</li>
+                            <li class="ui-search-filter-container" role="option">
                                 <a href="https://www.sachashoes.com.ar/zapatos/calzado/sacha-shoes#applied_filter_id%3Dcategory%26applied_filter_name%3DCategor%C3%ADas%26applied_filter_order%3D3%26applied_value_id%3DMLA109026%26applied_value_name%3DCalzado%26applied_value_order%3D1%26applied_value_results%3D573" class="ui-search-link">
                                     <span class="ui-search-filter-name">Calzado</span>
                                     <span class="ui-search-filter-results-qty">(573)</span>
                                 </a>
+                            </li>
+                            <li class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/ropa/ropa-interior-y-de-dormir/sacha-shoes#applied_filter_id%3Dcategory%26applied_filter_name%3DCategor%C3%ADas%26applied_filter_order%3D3%26applied_value_id%3DMLA109278%26applied_value_name%3DRopa+Interior+y+de+Dormir%26applied_value_order%3D2%26applied_value_results%3D26" class="ui-search-link"><span class="ui-search-filter-name">Ropa Interior y de Dormir</span><span class="ui-search-filter-results-qty">(26)</span></a></li>
+                            <li class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/listado/bebes/ropa-calzado/sacha-shoes_NoIndex_True#applied_filter_id%3Dcategory%26applied_filter_name%3DCategor%C3%ADas%26applied_filter_order%3D3%26applied_value_id%3DMLA1396%26applied_value_name%3DRopa+y+Calzado+para+Beb%C3%A9s%26applied_value_order%3D3%26applied_value_results%3D2" class="ui-search-link" rel="nofollow"><span class="ui-search-filter-name">Ropa y Calzado para Bebés</span><span class="ui-search-filter-results-qty">(2)</span></a></li>
+                        </ul>
+                        <dl class="ui-search-filter-dl" role="listbox">
+                            <dt class="ui-search-filter-dt-title">Costo de envío</dt>
+                            <dd class="ui-search-filter-container" role="option">
+                                <a href="https://www.sachashoes.com.ar/sacha-shoes_CostoEnvio_Gratis#applied_filter_id%3Dshipping_cost%26applied_filter_name%3DCosto+de+env%C3%ADo%26applied_filter_order%3D4%26applied_value_id%3Dfree%26applied_value_name%3DGratis%26applied_value_order%3D1%26applied_value_results%3D68" class="ui-search-link">
+                                    <span class="ui-search-filter-name">Gratis</span>
+                                    <span class="ui-search-filter-results-qty">(68)</span>
+                                </a>
                             </dd>
-                            <dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/ropa/ropa-interior-y-de-dormir/sacha-shoes#applied_filter_id%3Dcategory%26applied_filter_name%3DCategor%C3%ADas%26applied_filter_order%3D3%26applied_value_id%3DMLA109278%26applied_value_name%3DRopa+Interior+y+de+Dormir%26applied_value_order%3D2%26applied_value_results%3D26" class="ui-search-link"><span class="ui-search-filter-name">Ropa Interior y de Dormir</span><span class="ui-search-filter-results-qty">(26)</span></a></dd>
-                            <dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/listado/bebes/ropa-calzado/sacha-shoes_NoIndex_True#applied_filter_id%3Dcategory%26applied_filter_name%3DCategor%C3%ADas%26applied_filter_order%3D3%26applied_value_id%3DMLA1396%26applied_value_name%3DRopa+y+Calzado+para+Beb%C3%A9s%26applied_value_order%3D3%26applied_value_results%3D2" class="ui-search-link" rel="nofollow"><span class="ui-search-filter-name">Ropa y Calzado para Bebés</span><span class="ui-search-filter-results-qty">(2)</span></a></dd>
-                        </dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Costo de envío</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_CostoEnvio_Gratis#applied_filter_id%3Dshipping_cost%26applied_filter_name%3DCosto+de+env%C3%ADo%26applied_filter_order%3D4%26applied_value_id%3Dfree%26applied_value_name%3DGratis%26applied_value_order%3D1%26applied_value_results%3D68" class="ui-search-link"><span class="ui-search-filter-name">Gratis</span><span class="ui-search-filter-results-qty">(68)</span></a></dd></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Tiempo de entrega</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_TiempoEnvio_ProximoDia#applied_filter_id%3Dshipping_time%26applied_filter_name%3DTiempo+de+entrega%26applied_filter_order%3D5%26applied_value_id%3Dnextday%26applied_value_name%3DLlegan+en+menos+de+24+hs%26applied_value_order%3D1%26applied_value_results%3D572" class="ui-search-link"><span class="ui-search-filter-name">Llegan en menos de 24 hs</span><span class="ui-search-filter-results-qty">(572)</span></a></dd></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Pago</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_Installments_NoInterest#applied_filter_id%3Dinstallments%26applied_filter_name%3DPago%26applied_filter_order%3D6%26applied_value_id%3Dno_interest%26applied_value_name%3DSin+inter%C3%A9s%26applied_value_order%3D1%26applied_value_results%3D236" class="ui-search-link"><span class="ui-search-filter-name">Sin interés</span><span class="ui-search-filter-results-qty">(236)</span></a></dd></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Color principal</dt><div class="ui-search-filter-row wrap"><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Negro#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450295%26applied_value_name%3DNegro%26applied_value_order%3D1%26applied_value_results%3D332" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450295"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Blanco#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450308%26applied_value_name%3DBlanco%26applied_value_order%3D2%26applied_value_results%3D121" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450308"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Rosa#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450312%26applied_value_name%3DRosa%26applied_value_order%3D3%26applied_value_results%3D58" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450312"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Marrón#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450291%26applied_value_name%3DMarr%C3%B3n%26applied_value_order%3D4%26applied_value_results%3D54" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450291"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Azul#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450293%26applied_value_name%3DAzul%26applied_value_order%3D5%26applied_value_results%3D42" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450293"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Piel#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450286%26applied_value_name%3DNude%26applied_value_order%3D6%26applied_value_results%3D31" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450286"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Plateado#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450303%26applied_value_name%3DPlateado%26applied_value_order%3D7%26applied_value_results%3D24" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450303"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Fucsia#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450326%26applied_value_name%3DFucsia%26applied_value_order%3D8%26applied_value_results%3D23" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450326"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Suela#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450287%26applied_value_name%3DSuela%26applied_value_order%3D9%26applied_value_results%3D21" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450287"></div></a></div></dd><dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Gris-claro#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450294%26applied_value_name%3DGris%26applied_value_order%3D10%26applied_value_results%3D19" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450294"></div></a></div></dd></div><a href="https://www.sachashoes.com.ar/sacha-shoes_FiltersAvailableSidebar?filter=MAIN_COLOR" class="ui-search-modal__link ui-search-modal--default ui-search-link">Ver todos</a></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Talle</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259502#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259502%26applied_value_name%3D23%26applied_value_order%3D8%26applied_value_results%3D40" class="ui-search-link"><span class="ui-search-filter-name">23</span><span class="ui-search-filter-results-qty">(40)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3189110#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3189110%26applied_value_name%3D24%26applied_value_order%3D9%26applied_value_results%3D40" class="ui-search-link"><span class="ui-search-filter-name">24</span><span class="ui-search-filter-results-qty">(40)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_4608574#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D4608574%26applied_value_name%3D35%26applied_value_order%3D20%26applied_value_results%3D202" class="ui-search-link"><span class="ui-search-filter-name">35</span><span class="ui-search-filter-results-qty">(202)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259450#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259450%26applied_value_name%3D36%26applied_value_order%3D21%26applied_value_results%3D317" class="ui-search-link"><span class="ui-search-filter-name">36</span><span class="ui-search-filter-results-qty">(317)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259511#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259511%26applied_value_name%3D37%26applied_value_order%3D22%26applied_value_results%3D223" class="ui-search-link"><span class="ui-search-filter-name">37</span><span class="ui-search-filter-results-qty">(223)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259451#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259451%26applied_value_name%3D38%26applied_value_order%3D23%26applied_value_results%3D193" class="ui-search-link"><span class="ui-search-filter-name">38</span><span class="ui-search-filter-results-qty">(193)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259512#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259512%26applied_value_name%3D39%26applied_value_order%3D24%26applied_value_results%3D236" class="ui-search-link"><span class="ui-search-filter-name">39</span><span class="ui-search-filter-results-qty">(236)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3189142#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3189142%26applied_value_name%3D40%26applied_value_order%3D25%26applied_value_results%3D205" class="ui-search-link"><span class="ui-search-filter-name">40</span><span class="ui-search-filter-results-qty">(205)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259513#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259513%26applied_value_name%3D41%26applied_value_order%3D26%26applied_value_results%3D43" class="ui-search-link"><span class="ui-search-filter-name">41</span><span class="ui-search-filter-results-qty">(43)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259454#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259454%26applied_value_name%3D44%26applied_value_order%3D29%26applied_value_results%3D37" class="ui-search-link"><span class="ui-search-filter-name">44</span><span class="ui-search-filter-results-qty">(37)</span></a></dd><a href="https://www.sachashoes.com.ar/sacha-shoes_FiltersAvailableSidebar?filter=SIZE" class="ui-search-modal__link ui-search-modal--default ui-search-link">Ver todos</a></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Precio</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_PriceRange_0-1500#applied_filter_id%3Dprice%26applied_filter_name%3DPrecio%26applied_filter_order%3D9%26applied_value_id%3D*-1500.0%26applied_value_name%3DHasta+%24+1.500%26applied_value_order%3D1%26applied_value_results%3D131" class="ui-search-link"><span class="ui-search-filter-name">Hasta $ 1.500</span><span class="ui-search-filter-results-qty">(131)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_PriceRange_1500-2000#applied_filter_id%3Dprice%26applied_filter_name%3DPrecio%26applied_filter_order%3D9%26applied_value_id%3D1500.0-2000.0%26applied_value_name%3D%241.500+a+%242.000%26applied_value_order%3D2%26applied_value_results%3D146" class="ui-search-link"><span class="ui-search-filter-name">$1.500 a $2.000</span><span class="ui-search-filter-results-qty">(146)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_PriceRange_2000-0#applied_filter_id%3Dprice%26applied_filter_name%3DPrecio%26applied_filter_order%3D9%26applied_value_id%3D2000.0-*%26applied_value_name%3DM%C3%A1s+de+%242.000%26applied_value_order%3D3%26applied_value_results%3D298" class="ui-search-link"><span class="ui-search-filter-name">Más de $2.000</span><span class="ui-search-filter-results-qty">(298)</span></a></dd><form class="ui-search-price-filter ui-search-filter-range--price" method="post"><div class="ui-search-price-filter-container"><label class="andes-form-control andes-form-control--textfield andes-form-control--textbox"><div class="andes-form-control__control"><input type="number" data-testid="Minimum-price" name="Minimum" placeholder="Mínimo" rows="1" class="andes-form-control__field" maxLength="120" /><div class="andes-form-control__embedded"> <!-- --> </div></div><div class="andes-form-control__border"></div><span class="andes-form-control__message"></span></label></div><div class="ui-search-price-filter-container"><label class="andes-form-control andes-form-control--textfield andes-form-control--textbox"><div class="andes-form-control__control"><input type="number" data-testid="Maximum-price" name="Maximum" placeholder="Máximo" rows="1" class="andes-form-control__field" maxLength="120" /><div class="andes-form-control__embedded"> <!-- --> </div></div><div class="andes-form-control__border"></div><span class="andes-form-control__message"></span></label></div><div class="ui-search-price-filter-container"><button data-testid="submit-price" type="submit" class="ui-search-price-filter-action-btn" disabled=""><div class="andes-dropdown__arrow"></div></button></div></form></dl>
+                        </dl>
+                        <dl class="ui-search-filter-dl" role="listbox">
+                            <dt class="ui-search-filter-dt-title">Tiempo de entrega</dt>
+                            <dd class="ui-search-filter-container" role="option">
+                                <a href="https://www.sachashoes.com.ar/sacha-shoes_TiempoEnvio_ProximoDia#applied_filter_id%3Dshipping_time%26applied_filter_name%3DTiempo+de+entrega%26applied_filter_order%3D5%26applied_value_id%3Dnextday%26applied_value_name%3DLlegan+en+menos+de+24+hs%26applied_value_order%3D1%26applied_value_results%3D572" class="ui-search-link">
+                                    <span class="ui-search-filter-name">Llegan en menos de 24 hs</span>
+                                    <span class="ui-search-filter-results-qty">(572)</span>
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl class="ui-search-filter-dl" role="listbox">
+                            <dt class="ui-search-filter-dt-title">Pago</dt>
+                            <dd class="ui-search-filter-container" role="option">
+                                <a href="https://www.sachashoes.com.ar/sacha-shoes_Installments_NoInterest#applied_filter_id%3Dinstallments%26applied_filter_name%3DPago%26applied_filter_order%3D6%26applied_value_id%3Dno_interest%26applied_value_name%3DSin+inter%C3%A9s%26applied_value_order%3D1%26applied_value_results%3D236" class="ui-search-link">
+                                    <span class="ui-search-filter-name">Sin interés</span>
+                                    <span class="ui-search-filter-results-qty">(236)</span>
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl class="ui-search-filter-dl" role="listbox">
+                            <dt class="ui-search-filter-dt-title">Color principal</dt>
+                            <div class="ui-search-filter-row wrap">
+                                <dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option">
+                                    <div class="andes-tooltip__trigger">
+                                        <a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Negro#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450295%26applied_value_name%3DNegro%26applied_value_order%3D1%26applied_value_results%3D332" class="ui-search-link">
+                                            <div class="ui-search-filter-colors ui-search-filter-colors-2450295"></div>
+                                        </a>
+                                    </div>
+                                </dd>
+                                <dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option">
+                                    <div class="andes-tooltip__trigger">
+                                        <a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Blanco#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450308%26applied_value_name%3DBlanco%26applied_value_order%3D2%26applied_value_results%3D121" class="ui-search-link">
+                                            <div class="ui-search-filter-colors ui-search-filter-colors-2450308"></div>
+                                        </a>
+                                    </div>
+                                </dd>
+                                <dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option">
+                                    <div class="andes-tooltip__trigger">
+                                        <a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Rosa#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450312%26applied_value_name%3DRosa%26applied_value_order%3D3%26applied_value_results%3D58" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450312"></div></a>
+                                    </div>
+                                </dd>
+                                <dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option">
+                                    <div class="andes-tooltip__trigger">
+                                        <a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Marrón#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450291%26applied_value_name%3DMarr%C3%B3n%26applied_value_order%3D4%26applied_value_results%3D54" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450291"></div></a>
+                                    </div>
+                                </dd>
+                                <dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Azul#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450293%26applied_value_name%3DAzul%26applied_value_order%3D5%26applied_value_results%3D42" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450293"></div></a></div></dd>
+                                <dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Piel#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450286%26applied_value_name%3DNude%26applied_value_order%3D6%26applied_value_results%3D31" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450286"></div></a></div></dd>
+                                <dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Plateado#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450303%26applied_value_name%3DPlateado%26applied_value_order%3D7%26applied_value_results%3D24" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450303"></div></a></div></dd>
+                                <dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Fucsia#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450326%26applied_value_name%3DFucsia%26applied_value_order%3D8%26applied_value_results%3D23" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450326"></div></a></div></dd>
+                                <dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Suela#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450287%26applied_value_name%3DSuela%26applied_value_order%3D9%26applied_value_results%3D21" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450287"></div></a></div></dd>
+                                <dd class="ui-search-filter-dd ui-search-filter-dd-color" role="option"><div class="andes-tooltip__trigger"><a href="https://www.sachashoes.com.ar/sacha-shoes_Color-Principal_Gris-claro#applied_filter_id%3DMAIN_COLOR%26applied_filter_name%3DColor+principal%26applied_filter_order%3D7%26applied_value_id%3D2450294%26applied_value_name%3DGris%26applied_value_order%3D10%26applied_value_results%3D19" class="ui-search-link"><div class="ui-search-filter-colors ui-search-filter-colors-2450294"></div></a></div></dd>
+                            </div>
+                            <a href="https://www.sachashoes.com.ar/sacha-shoes_FiltersAvailableSidebar?filter=MAIN_COLOR" class="ui-search-modal__link ui-search-modal--default ui-search-link">Ver todos</a>
+                        </dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Talle</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259502#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259502%26applied_value_name%3D23%26applied_value_order%3D8%26applied_value_results%3D40" class="ui-search-link"><span class="ui-search-filter-name">23</span><span class="ui-search-filter-results-qty">(40)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3189110#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3189110%26applied_value_name%3D24%26applied_value_order%3D9%26applied_value_results%3D40" class="ui-search-link"><span class="ui-search-filter-name">24</span><span class="ui-search-filter-results-qty">(40)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_4608574#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D4608574%26applied_value_name%3D35%26applied_value_order%3D20%26applied_value_results%3D202" class="ui-search-link"><span class="ui-search-filter-name">35</span><span class="ui-search-filter-results-qty">(202)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259450#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259450%26applied_value_name%3D36%26applied_value_order%3D21%26applied_value_results%3D317" class="ui-search-link"><span class="ui-search-filter-name">36</span><span class="ui-search-filter-results-qty">(317)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259511#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259511%26applied_value_name%3D37%26applied_value_order%3D22%26applied_value_results%3D223" class="ui-search-link"><span class="ui-search-filter-name">37</span><span class="ui-search-filter-results-qty">(223)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259451#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259451%26applied_value_name%3D38%26applied_value_order%3D23%26applied_value_results%3D193" class="ui-search-link"><span class="ui-search-filter-name">38</span><span class="ui-search-filter-results-qty">(193)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259512#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259512%26applied_value_name%3D39%26applied_value_order%3D24%26applied_value_results%3D236" class="ui-search-link"><span class="ui-search-filter-name">39</span><span class="ui-search-filter-results-qty">(236)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3189142#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3189142%26applied_value_name%3D40%26applied_value_order%3D25%26applied_value_results%3D205" class="ui-search-link"><span class="ui-search-filter-name">40</span><span class="ui-search-filter-results-qty">(205)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259513#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259513%26applied_value_name%3D41%26applied_value_order%3D26%26applied_value_results%3D43" class="ui-search-link"><span class="ui-search-filter-name">41</span><span class="ui-search-filter-results-qty">(43)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_SIZE_3259454#applied_filter_id%3DSIZE%26applied_filter_name%3DTalle%26applied_filter_order%3D8%26applied_value_id%3D3259454%26applied_value_name%3D44%26applied_value_order%3D29%26applied_value_results%3D37" class="ui-search-link"><span class="ui-search-filter-name">44</span><span class="ui-search-filter-results-qty">(37)</span></a></dd><a href="https://www.sachashoes.com.ar/sacha-shoes_FiltersAvailableSidebar?filter=SIZE" class="ui-search-modal__link ui-search-modal--default ui-search-link">Ver todos</a></dl><dl class="ui-search-filter-dl" role="listbox"><dt class="ui-search-filter-dt-title">Precio</dt><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_PriceRange_0-1500#applied_filter_id%3Dprice%26applied_filter_name%3DPrecio%26applied_filter_order%3D9%26applied_value_id%3D*-1500.0%26applied_value_name%3DHasta+%24+1.500%26applied_value_order%3D1%26applied_value_results%3D131" class="ui-search-link"><span class="ui-search-filter-name">Hasta $ 1.500</span><span class="ui-search-filter-results-qty">(131)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_PriceRange_1500-2000#applied_filter_id%3Dprice%26applied_filter_name%3DPrecio%26applied_filter_order%3D9%26applied_value_id%3D1500.0-2000.0%26applied_value_name%3D%241.500+a+%242.000%26applied_value_order%3D2%26applied_value_results%3D146" class="ui-search-link"><span class="ui-search-filter-name">$1.500 a $2.000</span><span class="ui-search-filter-results-qty">(146)</span></a></dd><dd class="ui-search-filter-container" role="option"><a href="https://www.sachashoes.com.ar/sacha-shoes_PriceRange_2000-0#applied_filter_id%3Dprice%26applied_filter_name%3DPrecio%26applied_filter_order%3D9%26applied_value_id%3D2000.0-*%26applied_value_name%3DM%C3%A1s+de+%242.000%26applied_value_order%3D3%26applied_value_results%3D298" class="ui-search-link"><span class="ui-search-filter-name">Más de $2.000</span><span class="ui-search-filter-results-qty">(298)</span></a></dd><form class="ui-search-price-filter ui-search-filter-range--price" method="post"><div class="ui-search-price-filter-container"><label class="andes-form-control andes-form-control--textfield andes-form-control--textbox"><div class="andes-form-control__control"><input type="number" data-testid="Minimum-price" name="Minimum" placeholder="Mínimo" rows="1" class="andes-form-control__field" maxLength="120" /><div class="andes-form-control__embedded"> <!-- --> </div></div><div class="andes-form-control__border"></div><span class="andes-form-control__message"></span></label></div><div class="ui-search-price-filter-container"><label class="andes-form-control andes-form-control--textfield andes-form-control--textbox"><div class="andes-form-control__control"><input type="number" data-testid="Maximum-price" name="Maximum" placeholder="Máximo" rows="1" class="andes-form-control__field" maxLength="120" /><div class="andes-form-control__embedded"> <!-- --> </div></div><div class="andes-form-control__border"></div><span class="andes-form-control__message"></span></label></div><div class="ui-search-price-filter-container"><button data-testid="submit-price" type="submit" class="ui-search-price-filter-action-btn" disabled=""><div class="andes-dropdown__arrow"></div></button></div></form></dl>
                     </section>
-                </aside><section class="ui-search-results pt-lg-5">
-                    <div class="d-flex flex-row-reverse mr-auto pb-3">
+                </aside>
+                <section class="ui-search-results pt-lg-5">
+                    <div class="d-flex flex-row-reverse mr-auto hidden-sm-xs pb-3">
                         <div class="ui-search-view-options">
                             <div class="ui-search-view-options__content">
                                 <div class="ui-search-view-options__group">
@@ -321,8 +595,7 @@
                                                                         <span class="visually-hidden">Previous</span>
                                                                     </button>
                                                                     <button class="carousel-control-next" type="button" data-bs-target="#sliderControl" data-bs-slide="next">
-                                                                        <span class="flecha-next" aria-hidden="true"></span>
-                                                                        <span class="visually-hidden">Next</span>
+                                                                        <span class="flecha-next" aria-hidden="true"></span><span class="visually-hidden">Next</span>
                                                                     </button>
                                                                 </div>
                                                                 <!-- Fin Slider producto catalogo-->

@@ -70,6 +70,30 @@ function mostrarSidebar() {
         menu.classList.add("active");
     }
 }
+/*Filter menu*/
+function openFilter() {
+    let x = document.getElementById("filterNav");
+
+    if (x.classList.contains("active")) {
+        x.classList.remove("active")
+        x.style.width = "100%";
+    } else {
+        x.classList.add("active");
+        x.style.width = "0%";
+    }
+
+}
+function openFilter2() {
+    let x2 = document.getElementById("filterNav2");
+
+    if (x2.classList.contains("active")) {
+        x2.classList.remove("active")
+        x2.style.width = "100%";
+    } else {
+        x2.classList.add("active");
+        x2.style.width = "0%";
+    }
+}
 
 /* Cambiar icono del dropdown al hacer click*/
 $(document).ready(function () {
