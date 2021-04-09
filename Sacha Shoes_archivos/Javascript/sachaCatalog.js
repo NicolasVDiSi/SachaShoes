@@ -1,25 +1,3 @@
-//cambiar vista del catalogo
-function mobile() {
-    let w_w = window.innerWidth;
-    let token = document.getElementById("dactive")
-    let token1 = document.getElementById("active")
-  if (w_w < 510) {
-        document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
-        document.getElementById("active").style.display = "none";
-      document.getElementById("dactive").style.display = "none";
-  } else if (w_w > 510) {
-      document.getElementById("dactive").style.display = "flex";
-      document.getElementById("active").style.display = "flex";
-      if (token.classList.contains('ui-search-view-change__link--active')){
-          document.getElementById('cardProducto').classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
-      }
-      if (token1.classList.contains('ui-search-view-change__link--active')) {
-          document.getElementById('cardProducto').classList.replace('ui-search-layout--grid', 'ui-search-layout--stack');
-      }
-      
-    }
-     
-}
 function mostrarGrid() {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
     document.getElementById("active").classList.remove('ui-search-view-change__link--active');
@@ -94,9 +72,31 @@ function openFilter2() {
         x2.style.width = "0%";
     }
 }
-
+$(window).resize(function () {
+    let w_w = window.innerWidth;
+    let token = document.getElementById("grid");
+    let token1 = document.getElementById("rows");
+})
 /* Cambiar icono del dropdown al hacer click*/
 $(document).ready(function () {
+    let w_w = window.innerWidth;
+    let token = document.getElementById("grid");
+    let token1 = document.getElementById("rows");
+    if (w_w < 510) {
+        document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
+        document.getElementById("rows").style.display = "none";
+        document.getElementById("grid").style.display = "none";
+    } else if (w_w > 510) {
+        document.getElementById("grid").style.display = "flex";
+        document.getElementById("rows").style.display = "flex";
+        if (token.classList.contains('ui-search-view-change__link--active')) {
+            document.getElementById('cardProducto').classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
+        }
+        if (token1.classList.contains('ui-search-view-change__link--active')) {
+            document.getElementById('cardProducto').classList.replace('ui-search-layout--grid', 'ui-search-layout--stack');
+        }
+
+    }
     $('.verMas').click(function () {
 
         var dropdown = $(this).parent().find('.dropdown-menu');

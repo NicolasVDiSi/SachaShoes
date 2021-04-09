@@ -73,6 +73,11 @@ body {
     overflow: auto;
     margin-top: 7rem;
 }
+ @media(max-width:766px){
+     body{
+         margin-top:5rem;
+     }
+ }
 
 .header-wrapper {
     width: 100%;
