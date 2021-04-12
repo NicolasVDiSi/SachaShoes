@@ -1,17 +1,12 @@
-let w_w = window.innerWidth;
+var w_w = window.innerWidth;
 var p2 = document.getElementById("cantidad");
-var exit = $(this).parent().find('.dropdown-menu');
 $(".ui-pdp-buybox__quantity").click(function () {
     if (window.innerWidth < 766) {
         $("body").css("overflow", "hidden");
-        p2.style.height = "100%";
+        p2.style.height = "100vh";
         p2.classList.add("scale-in-ver-bottom");
         p2.classList.remove("scale-out-ver-bottom");
-    } else if (window.innerWidth > 766){
-        p2.classList.remove("scale-in-ver-bottom");
-        p2.classList.add("scale-out-ver-bottom");
-        $("body").css("overflow", "scroll");
-    }
+    } 
 });
 $(".closeoverlay").click(function () {
     p2.classList.remove("scale-in-ver-bottom");
@@ -56,14 +51,29 @@ function mostrarSidebar() {
         menu.classList.add("active");
     }
 }
-$(document).ready(function () {
-    if (w_w < 766) {
+function loadTemplate() {
+    if (window.innerWidth < 766) {
         $("#sliderControl").appendTo("#carousel-mb");
         $("#accordion").appendTo("#descripcion-mb");
+        $(".row--technical-specifications").appendTo("#info-mb");
     } else {
         $("#carousel-mb").appendTo("slider");
         $("#accordion").appendTo("#descripcion-desk");
+        $("#info-mb").appendTo("#infoProducto")
     }
+    if (window.innerWidth > 766) {
+        $("#sliderControl").appendTo("#sliderReplace");
+        $("#accordion").appendTo("#descripcion-desk");
+
+        p2.classList.remove("scale-in-ver-bottom");
+        p2.classList.add("scale-out-ver-bottom");
+        $("body").css("overflow", "scroll");
+    }
+}
+/*Cambios para movil*/
+$(document).ready(function () {
+    loadTemplate();
+
     $('.verMas').click(function () {
 
         var dropdown = $(this).parent().find('.dropdown-menu');
@@ -94,13 +104,6 @@ $(document).ready(function () {
 
 });
 $(window).resize(function () {
-    let w_w = window.innerWidth;
-    if (w_w < 766) {
-        $("#sliderControl").appendTo("#carousel-mb");
-        $("#accordion").appendTo("#descripcion-mb");
-    }
-    if (w_w > 766) {
-        $("#sliderControl").appendTo("#sliderReplace");
-        $("#accordion").appendTo("#descripcion-desk");
-    }
+    loadTemplate();
+    var w_w = window.innerWidth;
 });
