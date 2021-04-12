@@ -112,10 +112,10 @@
                         </form>
                     </li>
                     <li class="nav-item dropdown position-static subrayado">
-                        <a class="nav-link m-lg-4" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                        <a class="nav-link verMas m-lg-4" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                             Mujer
                         </a>
-                        <label class="toggle-menu verMas hidden-md-lg">
+                        <label class="toggle-menu hidden-md-lg">
                             <span class="barra1 animated1"></span>
                             <span class="barra2 animated2"></span>
                         </label>
@@ -147,10 +147,10 @@
                     </li>
                     <li><hr class="dropdown-divider"></li>
                     <li class="nav-item dropdown position-static subrayado">
-                        <a class="nav-link m-lg-4" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                        <a class="nav-link verMas m-lg-4" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                             Hombre
                         </a>
-                        <label class="toggle-menu verMas hidden-md-lg">
+                        <label class="toggle-menu hidden-md-lg">
                             <span class="barra1 animated1"></span>
                             <span class="barra2 animated2"></span>
                         </label>
@@ -352,7 +352,7 @@
                         </div>
                         <div class="row px-2 ">
                             <div class="ui-pdp-buybox__quantity">
-                                <div onclick="cantidad()" class="ui-pdp-action-row ui-pdp-variations">
+                                <div class="ui-pdp-action-row ui-pdp-variations">
                                     <button class="andes-button--transparent">
                                         <span class="flex-column">
                                             <span class="ui-pdp-buybox__quantity__title">Cantidad:</span>
@@ -369,15 +369,17 @@
                             </div>
                         </div>
                         <!--Desplegable Quantity-->
-                        <div id="cantidad" class="overlay active">
-                            <div class="overlay-content">
-                                <a href="javascript:void(0)" class="closebtn" onclick="cantidad();">
+                        <div id="cantidad" class="overlay">
+                            <div class="closeoverlay">
+                                <a href="javascript:void(0)" class="closebtn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" fill="#0d6efd" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
                                     </svg>
                                 </a>
+                            </div>
+                            <div class="overlay-product">
                                 <div class="andes-modal-dialog__container" style="padding-top: 0px; height: 100%;">
-                                    <div class="andes-modal-dialog__header container-fluid"><h3 id="dialog-label" class="andes-modal-dialog__header-title">Ordenar por</h3><a class="andes-modal-dialog__button-close"></a></div><div class="andes-modal-dialog__content">
+                                    <div class="andes-modal-dialog__header container-fluid"><h2 id="dialog-label" class="">Elija Cantidad</h2><a class="andes-modal-dialog__button-close"></a></div><div class="andes-modal-dialog__content">
                                         <div></div><ul class="w-100">
                                             <li class="andes-list__item ui-search-filter ui-search-filter--highlighted ui-search-filter--shipping_time_highlighted" role="button">
                                                 <div class="andes-list__item-image-container">
@@ -702,7 +704,6 @@
         </footer>
     </div>
     <script src="./Sacha Shoes_archivos/Javascript/ProductDetails.js" type='text/javascript'></script>
-    <script src="./Sacha Shoes_archivos/Javascript/sachaCatalog.js" type='text/javascript'></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

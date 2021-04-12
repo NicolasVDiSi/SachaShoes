@@ -807,31 +807,122 @@
         display:none;
     }
 }
+.scale-in-ver-bottom {
+    -webkit-animation: scale-in-ver-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-ver-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-ver-bottom {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-ver-bottom {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        opacity: 1;
+    }
+}
+.scale-out-ver-bottom {
+    -webkit-animation: scale-out-ver-bottom 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: scale-out-ver-bottom 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes scale-out-ver-bottom {
+    0% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale-out-ver-bottom {
+    0% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        opacity: 1;
+    }
+}
 
 /*Filter Nav*/
+.ui-pdp-buybox__quantity__item {
+    border-top: 1px solid #d8d8d8;
+    height: 50px;
+    text-align: center;
+}
+.closeoverlay{
+    position:relative;
+    height:50%;
+}
 .overlay {
-    height: 100%;
-    width: 0;
+    width: 100%;
+    height:0;
     position: fixed;
     z-index: 10000;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    transition: 0.5s;
     background: white;
+    overflow-y:hidden;
 }
 #cantidad {
     width: 100%;
-    bottom: 0;
-    height: 0;
-    max-height: 50%;
-    top: 60%;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(0,0,0, 0.4);
 }
-.overlay .active{
-    width:100%;
+div#cantidad.overlay a.closebtn {
+    position: absolute;
+    right: 2.5em;
+    top:90vw;
+    content: "";
+    height: 3em;
+    width: 3em;
+    cursor: pointer;
+    left: auto;
 }
+
 .overlay-content {
     position: relative;
     width: 100%;
@@ -839,7 +930,17 @@
     margin-top: 0px;
     background: white;
 }
-
+.overlay-product {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    height:100%;
+    bottom: 0px;
+    top: 50%;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 .overlay a {
     text-decoration: none;
     font-size: 1em;
