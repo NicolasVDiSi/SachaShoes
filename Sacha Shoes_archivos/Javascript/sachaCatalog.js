@@ -1,13 +1,13 @@
 function mostrarGrid() {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
-    document.getElementById("active").classList.remove('ui-search-view-change__link--active');
-    document.getElementById('dactive').classList.add('ui-search-view-change__link--active');
+    document.getElementById("rows").classList.remove('ui-search-view-change__link--active');
+    document.getElementById('grid').classList.add('ui-search-view-change__link--active');
 }
 
 function mostrarFilas() {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--grid', 'ui-search-layout--stack');
-    document.getElementById("active").classList.add('ui-search-view-change__link--active');
-    document.getElementById('dactive').classList.remove('ui-search-view-change__link--active');
+    document.getElementById("rows").classList.add('ui-search-view-change__link--active');
+    document.getElementById('grid').classList.remove('ui-search-view-change__link--active');
 }
 
 function mostrarInputSearch() {
