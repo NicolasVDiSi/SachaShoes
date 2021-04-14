@@ -675,6 +675,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!--dropdown colores-->
                                             <div class="ui-search-result__content-column ui-search-result__content-column--right">
                                                 <div class="ui-search-variations-picker ui-search-variations-picker--stack">
                                                     <p class="ui-search-variations-picker__label">Color:</p><div class="andes-widther">
@@ -686,9 +687,30 @@
                                                                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                                                                     </svg>
                                                                 </button>
-                                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                                    <a class="dropdown-item" href="#">Blanco</a>
-                                                                    <a class="dropdown-item" href="#">Marrón</a>
+                                                                <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                                                                    <!--Colores de producto-->
+                                                                        <div class="ui-search-variations-picker__variations-list">
+                                                                            <!--Color 1-->
+                                                                            <label for="gallery-item1" class="gallery-label ui-search-variations-picker__variation ui-search-variations-picker__variation--selected" onclick="selecionar(this);">
+                                                                                <img title="Negro" width="36" height="36" src="https://http2.mlstatic.com/D_NQ_NP_620547-MLA42585047518_072020-W.webp" class="ui-search-variations-picker__variation-image" alt="Negro">
+                                                                            </label>
+                                                                            <!--Color2-->
+                                                                            <label for="gallery-item2" class="gallery-label ui-search-variations-picker__variation" onclick="selecionar(this);">
+                                                                                <img title="Marrón" width="36" height="36" src="https://http2.mlstatic.com/D_NQ_NP_977741-MLA42589679296_072020-W.webphttps://http2.mlstatic.com/D_NQ_NP_620547-MLA42585047518_072020-W.webp" class="ui-search-variations-picker__variation-image" alt="Blanco">
+                                                                            </label>
+                                                                            <!--Color3-->
+                                                                            <label for="gallery-item3" class="gallery-label ui-search-variations-picker__variation">
+                                                                                <img title="Marrón" width="36" height="36" src="https://http2.mlstatic.com/D_NQ_NP_977741-MLA42589679296_072020-W.webphttps://http2.mlstatic.com/D_NQ_NP_620547-MLA42585047518_072020-W.webp" class="ui-search-variations-picker__variation-image" alt="Blanco">
+                                                                            </label>
+
+                                                                            <!--Color4-->
+                                                                            <!--Validar cuando hay mas de 4 colores, motrar 3 y a partir del cuarto color agrego opacity 1 al label y se agrega una etiqueta href para redirigir a la ficha de producto-->
+
+                                                                            <label for="gallery-item4" class="gallery-label ui-search-variations-picker__variation" style="opacity:1;">
+                                                                                <img title="Marrón" width="36" height="36" src="https://http2.mlstatic.com/D_NQ_NP_977741-MLA42589679296_072020-W.webphttps://http2.mlstatic.com/D_NQ_NP_620547-MLA42585047518_072020-W.webp" class="ui-search-variations-picker__variation-image" alt="Blanco">
+                                                                                <a href="#ficha-de-producto" class="ui-search-variations-picker__view-more ui-search-link">+2</a>
+                                                                            </label>
+                                                                        </div>
                                                                 </div>
                                                             </div>
                                                         </div>
