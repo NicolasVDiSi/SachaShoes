@@ -2,12 +2,19 @@ function mostrarGrid() {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
     document.getElementById("rows").classList.remove('ui-search-view-change__link--active');
     document.getElementById('grid').classList.add('ui-search-view-change__link--active');
+
+    /* ocultar dropdown color*/
+    document.querySelector('.ui-search-result__content-column--right').style.setProperty("display", "none");
 }
 
 function mostrarFilas() {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--grid', 'ui-search-layout--stack');
     document.getElementById("rows").classList.add('ui-search-view-change__link--active');
     document.getElementById('grid').classList.remove('ui-search-view-change__link--active');
+
+    /* mostrar dropdown color*/
+    document.querySelector('.ui-search-result__content-column--right').style.setProperty("display", "block");
+
 }
 
 function mostrarInputSearch() {
