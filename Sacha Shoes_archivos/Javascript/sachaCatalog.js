@@ -1,42 +1,25 @@
 function mostrarGrid() {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
-    document.getElementById("active").classList.remove('ui-search-view-change__link--active');
-    document.getElementById('dactive').classList.add('ui-search-view-change__link--active');
+    document.getElementById("rows").classList.remove('ui-search-view-change__link--active');
+    document.getElementById('grid').classList.add('ui-search-view-change__link--active');
+
+    /* ocultar dropdown color*/
+    document.querySelector('.ui-search-result__content-column--right').style.setProperty("display", "none");
 }
 
 function mostrarFilas() {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--grid', 'ui-search-layout--stack');
-    document.getElementById("active").classList.add('ui-search-view-change__link--active');
-    document.getElementById('dactive').classList.remove('ui-search-view-change__link--active');
+    document.getElementById("rows").classList.add('ui-search-view-change__link--active');
+    document.getElementById('grid').classList.remove('ui-search-view-change__link--active');
+
+    /* mostrar dropdown color*/
+    document.querySelector('.ui-search-result__content-column--right').style.setProperty("display", "block");
+
 }
 
 function mostrarInputSearch() {
     document.getElementById("search-input").style.setProperty("visibility", "visible");
     document.getElementById("search-input").style.setProperty("opacity", "1");
-}
-
-
-/* Moistrar/Ocultar subcategorias al pasar el mouse*/
-
-function mostrarCategorias(elementId) {
-  
-    let display = document.getElementById("popover-menu");
-    display.style.removeProperty("display");
-    display.style.setProperty("display", "block");
-
-    let submenu = document.getElementsByClassName(elementId);
-    submenu[0].style.removeProperty("display");
-    submenu[0].style.setProperty("display", "flex");
-}
-
-function ocultarCategorias(elementId) {
-    let display = document.getElementById("popover-menu");
-    display.style.removeProperty("display");
-    display.style.setProperty("display", "none");
-
-    let submenu = document.getElementsByClassName(elementId);
-    submenu[0].style.removeProperty("display");
-    submenu[0].style.setProperty("display", "none");
 }
 
 /*menu vertical*/
@@ -114,3 +97,9 @@ $(document).ready(function () {
         }
     });
 });
+
+function selecionar(e) {
+    let active = document.querySelector(".ui-search-variations-picker__variation--selected");
+    active.classList.remove('ui-search-variations-picker__variation--selected');
+    e.classList.add('ui-search-variations-picker__variation--selected');
+}

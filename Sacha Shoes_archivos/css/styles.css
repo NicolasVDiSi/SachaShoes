@@ -1431,3 +1431,49 @@ li:hover .sub {
 .ui-search-variations-picker--grid{
     position: absolute;
 }
+
+
+/*minislider con radiobuttons*/
+input.gallery-selector:checked + div.gallery-fullsize {
+    display: block;
+}
+
+
+
+input.gallery-selector:checked label {
+    background-color: red;
+    padding: 10px;
+}
+
+div.gallery-fullsize {
+    
+    display: none;
+}
+
+.gallery-selector{
+    display: none;
+}
+
+div.slider-product-content:hover div.ui-search-variations-picker--grid {
+    display: block !important;
+    bottom: -23px
+}
+
+
+/*hoy*/
+.ui-search-variations-picker__view-more {
+    width: 35px;
+    height: 35px;
+    background: hsla(0,0%,100%,.9);
+    color: #3483fa;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 34px;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
