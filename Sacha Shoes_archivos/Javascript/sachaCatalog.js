@@ -90,3 +90,9 @@ $(document).ready(function () {
         }
     });
 });
+
+function selecionar(e) {
+    let active = document.querySelector(".ui-search-variations-picker__variation--selected");
+    active.classList.remove('ui-search-variations-picker__variation--selected');
+    e.classList.add('ui-search-variations-picker__variation--selected');
+}
