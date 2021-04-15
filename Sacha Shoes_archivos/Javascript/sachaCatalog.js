@@ -5,6 +5,9 @@ function mostrarGrid() {
 
     /* ocultar dropdown color*/
     document.querySelector('.ui-search-result__content-column--right').style.setProperty("display", "none");
+
+    /* -habilitar- mostrar minicarousel al pasar el mouse sobre la img de producto*/
+    document.querySelector('.ui-search-variations-picker--grid').style.setProperty("visibility", "visible");
 }
 
 function mostrarFilas() {
@@ -14,6 +17,9 @@ function mostrarFilas() {
 
     /* mostrar dropdown color*/
     document.querySelector('.ui-search-result__content-column--right').style.setProperty("display", "block");
+
+    /* -deshabilitar- mostrar minicarousel al pasar el mouse sobre la img de producto*/
+    document.querySelector('.ui-search-variations-picker--grid').style.setProperty("visibility", "hidden");
 
 }
 
