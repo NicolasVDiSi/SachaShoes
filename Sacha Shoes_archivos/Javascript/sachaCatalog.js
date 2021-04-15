@@ -1,27 +1,26 @@
-function mostrarGrid() {
-    document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
-    document.getElementById("rows").classList.remove('ui-search-view-change__link--active');
-    document.getElementById('grid').classList.add('ui-search-view-change__link--active');
 
-    /* ocultar dropdown color*/
-    document.querySelector('.ui-search-result__content-column--right').style.setProperty("display", "none");
+$("#grid").click(function () {
+ document.getElementById("cardProducto").classList.replace('ui-search-layout--stack', 'ui-search-layout--grid');
+ document.getElementById("rows").classList.remove('ui-search-view-change__link--active');
+ document.getElementById('grid').classList.add('ui-search-view-change__link--active');
+  
+  /* ocultar dropdown color*/
+  document.querySelector('.ui-search-result__content-column--right').style.setProperty("display", "none");
 
-    /* -habilitar- mostrar minicarousel al pasar el mouse sobre la img de producto*/
-    document.querySelector('.ui-search-variations-picker--grid').style.setProperty("visibility", "visible");
-}
+  /* -habilitar- mostrar minicarousel al pasar el mouse sobre la img de producto*/
+  document.querySelector('.ui-search-variations-picker--grid').style.setProperty("visibility", "visible");
+})
 
-function mostrarFilas() {
+$("#rows").click(function () {
     document.getElementById("cardProducto").classList.replace('ui-search-layout--grid', 'ui-search-layout--stack');
     document.getElementById("rows").classList.add('ui-search-view-change__link--active');
     document.getElementById('grid').classList.remove('ui-search-view-change__link--active');
-
-    /* mostrar dropdown color*/
+   /* mostrar dropdown color*/
     document.querySelector('.ui-search-result__content-column--right').style.setProperty("display", "block");
 
     /* -deshabilitar- mostrar minicarousel al pasar el mouse sobre la img de producto*/
     document.querySelector('.ui-search-variations-picker--grid').style.setProperty("visibility", "hidden");
-
-}
+})
 
 function mostrarInputSearch() {
     document.getElementById("search-input").style.setProperty("visibility", "visible");
@@ -42,10 +41,11 @@ $(".filterbtn").click(function () {
     let x = document.getElementById("filterNav");
     if (x.classList.contains("active")) {
         x.classList.remove("active")
-        x.style.height = "100%";
+        x.style.height = "100vh";
+        $("body").css("overflow", "hidden");
     } else {
         x.classList.add("active");
-        x.style.height = "0%";
+        x.style.height = "0vh";
     }
 
 });

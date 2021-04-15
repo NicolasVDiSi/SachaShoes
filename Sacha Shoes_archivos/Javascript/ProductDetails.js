@@ -1,22 +1,33 @@
 var w_w = window.innerWidth;
-var p2 = document.getElementById("cantidad");
-$(".ui-pdp-buybox__quantity").click(function () {
+$("#size").click(function () {
+    ID = 1;
     if (window.innerWidth < 766) {
         $("body").css("overflow", "hidden");
-        p2.style.height = "100vh";
-        p2.classList.add("scale-in-ver-bottom");
-        p2.classList.remove("scale-out-ver-bottom");
-    } 
+        $("#talle").css("height", "100vh");
+        $("#talle").toggleClass("scale-in-ver-bottom");
+        $("#talle").removeClass("scale-out-ver-bottom")
+    }
 });
+$("#quantity").click(function () {
+    if (window.innerWidth < 766) {
+        $("body").css("overflow", "hidden");
+        $("#cantidad").css("height","100vh");
+        $("#cantidad").toggleClass("scale-in-ver-bottom");
+        $("#cantidad").removeClass("scale-out-ver-bottom")   
+    }
+
+});
+
+/*Cerrado de los menús*/
 $(".closeoverlay").click(function () {
-    p2.classList.remove("scale-in-ver-bottom");
-    p2.classList.add("scale-out-ver-bottom");
     $("body").css("overflow", "scroll");
+    $('.overlay-layout').removeClass("scale-in-ver-bottom");
+    $('.overlay-layout').addClass("scale-out-ver-bottom")
+
+    
 })
 $(".closebtn").click(function () {
-    p2.classList.remove("scale-in-ver-bottom");
-        p2.classList.add("scale-out-ver-bottom");
-    $("body").css("overflow", "scroll");
+    $(".closeoverlay")();
 });
 
 /* Moistrar/Ocultar subcategorias al pasar el mouse*/
@@ -53,17 +64,14 @@ function mostrarSidebar() {
 }
 function loadTemplate() {
     if (window.innerWidth < 766) {
-        $("#sliderControl").appendTo("#carousel-mb");
-        $("#accordion").appendTo("#descripcion-mb");
-        $(".row--technical-specifications").appendTo("#info-mb");
-    } else {
-        $("#carousel-mb").appendTo("slider");
-        $("#accordion").appendTo("#descripcion-desk");
-        $("#info-mb").appendTo("#infoProducto")
+        $("#sliderControl").appendTo("#description-col");
+        $("#accordion").insertBefore("#refund");
+        $("#product-info").insertAfter("#accordion");
     }
     if (window.innerWidth > 766) {
-        $("#sliderControl").appendTo("#sliderReplace");
-        $("#accordion").appendTo("#descripcion-desk");
+        $("#sliderControl").prependTo("#slider");
+        $("#accordion").appendTo("#description");
+        $("#product-info").insertBefore("#accordion")
 
         p2.classList.remove("scale-in-ver-bottom");
         p2.classList.add("scale-out-ver-bottom");

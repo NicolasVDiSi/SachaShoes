@@ -810,8 +810,8 @@
 }
 
 .scale-in-ver-bottom {
-    -webkit-animation: scale-in-ver-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-ver-bottom 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: scale-in-ver-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-ver-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes scale-in-ver-bottom {
@@ -1003,7 +1003,22 @@ imgT {
     height: 50px;
     text-align: center;
 }
-
+.ui-pdp-buybox__quantity__item button{
+    text-decoration:none;
+    border:none;
+    box-shadow:none;
+    background-color:transparent;
+    width:100%;
+    justify-content:center;
+    height:100%;
+}
+.ui-pdp-buybox__quantity-title {
+    color: rgba(0,0,0,.8);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px 16px 0;
+    font-weight:bold;
+}
 .closeoverlay {
     position: relative;
     height: 50%;
@@ -1016,25 +1031,32 @@ imgT {
     z-index: 10000;
     overflow-x: hidden;
     background: white;
+    top: 0;
+    left: 0;
+    transition: 0s;
+}
+.overlay-layout {
+    width: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 10000;
+    overflow-x: hidden;
     overflow-y: hidden;
     top: 0;
     left: 0;
     transition: 0s;
 }
 
-#cantidad {
-    width: 100%;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4);
-}
-
-div#cantidad.overlay a.closebtn {
+.closebtn {
     position: absolute;
     right: 1em;
-    top: -25px;
+    top: -30px;
     content: "";
-    height: 3em;
-    width: 3em;
+    height: 1em;
+    width: 1em;
     cursor: pointer;
     left: auto;
 }
@@ -3504,7 +3526,12 @@ input:checked + .slider:before {
     .andes-modal-dialog__container .andes-modal-dialog__content .ui-search-filter-container {
         width: 120px
     }
-
+.ui-pdp-variations__modal__label{
+    font-weight:100;
+}
+.ui-pdp-variations__modal__selected{
+    font-weight:bold;
+}
 .ui-search-pagination:last-child {
     margin-bottom: 32px
 }
